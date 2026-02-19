@@ -13,7 +13,7 @@ export default function Footer() {
     { label: 'Map Pack Optimization', href: '#services' },
     { label: 'AI Search Citations', href: '#ai-search' },
     { label: 'Content Authority', href: '#services' },
-    { label: 'Human Signals', href: '#method' },
+    { label: 'Authority Signals', href: '#method' },
     { label: 'Geo-Grid Tracking', href: '#services' },
   ];
 
@@ -83,7 +83,7 @@ export default function Footer() {
               href="#contact"
               className="btn-primary text-sm px-6 py-3"
             >
-              Get Your Free Audit
+              Get My Free Visibility Audit
             </a>
           </div>
         </div>

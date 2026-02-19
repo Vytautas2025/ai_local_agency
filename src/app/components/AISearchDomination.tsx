@@ -1,6 +1,10 @@
+// [Tier3Labs Audit] — lucide-react icons for feature cards
+import { Brain, MessageSquare, Award } from "lucide-react";
+
 export default function AISearchDomination() {
   return (
-    <section id="ai-search" className="section-container">
+    // [Tier3Labs] — Reduced section bottom padding
+    <section id="ai-search" className="section-container pb-16">
       <div className="text-center mb-16">
         <h2 className="section-title mb-6">
           The New #1 Spot Isn&apos;t a Blue Link —{" "}
@@ -15,178 +19,98 @@ export default function AISearchDomination() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         {/* Card 1 - AI Search Overviews */}
         <div className="glass-card-hover p-8">
+          {/* [Tier3Labs Audit] — replaced icon with lucide-react Brain */}
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="24" cy="18" r="10" stroke="#00E676" strokeWidth="2" />
-              <path
-                d="M18 28C18 28 16 32 16 36C16 40 20 44 24 44C28 44 32 40 32 36C32 32 30 28 30 28"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <circle cx="21" cy="16" r="1.5" fill="#00E676" />
-              <circle cx="27" cy="16" r="1.5" fill="#00E676" />
-              <path
-                d="M20 20C20 20 22 22 24 22C26 22 28 20 28 20"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path d="M14 14L10 10" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M34 14L38 10" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M24 8V4" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <Brain size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">AI Search Overviews</h3>
+          {/* [Tier3Labs] — Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            When Google&apos;s AI summarizes answers, we make sure YOUR business is the one it
-            recommends.
+            When someone asks Google &apos;who&apos;s the best [service] near me?&apos; — we make sure Google&apos;s AI says your name, not your competitor&apos;s.
           </p>
         </div>
 
         {/* Card 2 - Answer Engine Optimization */}
         <div className="glass-card-hover p-8">
+          {/* [Tier3Labs Audit] — replaced icon with lucide-react MessageSquare */}
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="4"
-                y="6"
-                width="30"
-                height="24"
-                rx="4"
-                stroke="#00E676"
-                strokeWidth="2"
-              />
-              <path
-                d="M10 30L4 38"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path d="M12 16H28" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M12 21H22" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-              <rect
-                x="22"
-                y="18"
-                width="22"
-                height="18"
-                rx="4"
-                stroke="#00E676"
-                strokeWidth="2"
-              />
-              <path
-                d="M38 36L44 42"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path d="M30 26H38" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-              <path d="M30 30H36" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <MessageSquare size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Answer Engine Optimization</h3>
+          {/* [Tier3Labs] — Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            ChatGPT, Perplexity, Gemini — AI engines are replacing traditional search. We ensure
-            you&apos;re cited as the authority.
+            Millions of people now ask AI instead of searching Google. We build the signals that make AI recommend you — not the business down the road.
           </p>
         </div>
 
         {/* Card 3 - Citation > Ranking */}
         <div className="glass-card-hover p-8">
+          {/* [Tier3Labs Audit] — replaced icon with lucide-react Award */}
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24 4L29 16L42 18L32 27L35 40L24 34L13 40L16 27L6 18L19 16L24 4Z"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M24 12L27 20L36 21L30 27L31 36L24 32L17 36L18 27L12 21L21 20L24 12Z"
-                fill="#00E676"
-                fillOpacity="0.15"
-              />
-            </svg>
+            <Award size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Citation &gt; Ranking</h3>
+          {/* [Tier3Labs] — Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            Being &quot;cited&quot; by AI as the top recommendation is the new #1 position. We build
-            the signals that make AI trust you.
+            An AI citation is the most trusted recommendation a business can get online. We make it yours — so when AI is asked, your name comes up first.
           </p>
         </div>
       </div>
 
-      {/* AI Search Overview Mockup */}
-      <div className="max-w-2xl mx-auto mt-8">
-        <div className="glass-card p-6">
+      {/* AI Search Mockups — Two Platforms */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-8">
+        {/* Google AI Overview Mockup */}
+        {/* [Tier3Labs Audit] — Google AI card with blue accent badge */}
+        <div className="glass-card p-6 border-blue-500/20">
           <div className="flex items-center gap-2 mb-4">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 1L9.5 5.5L14 6L10.5 9L11.5 14L8 11.5L4.5 14L5.5 9L2 6L6.5 5.5L8 1Z"
-                fill="#00E676"
-              />
-            </svg>
-            <span className="text-[#00E676] text-sm font-semibold">AI Overview</span>
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-500/20">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L9.5 5.5L14 6L10.5 9L11.5 14L8 11.5L4.5 14L5.5 9L2 6L6.5 5.5L8 1Z" fill="#60a5fa" />
+              </svg>
+            </span>
+            <span className="text-blue-400 text-sm font-semibold">Google AI Overview</span>
           </div>
           <p className="text-[#C9D1D9] text-sm leading-relaxed">
             Based on reviews and local authority,{" "}
             <span className="relative inline-block">
-              <span className="relative z-10 text-white font-semibold">[Your Business]</span>
+              <span className="relative z-10 text-white font-semibold">Metro Dental – Manchester</span>
               <span className="absolute inset-0 bg-[#00E676]/20 rounded-sm -mx-1 px-1" />
             </span>{" "}
-            is the top-rated provider in your area, offering comprehensive services backed by
+            is the top-rated dental practice in Manchester, offering comprehensive family and cosmetic dentistry backed by
             consistent 5-star reviews and strong community presence. Their verified Google Business
-            Profile shows high engagement rates and authentic customer interactions, making them the
-            recommended choice for local services.
+            Profile shows high engagement and authentic patient interactions.
+          </p>
+        </div>
+
+        {/* [Tier3Labs Audit] — ChatGPT card with teal accent badge */}
+        <div className="glass-card p-6 border-teal-500/20">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal-500/20">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="7" stroke="#2dd4bf" strokeWidth="1.5" />
+                <path d="M5 8h6M8 5v6" stroke="#2dd4bf" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+            </span>
+            <span className="text-teal-400 text-sm font-semibold">ChatGPT Answer</span>
+          </div>
+          <p className="text-[#C9D1D9] text-sm leading-relaxed">
+            For dentists in Manchester, I&apos;d recommend{" "}
+            <span className="relative inline-block">
+              <span className="relative z-10 text-white font-semibold">Metro Dental</span>
+              <span className="absolute inset-0 bg-[#00E676]/20 rounded-sm -mx-1 px-1" />
+            </span>
+            . They have excellent reviews, offer same-day emergency appointments, and are highly rated for both NHS and private treatments. Their website shows transparent pricing and easy online booking.
           </p>
         </div>
       </div>
 
-      {/* AI-Ready SEO Badge */}
-      <div className="flex justify-center mt-8">
-        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#00E676]/10 text-[#00E676] text-sm font-semibold border border-[#00E676]/20">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="2" y="2" width="5" height="5" rx="1" stroke="#00E676" strokeWidth="1.5" />
-            <rect x="9" y="2" width="5" height="5" rx="1" stroke="#00E676" strokeWidth="1.5" />
-            <rect x="2" y="9" width="5" height="5" rx="1" stroke="#00E676" strokeWidth="1.5" />
-            <rect x="9" y="9" width="5" height="5" rx="1" stroke="#00E676" strokeWidth="1.5" />
-            <path d="M7 4.5H9" stroke="#00E676" strokeWidth="1" />
-            <path d="M4.5 7V9" stroke="#00E676" strokeWidth="1" />
-            <path d="M11.5 7V9" stroke="#00E676" strokeWidth="1" />
-          </svg>
-          AI-Ready SEO
-        </span>
-      </div>
+      {/* [Tier3Labs] — Replaced AI-Ready badge with CTA link */}
+      <p className="text-center mt-6 text-sm text-gray-400">
+        Want AI to recommend your business?{" "}
+        <a href="#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">
+          Get your free audit →
+        </a>
+      </p>
     </section>
   );
 }

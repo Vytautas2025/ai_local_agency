@@ -6,9 +6,7 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    phone: "",
     website: "",
-    message: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -32,7 +30,7 @@ export default function Contact() {
       className="bg-gradient-to-b from-[#0D1117] to-[#0a1628]"
     >
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="section-title">
             Ready to{" "}
             <span className="green-gradient-text">Own the Map Pack</span>?
@@ -41,6 +39,11 @@ export default function Contact() {
             Stop renting visibility. Start owning it.
           </p>
         </div>
+
+        {/* Urgency line */}
+        <p className="text-center text-[#C9D1D9] text-sm mb-12">
+          We audit a limited number of businesses each month. Spots fill quickly.
+        </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div className="glass-card p-8">
@@ -63,11 +66,10 @@ export default function Contact() {
                   />
                 </svg>
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Message Sent!
+                  Audit Requested!
                 </h3>
                 <p className="text-[#C9D1D9] text-center">
-                  We’ll be in touch within 24 hours with your custom
-                  strategy overview.
+                  We&apos;ll be in touch within 24 hours with your custom visibility report.
                 </p>
               </div>
             ) : (
@@ -101,19 +103,6 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-phone" className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                    Phone
-                  </label>
-                  <input
-                    id="contact-phone"
-                    type="tel"
-                    value={form.phone}
-                    onChange={(e) => handleChange("phone", e.target.value)}
-                    placeholder="+1 (555) 000-0000"
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
-                  />
-                </div>
-                <div>
                   <label htmlFor="contact-website" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Business Website
                   </label>
@@ -126,26 +115,16 @@ export default function Contact() {
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
                   />
                 </div>
-                <div>
-                  <label htmlFor="contact-message" className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="contact-message"
-                    rows={4}
-                    value={form.message}
-                    onChange={(e) => handleChange("message", e.target.value)}
-                    placeholder="Tell us about your business and goals..."
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
-                  />
-                </div>
                 <button
                   type="submit"
                   disabled={loading}
                   className="btn-primary w-full mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending…" : "Send Message"}
+                  {loading ? "Sending\u2026" : "Get My Free Visibility Audit"}
                 </button>
+                <p className="text-[#8B949E] text-xs text-center mt-3">
+                  No spam. No sales scripts. Just a 15-minute honest look at your local rankings.
+                </p>
               </form>
             )}
           </div>
@@ -155,47 +134,35 @@ export default function Contact() {
               Or book a free 15-minute strategy call
             </h3>
             <p className="text-[#C9D1D9] mt-4">
-              We’ll analyze your current local search presence and show you
+              We&apos;ll analyse your current local search presence and show you
               exactly how to reach the Top 3.
             </p>
             <div className="flex flex-col gap-4 mt-8">
               <div className="flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="#00E676"
-                >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#00E676">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 <span className="text-[#C9D1D9]">Free competitive analysis</span>
               </div>
               <div className="flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="#00E676"
-                >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#00E676">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
                 <span className="text-[#C9D1D9]">Custom ranking strategy</span>
               </div>
               <div className="flex items-center gap-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="#00E676"
-                >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#00E676">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
                 </svg>
-                <span className="text-[#C9D1D9]">
-                  No obligation, no pressure
-                </span>
+                <span className="text-[#C9D1D9]">No obligation, no pressure</span>
               </div>
             </div>
-            <a href="#" className="btn-ghost mt-8 inline-block text-center">
+            <a
+              href="https://calendly.com/tier3labs/strategy-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost mt-8 inline-block text-center"
+            >
               Schedule a Call
             </a>
           </div>

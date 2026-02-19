@@ -11,22 +11,22 @@ const faqData = [
   {
     question: "How is this different from traditional SEO?",
     answer:
-      "Traditional SEO focuses on website rankings. We focus on Google Maps dominance AND AI search citations. Our approach uses authentic human activity signals rather than just technical tweaks.",
+      "Traditional SEO focuses on website rankings. We focus on Google Maps dominance AND AI search citations. Our approach builds the content authority, citation networks, and engagement signals that Google's algorithm rewards — not just technical tweaks.",
   },
   {
     question: "Do you need access to my Google Business Profile?",
     answer:
-      "No. We never need access to your GBP or website. Our entire strategy works through external signals — GPS activity, human engagement, and content authority building.",
+      "No. We never need access to your GBP or website. Our entire strategy works through external signals — content authority, citation networks, and engagement patterns that boost your local relevance.",
   },
   {
     question: "What are AI Search Overviews and why should I care?",
     answer:
-      "AI Search Overviews are Google’s AI-generated summaries that appear above traditional results. They’re replacing blue links as the primary way people find businesses. We optimize your presence so AI recommends YOU.",
+      "AI Search Overviews are Google's AI-generated summaries that appear above traditional results. They're replacing blue links as the primary way people find businesses. We optimise your presence so AI recommends YOU.",
   },
   {
     question: "How long until I see results?",
     answer:
-      "Most clients see measurable ranking improvements within 30-60 days. Significant Map Pack movement typically occurs within 90 days.",
+      "Most clients see measurable ranking improvements within 30–60 days. Significant Map Pack movement typically occurs within 90 days.",
   },
   {
     question: "What industries do you work with?",
@@ -34,14 +34,19 @@ const faqData = [
       "We work with any local service business — dentists, lawyers, HVAC, plumbers, restaurants, med spas, gyms, and more. If you serve a local area, we can help.",
   },
   {
-    question: "What’s included in the monthly deliverables?",
+    question: "What's included in the monthly deliverables?",
     answer:
-      "Each month you receive: YouTube content, Medium articles, Google & Cloud stacks, AI-driven keyword clustering, human engagement signals, and bi-weekly ranking reports with geo-grid heatmaps.",
+      "Each month you receive: YouTube content, authority articles, ranking signal stacks, multi-platform presence building, AI-driven keyword strategy, and bi-weekly geo-grid ranking reports showing exactly where you stand.",
   },
   {
-    question: "How do ‘human signals’ work?",
+    question: "How do your engagement signals work?",
     answer:
-      "We coordinate authentic human interactions with your business listing — real people performing searches, clicking, requesting directions, and engaging with your profile. These signals tell Google your business is relevant and popular.",
+      "We build the behavioural signals that Google uses to measure local relevance — content authority, citation consistency, and real-world engagement patterns. These compound over time, strengthening your position in the Map Pack month after month.",
+  },
+  {
+    question: "How much does it cost?",
+    answer:
+      "Our packages start from £497/month with no setup fees. Every client receives a custom strategy based on their market and competition. We'll give you a clear quote on your free strategy call — no surprises, no hidden costs.",
   },
 ];
 

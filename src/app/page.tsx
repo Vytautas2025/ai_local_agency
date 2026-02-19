@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import IsThisYou from "./components/IsThisYou";
 import DataVisualization from "./components/DataVisualization";
 import AISearchDomination from "./components/AISearchDomination";
 import HumanSignal from "./components/HumanSignal";
-import TrustBadge from "./components/TrustBadge";
+
 import TechStack from "./components/TechStack";
 import SuccessCalculator from "./components/SuccessCalculator";
 import Results from "./components/Results";
@@ -19,6 +20,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <IsThisYou />
         <DataVisualization />
         <AISearchDomination />
         <HumanSignal />
@@ -30,7 +32,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
-      <TrustBadge />
+
       <ScrollToTop />
     </>
   );

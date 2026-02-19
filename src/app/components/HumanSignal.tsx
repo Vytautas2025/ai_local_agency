@@ -2,170 +2,81 @@ export default function HumanSignal() {
   return (
     <section id="human-signals" className="section-container">
       <div className="text-center mb-16">
+        {/* [Tier3Labs Audit] — Updated section headline */}
         <h2 className="section-title mb-6">
-          Real Humans. Real Signals.{" "}
-          <span className="green-gradient-text">Real Rankings.</span>
+          Real Humans. Real Signals.
+          <br />
+          <span className="green-gradient-text">Real Authority.</span>
         </h2>
+        {/* [Tier3Labs Audit] — Updated sub-headline */}
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
-          Our secret weapon isn&apos;t a bot — it&apos;s authentic human activity.
+          We build the local authority signals Google actually trusts — through content, citations, and verified engagement patterns.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Card 1 - GPS-Driven Activity */}
-        <div className="glass-card-hover p-8">
+      {/* [Tier3Labs Audit] — Process flow layout with step badges + connectors */}
+      <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-0">
+        {/* Step 1 */}
+        <div className="glass-card-hover p-8 flex-1 flex flex-col items-center text-center">
+          <span className="bg-green-400 text-black font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm mb-4">1</span>
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24 4C16.268 4 10 10.268 10 18C10 28 24 44 24 44C24 44 38 28 38 18C38 10.268 31.732 4 24 4Z"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-              <circle cx="24" cy="18" r="6" stroke="#00E676" strokeWidth="2" />
-              <circle cx="24" cy="18" r="2" fill="#00E676" />
-              <path
-                d="M24 8V6"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M24 30V28"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M14 18H16"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-              <path
-                d="M32 18H34"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="4" width="32" height="40" rx="4" stroke="#00E676" strokeWidth="2" />
+              <path d="M16 14h16" stroke="#00E676" strokeWidth="2" strokeLinecap="round" />
+              <path d="M16 22h16M16 28h12M16 34h8" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
+              <path d="M32 30l4 4-4 4" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">GPS-Driven Activity</h3>
+          <h3 className="text-xl font-bold text-white mb-3">We make Google see you as the local leader</h3>
           <p className="text-[#8B949E]">
-            Real mobile users with real GPS data drive to your location, sending powerful ranking
-            signals to Google.
+            We build the local relevance signals Google uses to determine which businesses belong in the Top 3 for your area and service category.
           </p>
         </div>
 
-        {/* Card 2 - Authentic Engagement */}
-        <div className="glass-card-hover p-8">
+        {/* Connector */}
+        <div className="hidden md:flex w-12 items-center justify-center flex-shrink-0">
+          <div className="w-full h-px bg-green-500/40" />
+        </div>
+
+        {/* Step 2 */}
+        <div className="glass-card-hover p-8 flex-1 flex flex-col items-center text-center">
+          <span className="bg-green-400 text-black font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm mb-4">2</span>
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M32 8C32 8 36 8 38 12C40 16 36 20 36 20"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M12 20L12 32C12 34 14 36 16 36L28 36"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M20 36L20 42"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <rect
-                x="8"
-                y="12"
-                width="24"
-                height="8"
-                rx="4"
-                stroke="#00E676"
-                strokeWidth="2"
-              />
-              <circle cx="28" cy="16" r="2" fill="#00E676" />
-              <path
-                d="M28 36L34 42"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M28 36L34 30"
-                stroke="#00E676"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="8" stroke="#00E676" strokeWidth="2" />
+              <circle cx="24" cy="24" r="3" fill="#00E676" fillOpacity="0.3" />
+              <circle cx="10" cy="10" r="4" stroke="#00E676" strokeWidth="1.5" />
+              <circle cx="38" cy="10" r="4" stroke="#00E676" strokeWidth="1.5" />
+              <circle cx="10" cy="38" r="4" stroke="#00E676" strokeWidth="1.5" />
+              <circle cx="38" cy="38" r="4" stroke="#00E676" strokeWidth="1.5" />
+              <path d="M17 19l-4-6M31 19l4-6M17 29l-4 6M31 29l4 6" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">Authentic Engagement</h3>
+          <h3 className="text-xl font-bold text-white mb-3">We get real people interacting with your listing</h3>
           <p className="text-[#8B949E]">
-            Strategic human interactions with your Google Business Profile — searches, clicks,
-            calls, direction requests.
+            We optimise how your Google Business Profile is engaged with — strengthening the behavioural signals that tell Google your business is the most relevant local choice.
           </p>
         </div>
 
-        {/* Card 3 - Third-Party Partnerships */}
-        <div className="glass-card-hover p-8">
+        {/* Connector */}
+        <div className="hidden md:flex w-12 items-center justify-center flex-shrink-0">
+          <div className="w-full h-px bg-green-500/40" />
+        </div>
+
+        {/* Step 3 */}
+        <div className="glass-card-hover p-8 flex-1 flex flex-col items-center text-center">
+          <span className="bg-green-400 text-black font-bold rounded-full w-8 h-8 flex items-center justify-center text-sm mb-4">3</span>
           <div className="mb-6">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="24" cy="12" r="5" stroke="#00E676" strokeWidth="2" />
-              <circle cx="10" cy="34" r="5" stroke="#00E676" strokeWidth="2" />
-              <circle cx="38" cy="34" r="5" stroke="#00E676" strokeWidth="2" />
-              <path
-                d="M20 15L14 30"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeDasharray="3 3"
-              />
-              <path
-                d="M28 15L34 30"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeDasharray="3 3"
-              />
-              <path
-                d="M15 34H33"
-                stroke="#00E676"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeDasharray="3 3"
-              />
-              <circle cx="24" cy="12" r="2" fill="#00E676" fillOpacity="0.3" />
-              <circle cx="10" cy="34" r="2" fill="#00E676" fillOpacity="0.3" />
-              <circle cx="38" cy="34" r="2" fill="#00E676" fillOpacity="0.3" />
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 36V20M16 36V16M24 36V12M32 36V18M40 36V8" stroke="#00E676" strokeWidth="3" strokeLinecap="round" />
+              <path d="M8 36h34" stroke="#00E676" strokeWidth="1.5" />
+              <path d="M36 12l4-4" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
+              <path d="M38 12h2V8" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">Third-Party Partnerships</h3>
+          <h3 className="text-xl font-bold text-white mb-3">We build the trust signals your competitors don&apos;t have</h3>
           <p className="text-[#8B949E]">
-            Our network of verified partners generates organic activity patterns that Google
-            rewards.
+            Through our trusted network of content and citation partners, we build the external authority patterns that Google&apos;s local algorithm consistently rewards.
           </p>
         </div>
       </div>

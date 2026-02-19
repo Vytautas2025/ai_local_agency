@@ -12,7 +12,7 @@ export default function Comparison() {
     },
     {
       feature: "Trust Factor",
-      ppc: "‘Ad’ label reduces trust",
+      ppc: "'Ad' label reduces trust",
       mapPack: "Organic = trusted",
     },
     {
@@ -29,6 +29,11 @@ export default function Comparison() {
       feature: "AI Visibility",
       ppc: "None",
       mapPack: "Full AI citation optimization",
+    },
+    {
+      feature: "Requires Ongoing Ad Budget",
+      ppc: "Yes (£500–£5,000/mo minimum)",
+      mapPack: "No",
     },
   ];
 
@@ -48,12 +53,12 @@ export default function Comparison() {
               <thead>
                 <tr className="bg-white/5 border-b border-white/10">
                   <th className="px-6 py-4 text-sm uppercase tracking-wider text-[#8B949E] font-medium">
-                    Feature
+                    What matters to your bottom line
                   </th>
                   <th className="px-6 py-4 text-sm uppercase tracking-wider text-red-400 font-medium">
                     Paid Ads (PPC)
                   </th>
-                  <th className="px-6 py-4 text-sm uppercase tracking-wider text-[#00E676] font-medium">
+                  <th className="px-6 py-4 text-sm uppercase tracking-wider text-[#00E676] font-medium bg-[#00E676]/5">
                     Map Pack (Our Method)
                   </th>
                 </tr>
@@ -68,10 +73,10 @@ export default function Comparison() {
                       {row.feature}
                     </td>
                     <td className="px-6 py-5 border-b border-white/5 text-[#8B949E]">
-                      <span className="text-red-400/70">✗</span> {row.ppc}
+                      <span className="text-red-400/70">&#10007;</span> {row.ppc}
                     </td>
-                    <td className="px-6 py-5 border-b border-white/5 text-[#C9D1D9]">
-                      <span className="text-[#00E676]">✓</span> {row.mapPack}
+                    <td className="px-6 py-5 border-b border-white/5 text-[#C9D1D9] bg-[#00E676]/5">
+                      <span className="text-[#00E676]">&#10003;</span> {row.mapPack}
                     </td>
                   </tr>
                 ))}
