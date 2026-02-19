@@ -74,15 +74,17 @@ export default function Results() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-[#8B949E] text-sm">
-            Trusted by businesses across industries
+          <p className="text-[#8B949E] text-sm mb-4">
+            Trusted by local businesses across industries
           </p>
-          <div className="flex justify-center gap-8 mt-4 flex-wrap">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <div
-                key={i}
-                className="w-24 h-10 rounded bg-white/5 border border-white/10"
-              />
+          <div className="flex justify-center gap-3 mt-4 flex-wrap">
+            {["Dental", "Legal", "HVAC", "Restaurants", "Med Spas", "Hospitality"].map((industry) => (
+              <span
+                key={industry}
+                className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#8B949E] text-xs font-medium"
+              >
+                {industry}
+              </span>
             ))}
           </div>
         </div>

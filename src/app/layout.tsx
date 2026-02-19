@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tier3labs.com"),
   title: "Tier3Labs | Dominate the Google Maps Top 3 | Local SEO & AI Search",
   description:
-    "Stop chasing scraps. Tier3Labs puts your business in the Google Maps Top 3 where 70% of local search traffic converts. Local SEO, AI Search Optimization & Human Signal strategies that dominate.",
+    "Stop losing leads. Tier3Labs gets your business into the Top 3 on Google Maps and Search where 70% of local traffic converts. Local SEO, AI Search Optimization & Human Signal strategies that deliver.",
   keywords: [
     "local SEO",
     "Google Maps SEO",
@@ -33,20 +33,13 @@ export const metadata: Metadata = {
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
       "We put your business in the Google Maps Top 3 where 70% of local search traffic converts. Local SEO & AI Search Optimization.",
-    images: [
-      {
-        url: "/icon.png",
-        width: 512,
-        height: 512,
-        alt: "Tier3Labs Logo",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
       "We put your business in the Google Maps Top 3 where 70% of local search traffic converts.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,

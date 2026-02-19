@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-gradient grid-pattern">
@@ -9,10 +7,10 @@ export default function Hero() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-24 text-center">
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white">
-          Stop Chasing Scraps.
+          Stop Losing Leads.
           <br />
-          Dominate the{' '}
-          <span className="green-gradient-text">70%</span>.
+          Get Into the{' '}
+          <span className="green-gradient-text whitespace-nowrap">Google Maps &amp; Search Top&nbsp;3</span>
         </h1>
 
         {/* Subheadline */}

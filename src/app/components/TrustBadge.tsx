@@ -8,11 +8,11 @@ export default function TrustBadge() {
   if (dismissed) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 glass-card p-5 max-w-xs border-[#00E676]/20 animate-float">
+    <div className="fixed bottom-6 right-6 z-40 glass-card p-5 max-w-xs border-green-primary/20 animate-fade-in">
       {/* Close Button */}
       <button
         onClick={() => setDismissed(true)}
-        className="absolute top-3 right-3 text-[#8B949E] hover:text-white transition-colors duration-200"
+        className="absolute top-3 right-3 text-text-muted hover:text-white transition-colors duration-200"
         aria-label="Dismiss trust badge"
       >
         <svg
@@ -43,12 +43,12 @@ export default function TrustBadge() {
           <path d="M16 2L4 8V16C4 23.2 9.12 29.84 16 32C22.88 29.84 28 23.2 28 16V8L16 2ZM16 15.98H26C25.28 21.92 21.36 27.26 16 28.9V16H6V9.4L16 4.62V15.98Z" />
         </svg>
         <span className="text-white font-bold text-sm">
-          🔒 Zero Access Required
+          Zero Access Required
         </span>
       </div>
 
       {/* Body Text */}
-      <p className="text-[#8B949E] text-xs mt-3 leading-relaxed">
+      <p className="text-text-muted text-xs mt-3 leading-relaxed">
         We never need access to your Google Business Profile or website. Our strategy works
         entirely through external signals.
       </p>

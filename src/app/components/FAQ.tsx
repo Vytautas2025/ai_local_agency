@@ -81,9 +81,10 @@ export default function FAQ() {
 
         <div className="max-w-3xl mx-auto">
           {faqData.map((item, index) => (
-            <div key={index} className="border-b border-white/10">
+            <div key={item.question} className="border-b border-white/10">
               <button
                 onClick={() => toggle(index)}
+                aria-expanded={openIndex === index}
                 className="w-full flex justify-between items-center py-6 text-left text-white font-semibold text-lg hover:text-[#00E676] transition-colors cursor-pointer"
               >
                 <span className="pr-4">{item.question}</span>

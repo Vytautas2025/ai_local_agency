@@ -84,7 +84,7 @@ export default function DataVisualization() {
                 fontWeight="500"
                 fontFamily="Inter, system-ui, sans-serif"
               >
-                Map Pack
+                Top 3
               </text>
             </svg>
           </div>

@@ -11,6 +11,7 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
@@ -18,7 +19,11 @@ export default function Contact() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setSubmitted(true);
+    }, 800);
   };
 
   return (
@@ -68,10 +73,11 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                  <label htmlFor="contact-name" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Name
                   </label>
                   <input
+                    id="contact-name"
                     type="text"
                     required
                     value={form.name}
@@ -81,10 +87,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                  <label htmlFor="contact-email" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Email
                   </label>
                   <input
+                    id="contact-email"
                     type="email"
                     required
                     value={form.email}
@@ -94,10 +101,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                  <label htmlFor="contact-phone" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Phone
                   </label>
                   <input
+                    id="contact-phone"
                     type="tel"
                     value={form.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
@@ -106,10 +114,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                  <label htmlFor="contact-website" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Business Website
                   </label>
                   <input
+                    id="contact-website"
                     type="url"
                     value={form.website}
                     onChange={(e) => handleChange("website", e.target.value)}
@@ -118,10 +127,11 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                  <label htmlFor="contact-message" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Message
                   </label>
                   <textarea
+                    id="contact-message"
                     rows={4}
                     value={form.message}
                     onChange={(e) => handleChange("message", e.target.value)}
@@ -129,8 +139,12 @@ export default function Contact() {
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
                   />
                 </div>
-                <button type="submit" className="btn-primary w-full mt-6">
-                  Send Message
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-primary w-full mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {loading ? "Sending…" : "Send Message"}
                 </button>
               </form>
             )}
