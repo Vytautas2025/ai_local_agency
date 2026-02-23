@@ -51,7 +51,7 @@ export default function Results() {
         </div>
 
         {/* Geo-grid Before / After */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 max-w-3xl mx-auto">
           <div className="glass-card overflow-hidden rounded-2xl border border-white/10">
             <div className="bg-[#0D1117] py-4 text-center border-b border-white/10">
               <span className="text-white font-extrabold text-xl tracking-wide">BEFORE <span className="text-red-400">(RANK #21)</span></span>
