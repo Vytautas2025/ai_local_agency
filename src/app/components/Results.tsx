@@ -10,22 +10,22 @@ export default function Results() {
 
   const caseStudies = [
     {
-      beforeAfter: "Position #12 → Position #2",
+      beforeAfter: "Position #12 → Position #1",
       improvement: "+340% Map Views",
       quote: "Our phone hasn't stopped ringing since we hit the top 3.",
-      attribution: "— James T., Premier Dental, Manchester",
+      attribution: "— G. Treinkman, East Village Dental Centre, Chicago",
     },
     {
-      beforeAfter: "Position #15 → Position #1",
+      beforeAfter: "Position #15 → Position #3",
       improvement: "+520% Direction Requests",
-      quote: "We went from invisible to the first name people see. Game changer.",
-      attribution: "— Sarah M., Reliable Heat & Air, Birmingham",
+      quote: "Within weeks our schedule was fuller than it's ever been. The results speak for themselves.",
+      attribution: "— Sarah M., EHC Inc Electrical Heating Cooling, Boston",
     },
     {
-      beforeAfter: "Position #8 → Position #3",
+      beforeAfter: "Position #8 → Position #1",
       improvement: "+280% Phone Calls",
       quote: "The quality of leads we get now is on a completely different level.",
-      attribution: "— David K., Kensington Law Group, London",
+      attribution: "— David K., Lonnie Lawyer LLC, Miami Beach",
     },
   ];
 
