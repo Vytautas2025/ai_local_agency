@@ -23,11 +23,11 @@ export default function Home() {
         <IsThisYou />
         <DataVisualization />
         <Comparison />
+        <Results />
         <AISearchDomination />
         <HumanSignal />
         <TechStack />
         <SuccessCalculator />
-        <Results />
         <FAQ />
         <Contact />
       </main>
