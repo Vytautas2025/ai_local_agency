@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Results() {
   const stats = [
     { value: "70%", label: "Average Traffic Increase" },
@@ -46,6 +48,36 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm">{stat.label}</p>
             </div>
           ))}
+        </div>
+
+        {/* Geo-grid Before / After */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <div className="glass-card overflow-hidden rounded-2xl border border-white/10">
+            <div className="bg-[#0D1117] py-4 text-center border-b border-white/10">
+              <span className="text-white font-extrabold text-xl tracking-wide">BEFORE <span className="text-red-400">(RANK #21)</span></span>
+              <p className="text-[#8B949E] text-sm mt-1">28 January 2025</p>
+            </div>
+            <Image
+              src="/before.png"
+              alt="Geo-grid before — Rank #21"
+              width={702}
+              height={634}
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="glass-card overflow-hidden rounded-2xl border border-[#00E676]/30">
+            <div className="bg-[#0D1117] py-4 text-center border-b border-[#00E676]/20">
+              <span className="text-white font-extrabold text-xl tracking-wide">AFTER <span className="text-[#00E676]">(RANK #TOP3)</span></span>
+              <p className="text-[#8B949E] text-sm mt-1">8 March 2025</p>
+            </div>
+            <Image
+              src="/after.png"
+              alt="Geo-grid after — Rank Top 3"
+              width={697}
+              height={634}
+              className="w-full h-auto"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
