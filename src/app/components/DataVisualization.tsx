@@ -22,8 +22,7 @@ export default function DataVisualization() {
           <div className="flex rounded-full overflow-hidden h-6 w-full">
             <div className="bg-green-500" style={{ width: "70%" }} />
             <div className="bg-green-700" style={{ width: "20%" }} />
-            <div className="bg-gray-600" style={{ width: "8%" }} />
-            <div className="bg-gray-800" style={{ width: "2%" }} />
+            <div className="bg-gray-600" style={{ width: "10%" }} />
           </div>
           <p className="text-xs text-gray-500 mt-2 text-center">Source: BrightLocal Local Search Study, 2024</p>
         </div>
