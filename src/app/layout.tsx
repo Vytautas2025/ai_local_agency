@@ -66,10 +66,7 @@ const localBusinessSchema = {
     "Google Maps Optimization",
     "GEO Optimization",
   ],
-  areaServed: {
-    "@type": "Country",
-    name: "United States",
-  },
+  areaServed: "Worldwide",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Local SEO Services",
@@ -116,10 +113,7 @@ const serviceSchema = {
   },
   description:
     "Comprehensive local SEO service combining Google Maps optimization, AI search citation building, and authentic human engagement signals.",
-  areaServed: {
-    "@type": "Country",
-    name: "United States",
-  },
+  areaServed: "Worldwide",
 };
 
 export default function RootLayout({

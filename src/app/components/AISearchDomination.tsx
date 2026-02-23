@@ -108,7 +108,7 @@ export default function AISearchDomination() {
       <p className="text-center mt-6 text-sm text-gray-400">
         Want AI to recommend your business?{" "}
         <a href="#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">
-          Get your free trial →
+          Get your free audit →
         </a>
       </p>
     </section>
