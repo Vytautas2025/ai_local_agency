@@ -51,10 +51,10 @@ export default function TermsPage() {
             </p>
             <p className="mb-3">
               We reserve the right to update and change the terms of this Agreement from time to
-              time at our sole discretion. We will provide notice by updating this page and
-              indicating the date of the update. We may also send notice to the email address
-              associated with your account. Your continued use of the Services fourteen (14) days
-              after such notice shall constitute acceptance of the new terms.
+              time at our sole discretion. We will provide notice by updating this page, indicating
+              the date of the update, and sending written notice to the email address associated
+              with your account. Your continued use of the Services thirty (30) days after such
+              notice shall constitute acceptance of the new terms.
             </p>
             <p>
               You may not access the Services if you are our direct competitor, except with our
@@ -264,9 +264,13 @@ export default function TermsPage() {
               (collectively, &ldquo;Work Product&rdquo;) developed in whole or in part by Company
               in connection with the Services will be the exclusive property of Company. Upon
               request, Company will execute all documents necessary to confirm or perfect such
-              exclusive ownership. If Customer fails to adhere to payment terms or refuses to pay
-              for rendered services, Company retains full rights to use the rendered work for
-              promotional purposes and does not release copyright in such work.
+              exclusive ownership. However, upon receipt of full payment of all Fees due, Company
+              grants Customer a non-exclusive, worldwide, royalty-free, perpetual licence to use
+              the Work Product solely for Customer&apos;s internal business purposes and external
+              marketing. If Customer fails to adhere to payment terms or refuses to pay for
+              rendered services, this licence is immediately revoked, and Company retains full
+              rights to use the rendered work for promotional purposes and does not release
+              copyright in such work.
             </p>
           </section>
 
@@ -296,25 +300,77 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-white mb-3">10. Limitation of Liability</h2>
             <p>
               To the fullest extent permitted by applicable law (including the laws of England
-              &amp; Wales), except for bodily injury of a person, Company and its officers,
-              affiliates, representatives, contractors, and employees shall not be responsible or
-              liable under any contract, negligence, strict liability, or other theory: (a) for
-              error or interruption of use, or for loss, inaccuracy, or corruption of data, or for
-              the cost of procuring substitute goods, services, or technology, or for loss of
-              business; (b) for any indirect, exemplary, incidental, special, or consequential
-              damages; (c) for any matter beyond Company&apos;s reasonable control; or (d) for any
-              amounts that, together with amounts associated with all other claims, exceed the Fees
-              paid by Customer to Company for the Services in the twelve (12) months prior to the
-              act that gave rise to the liability; in each case, whether or not Company has been
-              advised of the possibility of such damages. Nothing in this Agreement limits
-              liability for fraud, fraudulent misrepresentation, or any other liability that cannot
-              be limited or excluded under applicable law.
+              &amp; Wales), nothing in this Agreement limits or excludes liability for death or
+              personal injury caused by our negligence, fraud or fraudulent misrepresentation, or
+              any other liability which cannot legally be limited or excluded under applicable law.
+              Subject to the foregoing, Company and its officers, affiliates, representatives,
+              contractors, and employees shall not be responsible or liable under any contract,
+              negligence, strict liability, or other theory: (a) for error or interruption of use,
+              or for loss, inaccuracy, or corruption of data, or for the cost of procuring
+              substitute goods, services, or technology, or for loss of business; (b) for any
+              indirect, exemplary, incidental, special, or consequential damages; (c) for any
+              matter beyond Company&apos;s reasonable control; or (d) for any amounts that,
+              together with amounts associated with all other claims, exceed the Fees paid by
+              Customer to Company for the Services in the twelve (12) months prior to the act that
+              gave rise to the liability; in each case, whether or not Company has been advised of
+              the possibility of such damages.
             </p>
           </section>
 
           {/* 11 */}
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">11. Miscellaneous</h2>
+            <h2 className="text-xl font-bold text-white mb-3">11. Data Protection</h2>
+            <p>
+              Both parties will comply with all applicable requirements of the Data Protection
+              Legislation (meaning the UK General Data Protection Regulation (UK GDPR) and the
+              Data Protection Act 2018). This Section is in addition to, and does not relieve,
+              remove, or replace, a party&apos;s obligations under the Data Protection
+              Legislation. If Company processes any personal data on Customer&apos;s behalf when
+              performing its obligations under this Agreement, the parties record their intention
+              that Customer will be the data controller and Company will be a data processor. The
+              specifics of such processing shall be governed by Company&apos;s Privacy Policy or
+              a separately executed Data Processing Agreement.
+            </p>
+          </section>
+
+          {/* 12 */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">12. Marketing &amp; Publicity</h2>
+            <p className="mb-3">
+              Customer grants Company a non-exclusive, worldwide, royalty-free licence to use
+              Customer&apos;s business name, trade name, and logos (&ldquo;Customer Marks&rdquo;)
+              to identify Customer as a user of the Services and to use the Customer Marks in
+              Company&apos;s marketing, advertising, and promotional materials, including on
+              Company&apos;s website, in sales presentations, case studies, and paid digital
+              advertisements. Company will use the Customer Marks in accordance with any reasonable
+              brand guidelines provided by Customer and will not materially alter the Customer
+              Marks other than to resize them.
+            </p>
+            <p className="mb-3">
+              Customer agrees that Company may describe in general terms the nature of the Services
+              provided to Customer and may use data and metrics relating to Customer&apos;s use of
+              the Services and the results achieved (including search-ranking, traffic, and
+              lead-generation metrics) (&ldquo;Results Data&rdquo;) in Company&apos;s marketing
+              and sales materials, provided that Company does not disclose Customer&apos;s
+              confidential information.
+            </p>
+            <p className="mb-3">
+              Where Company wishes to attribute a specific testimonial, quote, or detailed case
+              study to a named individual at Customer, Company will obtain that individual&apos;s
+              prior consent (email being sufficient) before publication.
+            </p>
+            <p>
+              Customer may revoke Company&apos;s right to use the Customer Marks in new marketing
+              materials at any time upon thirty (30) days&apos; prior written notice. Revocation
+              will not require Company to remove or modify materials created before the effective
+              date of revocation, and Company may continue to use aggregated or de-identified
+              Results Data that does not identify Customer.
+            </p>
+          </section>
+
+          {/* 13 */}
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">13. Miscellaneous</h2>
             <p>
               If any provision of this Agreement is found to be unenforceable or invalid, that
               provision will be limited or eliminated to the minimum extent necessary so that this
@@ -335,58 +391,6 @@ export default function TermsPage() {
               by recorded post. This Agreement shall be governed by and construed in accordance
               with the laws of England &amp; Wales, and the parties submit to the exclusive
               jurisdiction of the courts of England &amp; Wales.
-            </p>
-          </section>
-
-          {/* 12 */}
-          <section>
-            <h2 className="text-xl font-bold text-white mb-3">12. Free Trial; Marketing &amp; Publicity</h2>
-            <p className="mb-3">
-              This Section applies only if Customer registers for and/or uses a free trial, beta,
-              or other promotional access to the Services (&ldquo;Free Trial&rdquo;). By taking
-              advantage of a Free Trial, Customer grants Company a non-exclusive, worldwide,
-              royalty-free licence to use Customer&apos;s business name, trade name, and logos
-              (&ldquo;Customer Marks&rdquo;) to identify Customer as a user of the Services and to
-              use the Customer Marks in Company&apos;s marketing, advertising, and promotional
-              materials, including on Company&apos;s website, in sales presentations, case studies,
-              and paid digital advertisements. Company will use the Customer Marks in accordance
-              with any reasonable brand guidelines provided by Customer and will not materially
-              alter the Customer Marks other than to resize them.
-            </p>
-            <p className="mb-3">
-              During and after a Free Trial, Customer further agrees that Company may describe in
-              general terms the nature of the Services provided to Customer and may use data and
-              metrics relating to Customer&apos;s use of the Services and the results achieved
-              (including search-ranking, traffic, and lead-generation metrics)
-              (&ldquo;Results Data&rdquo;) in Company&apos;s marketing and sales materials,
-              provided that Company does not disclose Customer&apos;s confidential information.
-              Company may also use aggregated and/or de-identified versions of the Results Data
-              that do not identify Customer by name.
-            </p>
-            <p className="mb-3">
-              Where Company wishes to attribute a specific testimonial, quote, or detailed case
-              study to a named individual at Customer, Company will obtain that individual&apos;s
-              prior consent (email being sufficient) before publication. Company will not
-              knowingly make any statement about Customer or the Results Data that is false or
-              misleading and will comply with applicable advertising and endorsement laws and
-              regulations, including those of the UK Advertising Standards Authority (ASA).
-            </p>
-            <p>
-              Customer may revoke Company&apos;s right to use the Customer Marks in new marketing
-              materials at any time upon thirty (30) days&apos; prior written notice. Revocation
-              will not require Company to remove or modify materials created before the effective
-              date of revocation, and Company may continue to use aggregated or de-identified
-              Results Data that does not identify Customer.
-            </p>
-          </section>
-
-          {/* 13 */}
-          <section>
-            <h2 className="text-xl font-bold text-white mb-3">13. No Use Without Free Trial</h2>
-            <p>
-              Except as provided in Section 12 or as otherwise agreed in a separate written
-              consent or marketing release, Company will not use Customer Marks in public-facing
-              marketing or paid advertisements if Customer has not participated in a Free Trial.
             </p>
           </section>
 
