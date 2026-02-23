@@ -29,10 +29,10 @@ export default function SuccessCalculator() {
   ).length;
 
   const getBarWidth = () => {
-    if (score === 3) return "90%";
-    if (score === 2) return "55%";
-    if (score === 1) return "25%";
-    return "10%";
+    if (score === 3) return "100%";
+    if (score === 2) return "66%";
+    if (score === 1) return "33%";
+    return "5%";
   };
 
   const getBarColor = () => {
@@ -96,13 +96,13 @@ export default function SuccessCalculator() {
         </div>
 
         <div className="glass-card p-10 max-w-2xl mx-auto">
-          {/* [Tier3Labs Audit] — Progress dots */}
+          {/* Progress dots */}
           <div className="flex items-center justify-center gap-3 mb-8">
-            {[0, 1, 2].map((i) => (
+            {([answers.reviews, answers.address, answers.website] as (boolean | null)[]).map((ans, i) => (
               <div
                 key={i}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  i < answeredCount ? "bg-green-500" : "bg-gray-700"
+                  ans === true ? "bg-green-500" : ans === false ? "bg-red-500" : "bg-gray-700"
                 }`}
               />
             ))}
