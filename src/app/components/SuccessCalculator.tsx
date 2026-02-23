@@ -7,64 +7,61 @@ export default function SuccessCalculator() {
     reviews: boolean | null;
     address: boolean | null;
     website: boolean | null;
-    topThree: boolean | null;
   }>({
     reviews: null,
     address: null,
     website: null,
-    topThree: null,
   });
 
   const allAnswered =
     answers.reviews !== null &&
     answers.address !== null &&
-    answers.website !== null &&
-    answers.topThree !== null;
+    answers.website !== null;
 
   // [Tier3Labs Audit] — Count of answered questions for progress dots
-  const answeredCount = [answers.reviews, answers.address, answers.website, answers.topThree].filter(
+  const answeredCount = [answers.reviews, answers.address, answers.website].filter(
     (v) => v !== null
   ).length;
 
-  // [Tier3Labs Audit] — Score is simply the count of Yes answers (0–4)
-  const score = [answers.reviews, answers.address, answers.website, answers.topThree].filter(
+  // [Tier3Labs Audit] — Score is simply the count of Yes answers (0–3)
+  const score = [answers.reviews, answers.address, answers.website].filter(
     (v) => v === true
   ).length;
 
   const getBarWidth = () => {
-    if (score === 4) return "90%";
-    if (score === 3) return "65%";
-    if (score === 2) return "40%";
-    return "20%";
+    if (score === 3) return "90%";
+    if (score === 2) return "55%";
+    if (score === 1) return "25%";
+    return "10%";
   };
 
   const getBarColor = () => {
-    if (score === 4) return "bg-green-500";
-    if (score === 3) return "bg-lime-400";
-    if (score === 2) return "bg-amber-400";
+    if (score === 3) return "bg-green-500";
+    if (score === 2) return "bg-lime-400";
+    if (score === 1) return "bg-amber-400";
     return "bg-red-500";
   };
 
   const getLabel = () => {
-    if (score === 4) return "Excellent foundation";
-    if (score === 3) return "Almost there";
-    if (score === 2) return "Significant gaps";
+    if (score === 3) return "Excellent foundation";
+    if (score === 2) return "Almost there";
+    if (score === 1) return "Significant gaps";
     return "Starting from scratch";
   };
 
   const getHeading = () => {
-    if (score === 4) return "Your foundation is strong — now it's time to dominate.";
-    if (score === 3) return "You're close, but competitors are filling the spots you could own.";
-    if (score === 2) return "There are clear gaps holding you back from the Top 3.";
+    if (score === 3) return "Your foundation is strong — now it's time to dominate.";
+    if (score === 2) return "You're close, but competitors are filling the spots you could own.";
+    if (score === 1) return "There are clear gaps holding you back from the Top 3.";
     return "You're starting from scratch — that's actually an advantage. Here's why.";
   };
 
   const getParagraph = () => {
-    if (score === 4)
-      return "You have everything needed to rank. The only missing piece is the right optimisation strategy.";
     if (score === 3)
-      return "A targeted local SEO push could put you in the Top 3 within 60–90 days.";
+      return "You have everything needed to rank. The only missing piece is the right optimisation strategy.";
     if (score === 2)
+      return "A targeted local SEO push could put you in the Top 3 within 60–90 days.";
+    if (score === 1)
       return "We've helped businesses in this position reach the Top 3. It takes the right approach.";
     return "Many of our best-performing clients started exactly here. A clean foundation lets us build properly.";
   };
@@ -82,11 +79,6 @@ export default function SuccessCalculator() {
       key: "website" as const,
       text: "Do you have an established business website?",
     },
-    // [Tier3Labs Audit] — Added 4th question
-    {
-      key: "topThree" as const,
-      text: "Are you currently appearing in the Google Maps Top 3 for your main service?",
-    },
   ];
 
   return (
@@ -99,14 +91,14 @@ export default function SuccessCalculator() {
             Score?
           </h2>
           <p className="text-[#8B949E] text-lg mt-4 max-w-2xl mx-auto">
-            Answer four quick questions to see where you stand.
+            Answer three quick questions to see where you stand.
           </p>
         </div>
 
         <div className="glass-card p-10 max-w-2xl mx-auto">
           {/* [Tier3Labs Audit] — Progress dots */}
           <div className="flex items-center justify-center gap-3 mb-8">
-            {[0, 1, 2, 3].map((i) => (
+            {[0, 1, 2].map((i) => (
               <div
                 key={i}
                 className={`w-3 h-3 rounded-full transition-colors duration-300 ${
@@ -115,7 +107,7 @@ export default function SuccessCalculator() {
               />
             ))}
             <span className="text-sm text-gray-500 ml-2">
-              {answeredCount}/4 answered
+              {answeredCount}/3 answered
             </span>
           </div>
 
@@ -156,7 +148,7 @@ export default function SuccessCalculator() {
             ))}
           </div>
 
-          {/* [Tier3Labs Audit] — Progress bar results block (shown when all 4 answered) */}
+          {/* Progress bar results block (shown when all 3 answered) */}
           {allAnswered && (
             <div className="mt-10 pt-8 border-t border-white/10">
               <p className="text-sm text-gray-400 mb-2">Your Map Pack Readiness Score</p>
@@ -169,7 +161,7 @@ export default function SuccessCalculator() {
                   />
                 </div>
                 <span className="text-sm text-gray-300 whitespace-nowrap">
-                  {score}/4 — {getLabel()}
+                  {score}/3 — {getLabel()}
                 </span>
               </div>
 

@@ -3,8 +3,8 @@ export default function TechStack() {
     <section id="services" className="section-container">
       <div className="text-center mb-16">
         <h2 className="section-title mb-6">
-          Your Monthly{" "}
-          <span className="green-gradient-text">Domination Stack</span>
+          Your Local{" "}
+          <span className="green-gradient-text">Content Strategy</span>
         </h2>
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
           You already have a Google Business Profile. Here&apos;s what&apos;s been missing — and what we add every month to get you into the Top 3.
@@ -61,7 +61,7 @@ export default function TechStack() {
           <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
           Content That Ranks
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* YouTube Content */}
           <div className="glass-card-hover p-8">
             <div className="mb-6">
@@ -90,25 +90,6 @@ export default function TechStack() {
             <p className="text-[#8B949E]">
               Published on high-domain-authority platforms with strategic backlinks that establish your expertise
               and strengthen your ranking signals.
-            </p>
-          </div>
-
-          {/* AI Citation Optimization */}
-          <div className="glass-card-hover p-8">
-            <div className="mb-6">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="6" y="8" width="36" height="32" rx="4" stroke="#00E676" strokeWidth="2" />
-                <path d="M6 16h36" stroke="#00E676" strokeWidth="1.5" />
-                <circle cx="12" cy="12" r="1.5" fill="#00E676" />
-                <circle cx="18" cy="12" r="1.5" fill="#00E676" fillOpacity="0.5" />
-                <path d="M14 24h20M14 30h14M14 36h10" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M38 28l-4 4-2-2" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-3">AI Citation Optimization</h3>
-            <p className="text-[#8B949E]">
-              Structured content that AI search engines — Google AI, ChatGPT, Perplexity — use to
-              recommend your business as the top choice.
             </p>
           </div>
         </div>
