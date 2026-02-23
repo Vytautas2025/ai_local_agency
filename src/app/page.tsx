@@ -22,12 +22,12 @@ export default function Home() {
         <Hero />
         <IsThisYou />
         <DataVisualization />
+        <Comparison />
         <AISearchDomination />
         <HumanSignal />
         <TechStack />
         <SuccessCalculator />
         <Results />
-        <Comparison />
         <FAQ />
         <Contact />
       </main>
