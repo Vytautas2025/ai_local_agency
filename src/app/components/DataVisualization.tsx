@@ -16,7 +16,7 @@ export default function DataVisualization() {
           <div className="flex text-xs text-gray-400 mb-2">
             <div style={{ width: "70%" }} className="text-center truncate">Map Pack Top 3 — 70%</div>
             <div style={{ width: "20%" }} className="text-center truncate">Organic — 20%</div>
-            <div style={{ width: "10%" }} className="text-center truncate">Ads &amp; Other — 10%</div>
+            <div style={{ width: "10%" }} className="text-center whitespace-nowrap">Ads &amp; Other — 10%</div>
           </div>
           {/* Bar */}
           <div className="flex rounded-full overflow-hidden h-6 w-full">
@@ -29,7 +29,7 @@ export default function DataVisualization() {
         </div>
 
         {/* [Tier3Labs Audit] — Updated stat cards: 4 cards with sources */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {/* Card 1 */}
           <div className="glass-card p-8 text-center">
             <div className="text-5xl font-extrabold green-gradient-text mb-4">
@@ -62,18 +62,6 @@ export default function DataVisualization() {
               higher conversion rate from Map Pack vs traditional ads
             </p>
             <p className="text-xs text-gray-500 mt-1">Google Business Profile Insights</p>
-          </div>
-
-          {/* [Tier3Labs Audit] — New 4th stat card */}
-          <div className="glass-card p-8 text-center">
-            <div className="text-5xl font-extrabold text-green-400 mb-4">
-              £0
-            </div>
-            {/* [Tier3Labs] — Updated card 4 description for target audience */}
-            <p className="text-[#8B949E] text-base leading-relaxed">
-              in paid ad budget needed. Unlike PPC, your Map Pack position doesn’t disappear when you stop paying.
-            </p>
-            <p className="text-xs text-gray-500 mt-1">Tier3Labs client data</p>
           </div>
         </div>
 

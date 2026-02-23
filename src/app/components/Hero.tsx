@@ -115,12 +115,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* [Tier3Labs Audit] — Updated trust bar: social proof stat instead of tool names */}
-        <div className="mt-10 pt-6 border-t border-white/5">
-          <p className="text-[#8B949E] text-sm text-center">
-            <span className="text-green-400 font-semibold">47+</span> local businesses currently ranked in their Top 3
-          </p>
-        </div>
+
       </div>
     </section>
   );

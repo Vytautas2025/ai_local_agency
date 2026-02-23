@@ -4,9 +4,9 @@ export default function HumanSignal() {
       <div className="text-center mb-16">
         {/* [Tier3Labs Audit] — Updated section headline */}
         <h2 className="section-title mb-6">
-          Real Humans. Real Signals.
+          More Visits. Stronger Signals.
           <br />
-          <span className="green-gradient-text">Real Authority.</span>
+          <span className="green-gradient-text">Higher Rankings.</span>
         </h2>
         {/* [Tier3Labs Audit] — Updated sub-headline */}
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ export default function HumanSignal() {
               <path d="M17 19l-4-6M31 19l4-6M17 29l-4 6M31 29l4 6" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-white mb-3">We get real people interacting with your listing</h3>
+          <h3 className="text-xl font-bold text-white mb-3">We generate trips to your Google Business profile</h3>
           <p className="text-[#8B949E]">
             We optimise how your Google Business Profile is engaged with — strengthening the behavioural signals that tell Google your business is the most relevant local choice.
           </p>

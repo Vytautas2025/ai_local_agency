@@ -73,10 +73,7 @@ export default function Results() {
         {/* Social Proof Footer */}
         <div className="mt-12 text-center">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
-            <div className="glass-card px-6 py-4 text-center">
-              <p className="text-2xl font-extrabold green-gradient-text">47+</p>
-              <p className="text-[#8B949E] text-xs mt-1">Local businesses currently ranked in their Top 3</p>
-            </div>
+
             <div className="glass-card px-6 py-4 text-center">
               <p className="text-2xl font-extrabold green-gradient-text">6</p>
               <p className="text-[#8B949E] text-xs mt-1">Industries served (Dental, Legal, HVAC, Restaurants, Med Spas, Hospitality)</p>

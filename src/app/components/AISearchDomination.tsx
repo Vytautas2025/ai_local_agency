@@ -26,7 +26,7 @@ export default function AISearchDomination() {
           <h3 className="text-xl font-bold text-white mb-3">AI Search Overviews</h3>
           {/* [Tier3Labs] — Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            When someone asks Google &apos;who&apos;s the best [service] near me?&apos; — we make sure Google&apos;s AI says your name, not your competitor&apos;s.
+            When someone asks Google &apos;who&apos;s the best dentist near me?&apos; — we make sure Google&apos;s AI says your name, not your competitor&apos;s.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export default function AISearchDomination() {
       <p className="text-center mt-6 text-sm text-gray-400">
         Want AI to recommend your business?{" "}
         <a href="#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">
-          Get your free audit →
+          Get your free trial →
         </a>
       </p>
     </section>
