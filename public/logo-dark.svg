@@ -44,10 +44,10 @@
 
   <!-- Text: TIER3 -->
   <text x="170" y="92" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" fill="#FFFFFF" letter-spacing="2">TIER</text>
-  <text x="340" y="92" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" fill="url(#greenGrad)" letter-spacing="2">3</text>
+  <text x="304" y="92" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="800" fill="url(#greenGrad)" letter-spacing="2">3</text>
 
   <!-- Text: LABS -->
-  <text x="380" y="92" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="300" fill="#8B949E" letter-spacing="6">LABS</text>
+  <text x="360" y="92" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="56" font-weight="300" fill="#8B949E" letter-spacing="6">LABS</text>
 
   <!-- Tagline -->
   <text x="172" y="118" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="500" fill="#00E676" letter-spacing="4" opacity="0.8">DOMINATE THE MAP PACK</text>
