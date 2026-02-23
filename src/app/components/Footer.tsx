@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Footer() {
   const quickLinks = [
     { label: 'Services', href: '#services' },
-    { label: 'The Method', href: '#method' },
+    { label: 'Statistics', href: '#method' },
     { label: 'Results', href: '#results' },
     { label: 'AI Search', href: '#ai-search' },
     { label: 'Contact', href: '#contact' },

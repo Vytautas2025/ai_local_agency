@@ -31,7 +31,7 @@ const faqData = [
   {
     question: "What industries do you work with?",
     answer:
-      "We work with any local service business — dentists, lawyers, HVAC, plumbers, restaurants, med spas, gyms, and more. If you serve a local area, we can help.",
+      "We work with any local service business. If you serve a local area, we can help.",
   },
   {
     question: "What's included in the monthly deliverables?",
@@ -42,11 +42,6 @@ const faqData = [
     question: "How do your engagement signals work?",
     answer:
       "We build the behavioural signals that Google uses to measure local relevance — content authority, citation consistency, and real-world engagement patterns. These compound over time, strengthening your position in the Map Pack month after month.",
-  },
-  {
-    question: "How much does it cost?",
-    answer:
-      "Our packages start from £497/month with no setup fees. Every client receives a custom strategy based on their market and competition. We'll give you a clear quote on your free strategy call — no surprises, no hidden costs.",
   },
 ];
 

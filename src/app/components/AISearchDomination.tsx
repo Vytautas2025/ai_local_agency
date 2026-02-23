@@ -7,8 +7,8 @@ export default function AISearchDomination() {
     <section id="ai-search" className="section-container pb-16">
       <div className="text-center mb-16">
         <h2 className="section-title mb-6">
-          The New #1 Spot Isn&apos;t a Blue Link —{" "}
-          <span className="green-gradient-text">It&apos;s an AI Citation</span>
+          AI Recommends Only{" "}
+          <span className="green-gradient-text">the Top 3</span>
         </h2>
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
           We don&apos;t just optimize for rankings. We optimize for AI recommendations.

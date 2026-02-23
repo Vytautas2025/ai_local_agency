@@ -8,7 +8,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Services', href: '#services' },
-    { label: 'The Method', href: '#method' },
+    { label: 'Statistics', href: '#method' },
     { label: 'Results', href: '#results' },
     { label: 'AI Search', href: '#ai-search' },
     { label: 'Success Score', href: '#success-score' },
