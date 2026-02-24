@@ -71,16 +71,15 @@ export default function Hero() {
           <div className="text-center md:text-left">
             {/* [Tier3Labs] — Updated eyebrow text */}
             <p className="text-sm font-medium uppercase tracking-widest text-green-400 mb-4">
-              For businesses on Google — but not yet in the Top 3
+              You&apos;re on Google, but not where customers actually look.
             </p>
 
-            {/* [Tier3Labs] — Updated headline: three lines, italic green last line */}
+            {/* [Tier3Labs] — Updated headline */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white leading-[1.15]">
-              You&apos;re on Google.
-              <br />
-              You&apos;re just not where
-              <br />
-              <span className="text-green-400 italic">customers actually look.</span>
+              For businesses on Google but{" "}
+              <span className="text-green-400 italic">not yet</span>{" "}
+              <span className="text-green-400 italic">in the</span>{" "}
+              <span className="text-green-400 italic">Top 3</span>
             </h1>
 
             {/* [Tier3Labs] — Updated sub-headline for target audience */}
