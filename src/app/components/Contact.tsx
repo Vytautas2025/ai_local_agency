@@ -10,18 +10,38 @@ export default function Contact() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setError("");
+
+    try {
+      const res = await fetch("/api/send-audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          businessWebsite: form.website,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send audit request.");
+      }
+
       setSubmitted(true);
-    }, 800);
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -122,6 +142,9 @@ export default function Contact() {
                 >
                   {loading ? "Sending\u2026" : "Get My Free Visibility Audit"}
                 </button>
+                {error && (
+                  <p className="text-red-400 text-sm text-center mt-3">{error}</p>
+                )}
                 <p className="text-[#8B949E] text-xs text-center mt-3">
                   No spam. No sales scripts. Just a 15-minute honest look at your local rankings.
                 </p>
