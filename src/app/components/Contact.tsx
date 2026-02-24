@@ -151,7 +151,7 @@ export default function Contact() {
                     rows={3}
                     value={form.message}
                     onChange={(e) => handleChange("message", e.target.value)}
-                    placeholder="Tell us a bit about your business and what you're looking for..."
+                    placeholder="Write a short description about your business (optional)"
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
                   />
                 </div>
