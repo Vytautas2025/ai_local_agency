@@ -91,7 +91,7 @@ export default function Contact() {
                   Audit Requested!
                 </h3>
                 <p className="text-[#C9D1D9] text-center">
-                  We&apos;ll be in touch within 24 hours with your custom visibility report.
+                  We will be in touch within 24 hours.
                 </p>
               </div>
             ) : (
@@ -144,14 +144,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <label htmlFor="contact-message" className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                    Short Description
+                    Short Description (optional)
                   </label>
                   <textarea
                     id="contact-message"
                     rows={3}
                     value={form.message}
                     onChange={(e) => handleChange("message", e.target.value)}
-                    placeholder="Write a short description about your business (optional)"
+                    placeholder="Write a short description about your business"
                     className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
                   />
                 </div>
