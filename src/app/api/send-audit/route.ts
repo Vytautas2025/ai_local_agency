@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, businessWebsite } = await req.json();
+    const { name, email, businessWebsite, message } = await req.json();
 
     // Validate required fields
     if (!name || !email) {
@@ -28,12 +28,13 @@ export async function POST(req: NextRequest) {
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `New Audit Request from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nWebsite: ${businessWebsite || "Not provided"}`,
+      text: `Name: ${name}\nEmail: ${email}\nWebsite: ${businessWebsite || "Not provided"}\nMessage: ${message || "Not provided"}`,
       html: `
         <h2>New Visibility Audit Request</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Website:</strong> ${businessWebsite || "Not provided"}</p>
+        <p><strong>Message:</strong> ${message || "Not provided"}</p>
       `,
     });
 

@@ -7,6 +7,7 @@ export default function Contact() {
     name: "",
     email: "",
     website: "",
+    message: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -28,7 +29,8 @@ export default function Contact() {
         body: JSON.stringify({
           name: form.name,
           email: form.email,
-          businessWebsite: form.website,
+          businessWebsite: form.website ? `https://${form.website}` : "",
+          message: form.message,
         }),
       });
 
@@ -126,13 +128,31 @@ export default function Contact() {
                   <label htmlFor="contact-website" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Business Website
                   </label>
-                  <input
-                    id="contact-website"
-                    type="url"
-                    value={form.website}
-                    onChange={(e) => handleChange("website", e.target.value)}
-                    placeholder="https://yourbusiness.com"
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                  <div className="flex items-center bg-white/5 border border-white/10 rounded-lg focus-within:border-[#00E676]/50 focus-within:ring-1 focus-within:ring-[#00E676]/30 transition-all overflow-hidden">
+                    <span className="px-3 py-3 text-[#8B949E] text-sm select-none border-r border-white/10 whitespace-nowrap">
+                      https://
+                    </span>
+                    <input
+                      id="contact-website"
+                      type="text"
+                      value={form.website}
+                      onChange={(e) => handleChange("website", e.target.value)}
+                      placeholder="yourbusiness.com"
+                      className="flex-1 bg-transparent px-3 py-3 text-white placeholder-[#8B949E] focus:outline-none"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label htmlFor="contact-message" className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                    Short Description
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    rows={3}
+                    value={form.message}
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    placeholder="Tell us a bit about your business and what you're looking for..."
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
                   />
                 </div>
                 <button
