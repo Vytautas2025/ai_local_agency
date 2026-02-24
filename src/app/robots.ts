@@ -29,7 +29,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://tier3labs.co.uk/sitemap.xml',
-    host: 'https://tier3labs.co.uk',
+    sitemap: 'https://www.tier3labs.co.uk/sitemap.xml',
+    host: 'https://www.tier3labs.co.uk',
   }
 }

@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tier3labs.co.uk"),
+  metadataBase: new URL("https://www.tier3labs.co.uk"),
   title: "Tier3Labs | Dominate the Google Maps Top 3 | Local SEO & AI Search",
   description:
     "Stop losing leads. Tier3Labs gets your business into the Top 3 on Google Maps and Search where 70% of local traffic converts. Local SEO, AI Search Optimization & Human Signal strategies that deliver.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://tier3labs.co.uk",
+    url: "https://www.tier3labs.co.uk",
     siteName: "Tier3Labs",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://tier3labs.co.uk",
+    canonical: "https://www.tier3labs.co.uk",
   },
 };
 
@@ -57,9 +57,9 @@ const localBusinessSchema = {
   name: "Tier3Labs",
   description:
     "Local SEO & AI Search Optimization agency specializing in Google Maps Top 3 rankings and AI citation optimization.",
-  url: "https://tier3labs.co.uk",
-  logo: "https://tier3labs.co.uk/logo-dark.png",
-  image: "https://tier3labs.co.uk/icon.png",
+  url: "https://www.tier3labs.co.uk",
+  logo: "https://www.tier3labs.co.uk/logo-dark.png",
+  image: "https://www.tier3labs.co.uk/icon.png",
   priceRange: "$$",
   serviceType: [
     "Local SEO",
@@ -110,7 +110,7 @@ const serviceSchema = {
   provider: {
     "@type": "ProfessionalService",
     name: "Tier3Labs",
-    url: "https://tier3labs.co.uk",
+    url: "https://www.tier3labs.co.uk",
   },
   description:
     "Comprehensive local SEO service combining Google Maps optimization, AI search citation building, and authentic human engagement signals.",
