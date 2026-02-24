@@ -85,11 +85,11 @@ export default function SuccessCalculator() {
     <section id="success-score" className="bg-[#0D1117]">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title">
+          <p className="section-title">
             What&apos;s Your{" "}
             <span className="green-gradient-text">Map Pack Readiness</span>{" "}
             Score?
-          </h2>
+          </p>
           <p className="text-[#8B949E] text-lg mt-4 max-w-2xl mx-auto">
             Answer three quick questions to see where you stand.
           </p>

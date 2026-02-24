@@ -73,10 +73,10 @@ export default function FAQ() {
       />
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title">
+          <p className="section-title">
             Frequently Asked{" "}
             <span className="green-gradient-text">Questions</span>
-          </h2>
+          </p>
         </div>
 
         <div className="max-w-3xl mx-auto">

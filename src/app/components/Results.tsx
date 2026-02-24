@@ -33,10 +33,10 @@ export default function Results() {
     <section id="results" className="bg-[#0D1117]">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title">
+          <p className="section-title">
             Results That Speak{" "}
             <span className="green-gradient-text">Louder Than Promises</span>
-          </h2>
+          </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">

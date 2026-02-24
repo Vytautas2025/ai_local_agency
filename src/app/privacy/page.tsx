@@ -24,7 +24,7 @@ export default function PrivacyPage() {
         <div className="space-y-10 text-base leading-relaxed">
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">1. Who We Are</h2>
+            <p className="text-xl font-bold text-white mb-3">1. Who We Are</p>
             <p>
               Tier3 Labs (&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;) respects your privacy and is
               committed to protecting it through our compliance with this policy.

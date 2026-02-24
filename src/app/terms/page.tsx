@@ -25,7 +25,7 @@ export default function TermsPage() {
 
           {/* 1 */}
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">1. Introduction</h2>
+            <p className="text-xl font-bold text-white mb-3">1. Introduction</p>
             <p className="mb-3">
               Tier3 Labs Ltd (company number 15734938), registered in England &amp; Wales, whose
               registered address is 12 Old Mill Gardens, Berkhamsted, England, HP4 2NZ

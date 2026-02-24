@@ -79,7 +79,7 @@ export default function Hero() {
               For businesses on Google but{" "}
               <span className="text-green-400 italic">not yet</span>{" "}
               <span className="text-green-400 italic">in the</span>{" "}
-              <span className="text-green-400 italic">Top 3</span>
+              <span className="text-green-400 italic">Top 3.</span>
             </h1>
 
             {/* [Tier3Labs] — Updated sub-headline for target audience */}
