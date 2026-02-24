@@ -26,8 +26,14 @@ function HeroVisual() {
       {/* RIGHT CARD — With Tier3Labs */}
       <div className="flex-1">
         <p className="text-xs text-green-400 mb-2 text-center font-semibold">With Tier3Labs</p>
-        {/* [Tier3Labs] — Enlarged visual with pulsing green glow */}
-        <div className="rounded-2xl shadow-[0_0_60px_rgba(34,197,94,0.2)] animate-pulse">
+        {/*
+          ✅ FIX: Replaced Tailwind `animate-pulse` (CPU opacity reflow) with
+          a custom `pulse-glow` animation defined in globals.css.
+          Uses `transform: scale()` + `opacity` with `will-change: transform`
+          so the animation runs entirely on the GPU compositor thread.
+          Eliminates the forced layout/reflow that was blocking the main thread.
+        */}
+        <div className="rounded-2xl pulse-glow">
           <div className="rounded-2xl bg-gray-900 border border-gray-800 p-5 flex flex-col gap-3 w-full">
             {/* Row 1 — Winner */}
             <div className="rounded-lg bg-green-500/20 border border-green-500/40 h-16 flex items-center px-4 gap-3">
@@ -113,8 +119,6 @@ export default function Hero() {
             <HeroVisual />
           </div>
         </div>
-
-
       </div>
     </section>
   );

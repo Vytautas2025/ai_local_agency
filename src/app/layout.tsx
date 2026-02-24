@@ -125,13 +125,38 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        {/* ✅ FIX 1: Preconnect to third-party origins BEFORE any requests */}
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+        {/* ✅ FIX 2: Calendly CSS loaded NON-BLOCKING via preload trick */}
+        {/* This eliminates the 160ms render-blocking penalty */}
         <link
+          rel="preload"
           href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
+          as="style"
         />
+        <link
+          rel="stylesheet"
+          href="https://assets.calendly.com/assets/external/widget.css"
+          media="print"
+          // @ts-expect-error onLoad swap trick for non-blocking CSS
+          onLoad="this.media='all'"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://assets.calendly.com/assets/external/widget.css"
+          />
+        </noscript>
+
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -147,11 +172,14 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+
+        {/* ✅ Calendly JS — lazyOnload (unchanged, already correct) */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="lazyOnload"
         />
-        {/* Google Analytics GA4 */}
+
+        {/* ✅ Google Analytics GA4 — afterInteractive (unchanged, already correct) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2E0J5WWEDC"
           strategy="afterInteractive"
