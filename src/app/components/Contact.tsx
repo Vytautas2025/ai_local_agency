@@ -2,6 +2,14 @@
 
 import { useState, FormEvent } from "react";
 
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -200,14 +208,16 @@ export default function Contact() {
                 <span className="text-[#C9D1D9]">No obligation, no pressure</span>
               </div>
             </div>
-            <a
-              href="https://calendly.com/tier3labs/strategy-call"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-ghost mt-8 inline-block text-center"
+            <button
+              onClick={() =>
+                window.Calendly?.initPopupWidget({
+                  url: "https://calendly.com/tier3labs-info/30min",
+                })
+              }
+              className="btn-ghost mt-8 inline-block text-center cursor-pointer"
             >
               Schedule a Call
-            </a>
+            </button>
           </div>
         </div>
       </div>
