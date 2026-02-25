@@ -173,10 +173,10 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
 
-        {/* ✅ Calendly JS — lazyOnload (unchanged, already correct) */}
+        {/* Calendly JS — afterInteractive so it's ready before user interaction */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
 
         {/* ✅ Google Analytics GA4 — afterInteractive (unchanged, already correct) */}

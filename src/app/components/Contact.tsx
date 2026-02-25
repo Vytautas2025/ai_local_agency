@@ -209,11 +209,19 @@ export default function Contact() {
               </div>
             </div>
             <button
-              onClick={() =>
-                window.Calendly?.initPopupWidget({
-                  url: "https://calendly.com/tier3labs-info/30min",
-                })
-              }
+              onClick={() => {
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: "https://calendly.com/tier3labs-info/30min",
+                  });
+                } else {
+                  window.open(
+                    "https://calendly.com/tier3labs-info/30min",
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }
+              }}
               className="btn-ghost mt-8 inline-block text-center cursor-pointer"
             >
               Schedule a Call
