@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.tier3labs.co.uk"),
   title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency",
   description:
-    "Stop losing leads. Tier3Labs gets your business into the Top 3 on Google Maps and Search where 70% of local traffic converts. Local SEO, AI Search Optimization & Human Signal strategies that deliver.",
+    "Tier3Labs gets your business into the Google Maps Top 3 where 70% of local traffic converts. Local SEO & AI Search Optimization.",
   keywords: [
     "local SEO",
     "Google Maps SEO",
