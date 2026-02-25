@@ -33,10 +33,47 @@ const nextConfig: NextConfig = {
 
   // Security headers (applied to all routes)
   async headers() {
+    // Third-party origins inventory:
+    //   scripts  : assets.calendly.com, www.googletagmanager.com, www.google-analytics.com
+    //   styles   : assets.calendly.com  (widget.css)
+    //   fonts    : self only — next/font/google self-hosts at build time
+    //   frames   : calendly.com, scheduling.calendly.com  (popup iframe)
+    //   connect  : /api/* (form), GA4 endpoints, Calendly API
+    //   images   : self, data:, GA tracking pixel
+    //   unsafe-inline is required for:
+    //     • two JSON-LD <script> blocks (dangerouslySetInnerHTML)
+    //     • inline gtag() bootstrap script
+    //     • Next.js runtime inline style injections
+    //   TODO: upgrade to nonce-based CSP via Next.js Middleware to remove unsafe-inline
+    const csp = [
+      "default-src 'self'",
+      // Own origin + two named third-party script hosts + inline scripts (JSON-LD + gtag)
+      "script-src 'self' 'unsafe-inline' https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com",
+      // Calendly widget.css + Next.js runtime inline styles
+      "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
+      // Fonts self-hosted via next/font — no external font origin needed
+      "font-src 'self'",
+      // Local images, data URIs, GA tracking pixel
+      "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com",
+      // XHR/fetch: form API, all GA4 collection endpoints, Calendly availability API
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://api.calendly.com https://calendly.com",
+      // Calendly popup renders inside an iframe from these origins
+      "frame-src https://calendly.com https://scheduling.calendly.com",
+      // Block Flash/plugins entirely
+      "object-src 'none'",
+      // Prevent base-tag hijacking
+      "base-uri 'self'",
+      // Form posts only go to own origin
+      "form-action 'self'",
+      // Auto-upgrade any accidental http:// sub-resource requests to https://
+      "upgrade-insecure-requests",
+    ].join("; ");
+
     return [
       {
         source: "/(.*)",
         headers: [
+          { key: "Content-Security-Policy", value: csp },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
