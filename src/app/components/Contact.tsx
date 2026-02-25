@@ -174,7 +174,7 @@ export default function Contact() {
                   <p className="text-red-400 text-sm text-center mt-3">{error}</p>
                 )}
                 <p className="text-[#8B949E] text-xs text-center mt-3">
-                  No spam. No sales scripts. Just a 15-minute honest look at your local rankings.
+                  No spam. No sales scripts. Just a 30-minute honest look at your local rankings.
                 </p>
               </form>
             )}
@@ -182,7 +182,7 @@ export default function Contact() {
 
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl font-bold text-white">
-              Or book a free 15-minute strategy call
+              Or book a free 30-minute strategy call
             </h3>
             <p className="text-[#C9D1D9] mt-4">
               We&apos;ll analyse your current local search presence and show you
