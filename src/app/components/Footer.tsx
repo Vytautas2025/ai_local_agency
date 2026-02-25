@@ -9,19 +9,11 @@ export default function Footer() {
     { label: 'Contact', href: '#contact' },
   ];
 
-  const serviceLinks = [
-    { label: 'Map Pack Optimization', href: '#services' },
-    { label: 'AI Search Citations', href: '#ai-search' },
-    { label: 'Content Authority', href: '#services' },
-    { label: 'Authority Signals', href: '#method' },
-    { label: 'Geo-Grid Tracking', href: '#services' },
-  ];
-
   return (
     <footer className="bg-[#0D1117] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Top Row */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Column 1: Logo & Tagline */}
           <div className="md:col-span-1">
             <Image
@@ -56,23 +48,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Column 3: Services */}
-          <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
-            <nav className="flex flex-col">
-              {serviceLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="text-[#8B949E] hover:text-[#00E676] transition-colors block py-1 text-sm"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          {/* Column 4: Contact */}
+          {/* Column 3: Contact */}
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <p className="text-[#8B949E] text-sm leading-relaxed mb-6">
