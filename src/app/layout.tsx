@@ -132,26 +132,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-        {/* ✅ FIX 2: Calendly CSS loaded NON-BLOCKING via preload trick */}
-        {/* This eliminates the 160ms render-blocking penalty */}
-        <link
-          rel="preload"
-          href="https://assets.calendly.com/assets/external/widget.css"
-          as="style"
-        />
+        {/* Calendly CSS — loaded directly, it's ~4 KB and needed for the popup */}
         <link
           rel="stylesheet"
           href="https://assets.calendly.com/assets/external/widget.css"
-          media="print"
-          // @ts-expect-error onLoad swap trick for non-blocking CSS
-          onLoad="this.media='all'"
         />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://assets.calendly.com/assets/external/widget.css"
-          />
-        </noscript>
 
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />

@@ -208,24 +208,22 @@ export default function Contact() {
                 <span className="text-[#C9D1D9]">No obligation, no pressure</span>
               </div>
             </div>
-            <button
-              onClick={() => {
+            <a
+              href="https://calendly.com/tier3labs-info/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
                 if (window.Calendly) {
+                  e.preventDefault();
                   window.Calendly.initPopupWidget({
                     url: "https://calendly.com/tier3labs-info/30min",
                   });
-                } else {
-                  window.open(
-                    "https://calendly.com/tier3labs-info/30min",
-                    "_blank",
-                    "noopener,noreferrer"
-                  );
                 }
               }}
               className="btn-ghost mt-8 inline-block text-center cursor-pointer"
             >
               Schedule a Call
-            </button>
+            </a>
           </div>
         </div>
       </div>
