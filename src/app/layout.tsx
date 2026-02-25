@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tier3labs.co.uk"),
-  title: "Tier3Labs | Dominate the Google Maps Top 3 | Local SEO & AI Search",
+  title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency",
   description:
     "Stop losing leads. Tier3Labs gets your business into the Top 3 on Google Maps and Search where 70% of local traffic converts. Local SEO, AI Search Optimization & Human Signal strategies that deliver.",
   keywords: [
