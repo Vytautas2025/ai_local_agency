@@ -19,6 +19,18 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
 
+  // Permanently redirect non-www to www (308 = permanent, preserves method)
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "tier3labs.co.uk" }],
+        destination: "https://www.tier3labs.co.uk/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
   // Security headers (applied to all routes)
   async headers() {
     return [
