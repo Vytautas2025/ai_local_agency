@@ -51,7 +51,7 @@ export default function Results() {
         </div>
 
         {/* Geo-grid Before / After */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16 max-w-3xl mx-auto items-start">
           <div className="glass-card overflow-hidden rounded-2xl border border-white/10">
             <div className="bg-[#0D1117] py-4 text-center border-b border-white/10">
               <span className="text-white font-extrabold text-xl tracking-wide">BEFORE <span className="text-red-400">(RANK #21)</span></span>
@@ -60,9 +60,10 @@ export default function Results() {
             <Image
               src="/before.png"
               alt="Geo-grid before — Rank #21"
-              width={702}
-              height={634}
-              className="w-full h-auto"
+              width={799}
+              height={709}
+              unoptimized
+              className="w-full h-auto block"
             />
           </div>
           <div className="glass-card overflow-hidden rounded-2xl border border-[#00E676]/30">
@@ -73,9 +74,10 @@ export default function Results() {
             <Image
               src="/after.png"
               alt="Geo-grid after — Rank Top 3"
-              width={697}
-              height={634}
-              className="w-full h-auto"
+              width={800}
+              height={704}
+              unoptimized
+              className="w-full h-auto block"
             />
           </div>
         </div>
