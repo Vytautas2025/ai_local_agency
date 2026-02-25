@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({
@@ -117,11 +118,14 @@ const serviceSchema = {
   areaServed: "Worldwide",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Read the per-request nonce set by middleware.ts
+  const nonce = (await headers()).get("x-nonce") ?? "";
+
   return (
     <html lang="en" className={inter.variable}>
       <head>
@@ -143,12 +147,16 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon.png" />
 
         <script
+          nonce={nonce}
+          suppressHydrationWarning
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}
         />
         <script
+          nonce={nonce}
+          suppressHydrationWarning
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(serviceSchema),
@@ -162,14 +170,16 @@ export default function RootLayout({
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
+          nonce={nonce}
         />
 
         {/* ✅ Google Analytics GA4 — afterInteractive (unchanged, already correct) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2E0J5WWEDC"
           strategy="afterInteractive"
+          nonce={nonce}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="afterInteractive" nonce={nonce}>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
