@@ -112,7 +112,7 @@ export default function Hero() {
             </div>
 
             {/* [Tier3Labs Audit] — Inline Zero Access trust badge with ShieldCheck */}
-            <div className="flex items-center gap-2 text-xs text-gray-400 mt-4 border border-green-900 rounded-full px-4 py-2 w-fit">
+            <div className="flex items-center gap-2 text-xs text-gray-400 mt-4 border border-green-900 rounded-full px-4 py-2 w-fit max-w-full">
               <ShieldCheck size={16} className="text-green-400" />
               Zero Access Required — we never need your GBP or website credentials.
             </div>

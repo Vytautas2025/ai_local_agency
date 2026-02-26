@@ -48,8 +48,8 @@ export default function Comparison() {
         </div>
 
         <div className="glass-card overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left">
+          <div className="overflow-x-auto -mx-px">
+            <table className="w-full min-w-[600px] text-left">
               <thead>
                 <tr className="bg-white/5 border-b border-white/10">
                   <th className="px-6 py-4 text-sm uppercase tracking-wider text-[#8B949E] font-medium">

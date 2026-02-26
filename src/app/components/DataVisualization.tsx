@@ -12,17 +12,26 @@ export default function DataVisualization() {
 
         {/* [Tier3Labs Audit] — Horizontal traffic distribution bar replacing donut chart */}
         <div className="max-w-3xl mx-auto mb-16">
-          {/* Labels row — aligned to bar segments */}
-          <div className="flex text-xs text-gray-400 mb-2">
-            <div style={{ width: "70%" }} className="text-center truncate">Map Pack Top 3 — 70%</div>
-            <div style={{ width: "20%" }} className="text-center truncate">Organic — 20%</div>
-            <div style={{ width: "10%" }} className="text-center whitespace-nowrap">Ads &amp; Other — 10%</div>
-          </div>
           {/* Bar */}
           <div className="flex rounded-full overflow-hidden h-6 w-full">
             <div className="bg-green-500" style={{ width: "70%" }} />
             <div className="bg-green-700" style={{ width: "20%" }} />
             <div className="bg-gray-600" style={{ width: "10%" }} />
+          </div>
+          {/* Legend row — uses wrapping flex + colored dots to avoid overflow from tight segment widths */}
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-1.5 mt-3 text-xs text-gray-400">
+            <div className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-sm bg-green-500 shrink-0" />
+              Map Pack Top 3 — 70%
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-sm bg-green-700 shrink-0" />
+              Organic — 20%
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-sm bg-gray-600 shrink-0" />
+              Ads &amp; Other — 10%
+            </div>
           </div>
           <p className="text-xs text-gray-500 mt-2 text-center">Source: BrightLocal Local Search Study, 2024</p>
         </div>
