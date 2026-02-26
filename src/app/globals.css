@@ -47,6 +47,14 @@
     max-width: 100%;
   }
 
+  /* Prevent any section from leaking content into page-level horizontal scroll.
+     overflow-x: clip hard-clips without creating a scroll container (unlike hidden),
+     so it cannot be "scrolled into" via JS or by a child stacking-context trick.
+     95%+ global browser support as of 2025. */
+  section {
+    overflow-x: clip;
+  }
+
   ::selection {
     background-color: rgba(0, 230, 118, 0.2);
     color: #FFFFFF;
