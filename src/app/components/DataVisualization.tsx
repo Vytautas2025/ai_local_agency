@@ -45,7 +45,6 @@ export default function DataVisualization() {
             <p className="text-[#8B949E] text-base leading-relaxed">
               of all local search clicks go to the Google Maps Top 3
             </p>
-            <p className="text-xs text-gray-500 mt-1">BrightLocal, 2024</p>
           </div>
 
           {/* Card 2 */}

@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "What is the Google Maps 3-Pack and why does it matter?",
     answer:
-      "The Google Maps 3-Pack is the top 3 business listings that appear in Google Maps results. It captures 70% of all local search clicks — making it the most valuable digital real estate for any local business.",
+      "The Google Maps 3-Pack is the top 3 business listings that appear in Google Maps results. It captures 60% of all local search clicks — making it the most valuable digital real estate for any local business.",
   },
   {
     question: "How is this different from traditional SEO?",

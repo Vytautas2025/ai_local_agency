@@ -100,7 +100,7 @@ export default function Hero() {
             {/* [Tier3Labs Audit] — CTAs: primary button + plain text link with ChevronDown */}
             <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 mt-8">
               <a href="#contact" className="btn-primary">
-                Start My Free Trail
+                Start My Free Trial
               </a>
               <a
                 href="#method"
