@@ -59,7 +59,7 @@ export default function Footer() {
               href="#contact"
               className="btn-primary text-sm px-6 py-3"
             >
-              Get My Free Visibility Audit
+              Start My Free Trial
             </a>
           </div>
         </div>

@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <a href="#contact" className="btn-primary text-sm px-6 py-3">
-              Get My Free Visibility Audit
+              Start My Free Trial
             </a>
           </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="btn-primary text-sm px-6 py-3 mt-2 text-center"
           >
-            Get My Free Visibility Audit
+            Start My Free Trial
           </a>
         </div>
       </div>
