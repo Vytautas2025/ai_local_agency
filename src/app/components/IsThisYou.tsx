@@ -10,7 +10,7 @@ const items = [
   {
     icon: <MapPin size={20} className="text-amber-400" />,
     title: "You rank — just not in the Top 3",
-    body: "You show up somewhere on Google. Just not where 70% of clicks happen.",
+    body: "You show up somewhere on Google. Just not where 60% of clicks happen.",
   },
   {
     icon: <PhoneOff size={20} className="text-red-400" />,
