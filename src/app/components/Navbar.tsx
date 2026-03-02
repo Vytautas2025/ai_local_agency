@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <a href="#contact" className="btn-primary text-sm px-6 py-3">
-              Start My Free Trial
+              Start My Free Trail
             </a>
           </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="btn-primary text-sm px-6 py-3 mt-2 text-center"
           >
-            Start My Free Trial
+            Start My Free Trail
           </a>
         </div>
       </div>

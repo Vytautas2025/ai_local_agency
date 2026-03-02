@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Generate a fresh cryptographic nonce for every request.
   // This allows us to whitelist only our own inline scripts without 'unsafe-inline'.
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
