@@ -79,7 +79,7 @@ export default function TermsPage() {
             <p className="mb-3">
               <strong className="text-white">2.2</strong> Subject to the terms of this Agreement,
               Company will use commercially reasonable efforts to provide Customer the Services.
-              The Services encompass our proprietary AI search optimisation and local SEO systems,
+              The Services encompass our local SEO systems,
               designed to enhance your business&apos;s online visibility across traditional and
               AI-powered search platforms.
             </p>
@@ -207,18 +207,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">6. Payment of Fees</h2>
             <p className="mb-3">
-              <strong className="text-white">6.1</strong> Customer will pay Company the fees
-              described in the Order Form (&ldquo;Fees&rdquo;). If Customer&apos;s use of the
-              Services exceeds the service capacity set forth on the Order Form or otherwise
-              requires additional fees, Customer shall be billed accordingly and agrees to pay
-              such additional fees. Company reserves the right to change the Fees upon thirty (30)
+              <strong className="text-white">6.1</strong> Company reserves the right to change the Fees upon thirty (30)
               days&apos; prior notice to Customer. If Customer believes that Company has billed
               incorrectly, Customer must contact Company no later than 60 days after the closing
               date on the first billing statement in which the error appeared.
             </p>
             <p>
               <strong className="text-white">6.2</strong> Where Company bills by invoice, full
-              payment must be received within thirty (30) days of the invoice date. Unpaid amounts
+              payment must be received within fourteen (14) days of the invoice date. Unpaid amounts
               are subject to statutory interest under the Late Payment of Commercial Debts (Interest)
               Act 1998 and any applicable late payment legislation, plus reasonable costs of
               collection, and may result in immediate suspension or termination of the Services.
