@@ -73,7 +73,7 @@ export default function SuccessCalculator() {
     },
     {
       key: "address" as const,
-      text: "Do you have a verified physical business address?",
+      text: "Do you have a Google My Business profile?",
     },
     {
       key: "website" as const,

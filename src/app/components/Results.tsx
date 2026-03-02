@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Results() {
   const stats = [
-    { value: "70%", label: "Average Traffic Increase" },
+    { value: "60%", label: "Average Traffic Increase" },
     { value: "Top 3", label: "Map Pack Positions Secured" },
     { value: "3x", label: "More Calls & Directions" },
     { value: "90 Days", label: "Average Time to Results" },

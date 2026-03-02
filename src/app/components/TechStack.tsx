@@ -101,9 +101,9 @@ export default function TechStack() {
                 <path d="M18 20L15 15M30 20L33 15M18 28L15 33M30 28L33 33" stroke="#00E676" strokeWidth="1" strokeLinecap="round" />
               </svg>
             </div>
-            <h3 className="text-base font-bold text-white mb-2">Smart Keyword Strategy</h3>
+            <h3 className="text-base font-bold text-white mb-2">Keyword Ranking Tracker</h3>
             <p className="text-[#8B949E] text-sm">
-              AI-driven keyword clustering for maximum topical coverage — targeting the exact search terms your customers actually use.
+              Stay on top of your most valuable local keywords with bi-monthly ranking reports — so you always know where you stand.
             </p>
           </div>
           <div className="glass-card-hover p-5 flex-1">

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.tier3labs.co.uk"),
   title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency",
   description:
-    "Tier3Labs gets your business into the Google Maps Top 3 where 70% of local traffic converts. Local SEO & AI Search Optimization.",
+    "Tier3Labs gets your business into the Google Maps Top 3 where 60% of local traffic converts. Local SEO & AI Search Optimization.",
   keywords: [
     "local SEO",
     "Google Maps SEO",
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     siteName: "Tier3Labs",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
-      "We put your business in the Google Maps Top 3 where 70% of local search traffic converts. Local SEO & AI Search Optimization.",
+      "We put your business in the Google Maps Top 3 where 60% of local search traffic converts. Local SEO & AI Search Optimization.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
-      "We put your business in the Google Maps Top 3 where 70% of local search traffic converts.",
+      "We put your business in the Google Maps Top 3 where 60% of local search traffic converts.",
     images: ["/opengraph-image"],
   },
   robots: {

@@ -26,7 +26,7 @@ export default function Footer() {
               Dominate the Map Pack
             </p>
             <p className="text-[#8B949E] mt-3 text-sm leading-relaxed">
-              We help local businesses capture the 70% of search traffic that
+              We help local businesses capture the 60% of search traffic that
               flows through Google&apos;s Top 3 Map Pack results. Data-driven
               strategies. Real results.
             </p>
