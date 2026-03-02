@@ -3,7 +3,7 @@ export default function Comparison() {
     {
       feature: "Traffic Share",
       ppc: "~10% of clicks",
-      mapPack: "up to 70% of clicks",
+      mapPack: "up to 60% of clicks",
     },
     {
       feature: "Cost",

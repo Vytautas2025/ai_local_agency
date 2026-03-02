@@ -14,26 +14,25 @@ export default function DataVisualization() {
         <div className="max-w-3xl mx-auto mb-16">
           {/* Bar */}
           <div className="flex rounded-full overflow-hidden h-6 w-full">
-            <div className="bg-green-500" style={{ width: "70%" }} />
-            <div className="bg-green-700" style={{ width: "20%" }} />
+            <div className="bg-green-500" style={{ width: "60%" }} />
+            <div className="bg-green-700" style={{ width: "30%" }} />
             <div className="bg-gray-600" style={{ width: "10%" }} />
           </div>
           {/* Legend row — uses wrapping flex + colored dots to avoid overflow from tight segment widths */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-1.5 mt-3 text-xs text-gray-400">
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-green-500 shrink-0" />
-              Map Pack Top 3 — 70%
+              Google Map Pack — 60%
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-green-700 shrink-0" />
-              Organic — 20%
+              Organic Results — 28%–32%
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-gray-600 shrink-0" />
-              Ads &amp; Other — 10%
+              Paid Ads (PPC/LSA) — 8%–12%
             </div>
           </div>
-          <p className="text-xs text-gray-500 mt-2 text-center">Source: BrightLocal Local Search Study, 2024</p>
         </div>
 
         {/* [Tier3Labs Audit] — Updated stat cards: 4 cards with sources */}
@@ -41,7 +40,7 @@ export default function DataVisualization() {
           {/* Card 1 */}
           <div className="glass-card p-8 text-center">
             <div className="text-5xl font-extrabold green-gradient-text mb-4">
-              70%
+              60%
             </div>
             <p className="text-[#8B949E] text-base leading-relaxed">
               of all local search clicks go to the Google Maps Top 3
