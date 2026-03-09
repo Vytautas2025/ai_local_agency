@@ -8,7 +8,7 @@ const PIXEL = Buffer.from(
 );
 
 // Non-blocking: append event to Google Sheet
-async function logToSheet(trackingId: string, event: string, ip: string, ua: string) {
+async function logToSheet(trackingId: string, event: string, ip: string, ua: string, email: string) {
   try {
     const clientId     = process.env.GOOGLE_CLIENT_ID;
     const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
@@ -33,7 +33,7 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
           new Date().toISOString(),
           ip,
           ua.substring(0, 200),
-          '',                      // email column — filled by sync script
+          email,                   // recipient email address
         ]],
       },
     });
@@ -47,6 +47,7 @@ export async function GET(request: NextRequest) {
   const trackingId = searchParams.get('id')       || '';
   const event      = searchParams.get('event')    || 'open';
   const redirect   = searchParams.get('redirect') || '';
+  const email      = searchParams.get('email')    || '';
 
   const ip = request.headers.get('x-forwarded-for') || '';
   const ua = request.headers.get('user-agent')       || '';
@@ -56,13 +57,14 @@ export async function GET(request: NextRequest) {
     console.log(JSON.stringify({
       event,
       tracking_id: trackingId,
+      email,
       timestamp:   new Date().toISOString(),
       ip,
       ua,
     }));
 
     // Log to Google Sheets (non-blocking)
-    logToSheet(trackingId, event, ip, ua);
+    logToSheet(trackingId, event, ip, ua, email);
   }
 
   // If redirect param present → click tracking redirect
