@@ -68,12 +68,12 @@ export default function SuccessCalculator() {
 
   const questions = [
     {
-      key: "reviews" as const,
-      text: "Do you have 10+ reviews on your Google Business Profile?",
-    },
-    {
       key: "address" as const,
       text: "Do you have a Google My Business profile?",
+    },
+    {
+      key: "reviews" as const,
+      text: "Do you have 15+ reviews on your Google Business Profile?",
     },
     {
       key: "website" as const,
