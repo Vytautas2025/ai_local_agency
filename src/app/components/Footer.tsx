@@ -6,6 +6,7 @@ export default function Footer() {
     { label: 'Statistics', href: '#method' },
     { label: 'Results', href: '#results' },
     { label: 'AI Search', href: '#ai-search' },
+    { label: 'Plans', href: '#plans' },
     { label: 'Contact', href: '#contact' },
   ];
 
