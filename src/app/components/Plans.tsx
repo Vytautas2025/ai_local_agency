@@ -20,7 +20,7 @@ const plans = [
     name: "MAXI Plan",
     featured: true,
     specs: [
-      { label: "Daily commutes", value: "30–40 / day", highlight: true, suffix: "+ calls to your profile" },
+      { label: "Daily commutes", value: "30–40 / day", highlight: true, suffix: "" },
       { label: "Rating grid", value: "within area of 100 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
@@ -71,7 +71,7 @@ export default function Plans() {
                 </div>
               )}
 
-              <h3 className="text-2xl font-extrabold text-white mb-8 mt-2">{plan.name}</h3>
+              <h3 className={`text-2xl font-extrabold text-white mb-8 ${plan.featured ? "mt-6" : "mt-2"}`}>{plan.name}</h3>
 
               <div className="space-y-3 pb-6 mb-6 border-b border-white/10">
                 {plan.specs.map((spec) => (
