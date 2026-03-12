@@ -11,6 +11,7 @@ export default function Navbar() {
     { label: 'Statistics', href: '#method' },
     { label: 'Results', href: '#results' },
     { label: 'AI Search', href: '#ai-search' },
+    { label: 'Plans', href: '#plans' },
     { label: 'Success Score', href: '#success-score' },
     { label: 'Contact', href: '#contact' },
   ];

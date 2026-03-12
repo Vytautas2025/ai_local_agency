@@ -35,6 +35,10 @@ const TechStack = dynamic(() => import("./components/TechStack"), {
   loading: () => <div className="min-h-[300px]" />,
 });
 
+const Plans = dynamic(() => import("./components/Plans"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
 const SuccessCalculator = dynamic(() => import("./components/SuccessCalculator"), {
   loading: () => <div className="min-h-[400px]" />,
 });
@@ -65,6 +69,7 @@ export default function Home() {
         <IsThisYou />
         <DataVisualization />
         <Comparison />
+        <Plans />
         <Results />
         <AISearchDomination />
         <HumanSignal />

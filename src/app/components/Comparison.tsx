@@ -47,8 +47,8 @@ export default function Comparison() {
           </h2>
         </div>
 
-        {/* ── MOBILE: stacked cards (< md) ── */}
-        <div className="md:hidden space-y-3">
+        {/* ── MOBILE: stacked cards (< lg) ── */}
+        <div className="lg:hidden space-y-3">
           {/* Column headers */}
           <div className="grid grid-cols-2 gap-px ml-auto w-full">
             <div /> {/* spacer for feature label */}
@@ -88,8 +88,8 @@ export default function Comparison() {
           ))}
         </div>
 
-        {/* ── DESKTOP: full table (≥ md) ── */}
-        <div className="hidden md:block glass-card overflow-hidden">
+        {/* ── DESKTOP: full table (≥ lg) ── */}
+        <div className="hidden lg:block glass-card overflow-hidden">
           <table className="w-full text-left">
             <thead>
               <tr className="bg-white/5 border-b border-white/10">
