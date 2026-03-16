@@ -22,11 +22,19 @@ const nextConfig: NextConfig = {
   // Permanently redirect non-www to www (308 = permanent, preserves method)
   async redirects() {
     return [
+      // Redirect non-www to www
       {
         source: "/:path*",
         has: [{ type: "host", value: "tier3labs.co.uk" }],
         destination: "https://www.tier3labs.co.uk/:path*",
         permanent: true,
+      },
+      // Calendly booking shortlink — used in email campaigns
+      // Change Calendly URL here without updating all email templates
+      {
+        source: "/book",
+        destination: "https://calendly.com/tier3labs-info/30min",
+        permanent: false,
       },
     ];
   },

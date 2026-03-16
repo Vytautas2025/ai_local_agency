@@ -55,6 +55,10 @@ const Footer = dynamic(() => import("./components/Footer"), {
   loading: () => <div className="min-h-[200px]" />,
 });
 
+const AnchorScroller = dynamic(() => import("./components/AnchorScroller"), {
+  loading: () => null,
+});
+
 const ScrollToTop = dynamic(() => import("./components/ScrollToTop"));
 
 export default function Home() {
@@ -79,6 +83,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <AnchorScroller />
       <ScrollToTop />
     </>
   );
