@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { headers } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -165,6 +166,7 @@ export default async function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <Analytics />
 
         {/* Calendly JS — afterInteractive so it's ready before user interaction */}
         <Script
