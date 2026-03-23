@@ -7,8 +7,7 @@ const PIXEL = Buffer.from(
   'base64'
 );
 
-// Non-blocking: append event to Google Sheet
-// NOTE: email address is intentionally NOT logged — privacy + anti-spam
+// Log event to Google Sheet
 async function logToSheet(trackingId: string, event: string, ip: string, ua: string) {
   try {
     const clientId     = process.env.GOOGLE_CLIENT_ID;
@@ -16,7 +15,10 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
     const refreshToken = process.env.GOOGLE_REFRESH_TOKEN;
     const sheetId      = process.env.TRACKING_SHEET_ID;
 
-    if (!clientId || !clientSecret || !refreshToken || !sheetId) return;
+    if (!clientId || !clientSecret || !refreshToken || !sheetId) {
+      console.warn('[track] Missing env vars — sheet logging skipped');
+      return;
+    }
 
     const auth = new google.auth.OAuth2(clientId, clientSecret);
     auth.setCredentials({ refresh_token: refreshToken });
@@ -34,12 +36,14 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
           new Date().toISOString(),
           ip,
           ua.substring(0, 200),
-          ''                      // email column intentionally blank
+          ''                      // email column — backfilled by sync_tracking.py
         ]],
       },
     });
-  } catch {
-    // Non-blocking — never fail the pixel/redirect response
+    console.log('[track] Logged to sheet:', trackingId, event);
+  } catch (err) {
+    // Non-blocking — log error but never fail the pixel response
+    console.error('[track] Sheet logging error:', err);
   }
 }
 
@@ -63,8 +67,9 @@ export async function GET(request: NextRequest) {
       ua,
     }));
 
-    // Log to Google Sheets (non-blocking)
-    logToSheet(trackingId, event, ip, ua);
+    // AWAITED — ensures sheet write completes before response is returned
+    // Previously fire-and-forget which caused writes to be killed by serverless runtime
+    await logToSheet(trackingId, event, ip, ua);
   }
 
   // If redirect param present → click tracking redirect (allowlist enforced)
@@ -79,7 +84,6 @@ export async function GET(request: NextRequest) {
     if (isSafe) {
       return NextResponse.redirect(decoded);
     }
-    // Reject disallowed redirects — return pixel instead
     console.warn('[track] Blocked open redirect attempt:', decoded);
   }
 
