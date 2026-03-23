@@ -1,9 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+// Sanitize user input to prevent XSS in admin emails
+function escapeHtml(str: string): string {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, businessWebsite, message } = await req.json();
+    const raw = await req.json();
+    const name            = escapeHtml(raw.name            || '');
+    const email           = escapeHtml(raw.email           || '');
+    const businessWebsite = escapeHtml(raw.businessWebsite || '');
+    const message         = escapeHtml(raw.message         || '');
 
     // Validate required fields
     if (!name || !email) {

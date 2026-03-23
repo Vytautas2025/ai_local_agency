@@ -8,7 +8,8 @@ const PIXEL = Buffer.from(
 );
 
 // Non-blocking: append event to Google Sheet
-async function logToSheet(trackingId: string, event: string, ip: string, ua: string, email: string) {
+// NOTE: email address is intentionally NOT logged — privacy + anti-spam
+async function logToSheet(trackingId: string, event: string, ip: string, ua: string) {
   try {
     const clientId     = process.env.GOOGLE_CLIENT_ID;
     const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
@@ -33,7 +34,7 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
           new Date().toISOString(),
           ip,
           ua.substring(0, 200),
-          email,                   // recipient email address
+          ''                      // email column intentionally blank
         ]],
       },
     });
@@ -47,7 +48,7 @@ export async function GET(request: NextRequest) {
   const trackingId = searchParams.get('id')       || '';
   const event      = searchParams.get('event')    || 'open';
   const redirect   = searchParams.get('redirect') || '';
-  const email      = searchParams.get('email')    || '';
+  // NOTE: &email= param intentionally ignored — email in URL is a spam signal
 
   const ip = request.headers.get('x-forwarded-for') || '';
   const ua = request.headers.get('user-agent')       || '';
@@ -57,19 +58,29 @@ export async function GET(request: NextRequest) {
     console.log(JSON.stringify({
       event,
       tracking_id: trackingId,
-      email,
       timestamp:   new Date().toISOString(),
       ip,
       ua,
     }));
 
     // Log to Google Sheets (non-blocking)
-    logToSheet(trackingId, event, ip, ua, email);
+    logToSheet(trackingId, event, ip, ua);
   }
 
-  // If redirect param present → click tracking redirect
+  // If redirect param present → click tracking redirect (allowlist enforced)
   if (redirect) {
-    return NextResponse.redirect(decodeURIComponent(redirect));
+    const decoded = decodeURIComponent(redirect);
+    const ALLOWED_DOMAINS = [
+      'https://tier3labs.co.uk',
+      'https://www.tier3labs.co.uk',
+      'https://calendly.com/tier3labs',
+    ];
+    const isSafe = ALLOWED_DOMAINS.some(d => decoded.startsWith(d));
+    if (isSafe) {
+      return NextResponse.redirect(decoded);
+    }
+    // Reject disallowed redirects — return pixel instead
+    console.warn('[track] Blocked open redirect attempt:', decoded);
   }
 
   // Return 1x1 transparent GIF (open tracking)
