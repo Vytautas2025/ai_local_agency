@@ -61,10 +61,10 @@ const BOT_IP_PREFIXES = [
   // SEMrush / OVH crawlers
   '185.191.171.',
   '54.36.', '54.37.',
+  // Outlook / Microsoft email scanners
+  '85.210.',
 ];
 
-// In-memory IP frequency counter (resets on cold start — good enough for burst detection)
-const ipHitCounter = new Map<string, number>();
 
 function scoreBotLikelihood(ip: string, ua: string): number {
   let score = 0;
@@ -91,10 +91,6 @@ function scoreBotLikelihood(ip: string, ua: string): number {
   // No common browser token
   if (ua && !/mozilla|chrome|safari|firefox|edge|opera/i.test(ua)) score += 20;
 
-  // Burst detection: same IP hitting 5+ times (corporate scanner pattern)
-  const hits = (ipHitCounter.get(ip) || 0) + 1;
-  ipHitCounter.set(ip, hits);
-  if (hits >= 5) score += 60;
 
   return Math.min(score, 100);
 }
