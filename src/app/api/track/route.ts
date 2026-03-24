@@ -7,7 +7,79 @@ const PIXEL = Buffer.from(
   'base64'
 );
 
-// Log event to Google Sheet
+// ─── Bot Detection ────────────────────────────────────────────────────────────
+
+const BOT_UA_PATTERNS = [
+  /bot/i, /crawl/i, /spider/i, /slurp/i, /mediapartners/i,
+  /facebookexternalhit/i, /linkedinbot/i, /twitterbot/i,
+  /whatsapp/i, /telegrambot/i, /applebot/i, /googlebot/i,
+  /bingbot/i, /yandexbot/i, /duckduckbot/i, /baiduspider/i,
+  /sogou/i, /exabot/i, /ia_archiver/i, /semrushbot/i,
+  /ahrefsbot/i, /mj12bot/i, /dotbot/i, /rogerbot/i,
+  /screaming frog/i, /seokicks/i, /sistrix/i,
+  // Email security scanners
+  /barracuda/i, /mimecast/i, /proofpoint/i, /ironport/i,
+  /symantec/i, /messagelabs/i, /sophos/i, /forcepoint/i,
+  /trend micro/i, /fireeye/i, /cloudmark/i, /postini/i,
+  /microsoft.*security/i, /exchange.*online/i,
+  // Preview / prefetch agents
+  /preview/i, /prefetch/i, /validator/i, /checker/i,
+  /monitor/i, /pingdom/i, /uptimerobot/i, /statuscake/i,
+  /newrelic/i, /datadog/i, /site24x7/i,
+  // Generic automation
+  /python-requests/i, /python-urllib/i, /go-http-client/i,
+  /java//i, /curl//i, /wget//i, /libwww/i, /httpunit/i,
+  /httpclient/i, /okhttp/i, /axios/i, /node-fetch/i,
+  /got//i, /superagent/i, /request//i,
+];
+
+const BOT_IP_PREFIXES = [
+  // Known scanner / security ranges
+  '66.249.', '66.102.', '64.233.', '72.14.',   // Google
+  '157.55.', '207.46.', '40.77.',               // Bing
+  '17.0.', '17.58.',                             // Apple
+  '54.', '52.', '34.', '35.',                   // AWS (broad — score only)
+  '104.154.', '104.196.', '130.211.',           // GCP
+  '13.', '18.', '3.', '15.',                    // AWS EC2
+  '185.191.171.',                               // SEMrush
+  '54.36.', '54.37.',                           // OVH crawlers
+];
+
+function scoreBotLikelihood(ip: string, ua: string): number {
+  let score = 0;
+
+  // UA pattern match
+  for (const pattern of BOT_UA_PATTERNS) {
+    if (pattern.test(ua)) {
+      score += 80;
+      break;
+    }
+  }
+
+  // IP prefix match
+  for (const prefix of BOT_IP_PREFIXES) {
+    if (ip.startsWith(prefix)) {
+      score += 40;
+      break;
+    }
+  }
+
+  // Empty or very short UA
+  if (!ua || ua.length < 10) score += 50;
+
+  // No common browser token
+  if (ua && !/mozilla|chrome|safari|firefox|edge|opera/i.test(ua)) score += 20;
+
+  return Math.min(score, 100);
+}
+
+function isHumanOpen(ip: string, ua: string): boolean {
+  const score = scoreBotLikelihood(ip, ua);
+  return score < 25;
+}
+
+// ─── Sheet Logging ────────────────────────────────────────────────────────────
+
 async function logToSheet(trackingId: string, event: string, ip: string, ua: string) {
   try {
     const clientId     = process.env.GOOGLE_CLIENT_ID;
@@ -47,6 +119,8 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
   }
 }
 
+// ─── Route Handler ────────────────────────────────────────────────────────────
+
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const trackingId = searchParams.get('id')       || '';
@@ -58,18 +132,26 @@ export async function GET(request: NextRequest) {
   const ua = request.headers.get('user-agent')       || '';
 
   if (trackingId) {
-    // Log to Vercel console
+    const human = isHumanOpen(ip, ua);
+    const botScore = scoreBotLikelihood(ip, ua);
+
+    // Log to Vercel console (always — for debugging)
     console.log(JSON.stringify({
       event,
       tracking_id: trackingId,
       timestamp:   new Date().toISOString(),
       ip,
       ua,
+      bot_score:   botScore,
+      logged:      human,
     }));
 
-    // AWAITED — ensures sheet write completes before response is returned
-    // Previously fire-and-forget which caused writes to be killed by serverless runtime
-    await logToSheet(trackingId, event, ip, ua);
+    // Only write to sheet if classified as HUMAN (bot_score < 25)
+    if (human) {
+      await logToSheet(trackingId, event, ip, ua);
+    } else {
+      console.log('[track] Suppressed bot/suspicious open — not logged to sheet. Score:', botScore);
+    }
   }
 
   // If redirect param present → click tracking redirect (allowlist enforced)
