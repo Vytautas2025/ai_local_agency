@@ -22,28 +22,49 @@ const BOT_UA_PATTERNS = [
   /symantec/i, /messagelabs/i, /sophos/i, /forcepoint/i,
   /trend micro/i, /fireeye/i, /cloudmark/i, /postini/i,
   /microsoft.*security/i, /exchange.*online/i,
+  // Microsoft Office / Outlook preview
+  /ms-office/i, /msoffice/i, /microsoft office/i,
+  /trident\/[0-9]/i,
+  // Google Image Proxy
+  /googleimageproxy/i, /ggpht\.com/i, /google-read-aloud/i,
+  /feedfetcher/i,
+  // Email clients with auto-preview
+  /thunderbird/i,
   // Preview / prefetch agents
   /preview/i, /prefetch/i, /validator/i, /checker/i,
   /monitor/i, /pingdom/i, /uptimerobot/i, /statuscake/i,
   /newrelic/i, /datadog/i, /site24x7/i,
   // Generic automation
   /python-requests/i, /python-urllib/i, /go-http-client/i,
-  /java//i, /curl//i, /wget//i, /libwww/i, /httpunit/i,
+  /java\//i, /curl\//i, /wget\//i, /libwww/i, /httpunit/i,
   /httpclient/i, /okhttp/i, /axios/i, /node-fetch/i,
-  /got//i, /superagent/i, /request//i,
+  /got\//i, /superagent/i, /request\//i,
 ];
 
 const BOT_IP_PREFIXES = [
-  // Known scanner / security ranges
-  '66.249.', '66.102.', '64.233.', '72.14.',   // Google
-  '157.55.', '207.46.', '40.77.',               // Bing
-  '17.0.', '17.58.',                             // Apple
-  '54.', '52.', '34.', '35.',                   // AWS (broad — score only)
-  '104.154.', '104.196.', '130.211.',           // GCP
-  '13.', '18.', '3.', '15.',                    // AWS EC2
-  '185.191.171.',                               // SEMrush
-  '54.36.', '54.37.',                           // OVH crawlers
+  // Google (search, image proxy, etc.)
+  '66.249.', '66.102.', '64.233.', '72.14.',
+  '74.125.', '209.85.', '216.58.', '216.239.', '108.177.',
+  // Bing / Microsoft
+  '157.55.', '207.46.', '40.77.',
+  '40.', '20.', '172.186.', '48.209.',
+  // Apple
+  '17.0.', '17.58.',
+  // AWS EC2 / Lambda
+  '54.', '52.', '34.', '35.', '44.',
+  '13.', '18.', '3.', '15.',
+  // GCP
+  '104.154.', '104.196.', '130.211.',
+  // Cloudflare
+  '104.16.', '104.17.', '104.18.', '104.19.', '104.20.', '104.21.',
+  '172.64.', '172.65.', '172.66.', '172.67.',
+  // SEMrush / OVH crawlers
+  '185.191.171.',
+  '54.36.', '54.37.',
 ];
+
+// In-memory IP frequency counter (resets on cold start — good enough for burst detection)
+const ipHitCounter = new Map<string, number>();
 
 function scoreBotLikelihood(ip: string, ua: string): number {
   let score = 0;
@@ -69,6 +90,11 @@ function scoreBotLikelihood(ip: string, ua: string): number {
 
   // No common browser token
   if (ua && !/mozilla|chrome|safari|firefox|edge|opera/i.test(ua)) score += 20;
+
+  // Burst detection: same IP hitting 5+ times (corporate scanner pattern)
+  const hits = (ipHitCounter.get(ip) || 0) + 1;
+  ipHitCounter.set(ip, hits);
+  if (hits >= 5) score += 60;
 
   return Math.min(score, 100);
 }
