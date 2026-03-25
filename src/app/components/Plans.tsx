@@ -48,8 +48,8 @@ export default function Plans() {
             Choose Your{" "}
             <span className="green-gradient-text">Growth Plan</span>
           </h2>
-          <p className="section-subtitle mx-auto mt-4">
-            Both plans start with a free 7-day trial — no credit card, no contracts, cancel anytime.
+              <p className="section-subtitle mx-auto mt-4">
+                Start with a free 7-day trial — no credit card, no contracts, cancel anytime.
           </p>
         </div>
 
