@@ -187,6 +187,11 @@ export async function GET(request: NextRequest) {
       'https://tier3labs.co.uk',
       'https://www.tier3labs.co.uk',
       'https://calendly.com/tier3labs',
+      'https://facebook.com',
+      'https://www.facebook.com',
+      'https://m.facebook.com',
+      'https://instagram.com',
+      'https://www.instagram.com',
     ];
     const isSafe = ALLOWED_DOMAINS.some(d => decoded.startsWith(d));
     if (isSafe) {
