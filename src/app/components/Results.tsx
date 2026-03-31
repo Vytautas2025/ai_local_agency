@@ -84,9 +84,9 @@ export default function Results() {
 
         <div className="mb-12 text-center">
           <div className="glass-card px-6 py-4 text-center inline-block">
-            <p className="text-2xl font-extrabold green-gradient-text">Industries Served:</p>
-            <p className="text-[#8B949E] text-xs mt-1">
-              Car Dealership, Dental, Med Spas, Legal, Builders, Estate Agencies, Car Servicing, Restaurants
+            <p className="text-3xl font-extrabold green-gradient-text">Industries Served</p>
+            <p className="text-white text-2xl font-bold mt-2 leading-snug">
+              Car Dealership and Servicing, Dental, Med Spas, Legal, Builders, Estate Agencies, Restaurants
             </p>
           </div>
         </div>
@@ -113,15 +113,6 @@ export default function Results() {
           ))}
         </div>
 
-        {/* Social Proof Footer */}
-        <div className="mt-12 text-center">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
-            <div className="glass-card px-6 py-4 text-center">
-              <p className="text-2xl font-extrabold green-gradient-text">4.9&#9733;</p>
-              <p className="text-[#8B949E] text-xs mt-1">Average client satisfaction</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
