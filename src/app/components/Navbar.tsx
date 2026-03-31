@@ -21,13 +21,21 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex-shrink-0">
+          <a href="/" className="flex items-center gap-3 flex-shrink-0">
             <Image
               src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
               alt="Tier3Labs"
               width={140}
               height={40}
               priority
+            />
+            <span className="h-6 w-px bg-white/20" aria-hidden="true" />
+            <Image
+              src="/GMB-Logo.webp"
+              alt="Google Business Profile"
+              width={36}
+              height={36}
+              className="opacity-90"
             />
           </a>
 
