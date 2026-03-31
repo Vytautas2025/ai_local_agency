@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { headers } from "next/headers";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -167,6 +168,7 @@ export default async function RootLayout({
       <body className="antialiased">
         {children}
         <Analytics />
+        <SpeedInsights />
 
         {/* Calendly JS — afterInteractive so it's ready before user interaction */}
         <Script
