@@ -85,7 +85,7 @@ export default function Results() {
         <div className="mb-12 text-center">
           <div className="glass-card px-6 py-4 text-center inline-block">
             <p className="text-3xl font-extrabold green-gradient-text">Industries Served</p>
-            <p className="text-white text-2xl font-bold mt-2 leading-snug">
+            <p className="text-white text-xl font-bold mt-2 leading-snug">
               Car Dealership and Servicing, Dental, Med Spas, Legal, Builders, Estate Agencies, Restaurants
             </p>
           </div>

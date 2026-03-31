@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ChevronDown, ShieldCheck, MapPin } from "lucide-react";
 
 // [Tier3Labs Audit] — Hero visual: before/after search result cards
@@ -75,6 +76,15 @@ export default function Hero() {
 
       {/* [Tier3Labs Audit] — Reduced vertical padding */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-12">
+        <div className="absolute top-8 right-6 md:top-10 md:right-10 lg:right-16 z-20">
+          <Image
+            src="/GMB-Logo.webp"
+            alt="Google Business Profile"
+            width={88}
+            height={30}
+            className="opacity-90"
+          />
+        </div>
         {/* [Tier3Labs Audit] — Two-column hero layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left: Copy */}
@@ -83,6 +93,7 @@ export default function Hero() {
             <p className="text-sm font-medium uppercase tracking-widest text-green-400 mb-4">
               You&apos;re on Google, but not where customers actually look.
             </p>
+
 
             {/* [Tier3Labs] — Updated headline */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white leading-[1.15]">
