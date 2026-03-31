@@ -60,7 +60,7 @@ const localBusinessSchema = {
   description:
     "Local SEO & AI Search Optimization agency specializing in Google Maps Top 3 rankings and AI citation optimization.",
   url: "https://www.tier3labs.co.uk",
-  logo: "https://www.tier3labs.co.uk/logo-dark.png",
+  logo: "https://www.tier3labs.co.uk/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png",
   image: "https://www.tier3labs.co.uk/icon.png",
   priceRange: "$$",
   serviceType: [

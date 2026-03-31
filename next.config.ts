@@ -77,7 +77,7 @@ const nextConfig: NextConfig = {
         headers: [{ key: "Cache-Control", value: "public, max-age=86400" }],
       },
       {
-        source: "/logo-dark.png",
+        source: "/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png",
         headers: [{ key: "Cache-Control", value: "public, max-age=86400" }],
       },
     ];

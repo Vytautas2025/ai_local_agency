@@ -23,7 +23,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className="flex-shrink-0">
             <Image
-              src="/logo-dark.svg"
+              src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
               alt="Tier3Labs"
               width={140}
               height={40}

@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Column 1: Logo & Tagline */}
           <div className="md:col-span-1">
             <Image
-              src="/logo-dark.svg"
+              src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
               alt="Tier3Labs"
               width={140}
               height={40}
