@@ -98,9 +98,12 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-gray-300 max-w-xl mt-6 leading-relaxed">
               If your business isn&apos;t in the Google Maps Top 3, you&apos;re invisible to the majority of people searching for exactly what you offer — right now, in your area. Tier3Labs changes that.
             </p>
+            <p className="text-2xl md:text-3xl text-white font-bold max-w-xl mt-3 leading-relaxed">
+              We will work 7 days for free so <span className="text-green-400">you can see the results</span>.
+            </p>
 
             {/* [Tier3Labs Audit] — CTAs: primary button + plain text link with ChevronDown */}
-            <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 mt-6">
               <a href="#contact" className="btn-primary">
                 Start For Free
               </a>
