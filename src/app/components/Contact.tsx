@@ -168,7 +168,7 @@ export default function Contact() {
                   disabled={loading}
                   className="btn-primary w-full mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending…" : "Start My Free Trial"}
+                  {loading ? "Sending6" : "Start For Free"}
                 </button>
                 {error && (
                   <p className="text-red-400 text-sm text-center mt-3">{error}</p>
