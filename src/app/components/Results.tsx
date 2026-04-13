@@ -63,7 +63,7 @@ export default function Results() {
               width={800}
               height={704}
               unoptimized
-              className="w-full h-[340px] sm:h-[420px] lg:h-[520px] object-cover object-top block"
+              className="w-full h-[520px] object-cover object-top block"
             />
           </div>
           <div className="glass-card overflow-hidden rounded-2xl border border-[#00E676]/30">
@@ -77,7 +77,7 @@ export default function Results() {
               width={800}
               height={704}
               unoptimized
-              className="w-full h-[340px] sm:h-[420px] lg:h-[520px] object-cover object-top block"
+              className="w-full h-[520px] object-cover object-top block"
             />
           </div>
         </div>
