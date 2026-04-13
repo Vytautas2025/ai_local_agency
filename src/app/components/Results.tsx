@@ -58,7 +58,7 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm mt-1">28 January 2026</p>
             </div>
             <Image
-              src="/before minesota.png"
+              src="/before minesota.png?v=20260413a"
               alt="Geo-grid before — Rank #21"
               width={800}
               height={704}
@@ -72,7 +72,7 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm mt-1">8 March 2026</p>
             </div>
             <Image
-              src="/after minesota.png"
+              src="/after minesota.png?v=20260413a"
               alt="Geo-grid after — Rank Top 3"
               width={800}
               height={704}
