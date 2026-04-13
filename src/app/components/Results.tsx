@@ -57,8 +57,8 @@ export default function Results() {
               <span className="text-white font-extrabold text-xl tracking-wide">BEFORE <span className="text-red-400">(RANK #11)</span></span>
               <p className="text-[#8B949E] text-sm mt-1">28 January 2026</p>
             </div>
-            <Image
-              src="/before minesota.png"
+              <Image
+                src="/image before .png"
               alt="Geo-grid before — Rank #21"
               width={799}
               height={709}
@@ -72,7 +72,7 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm mt-1">25 March 2026</p>
             </div>
             <Image
-              src="/after minesota.png"
+              src="/image after.png"
               alt="Geo-grid after — Rank Top 3"
               width={799}
               height={709}
