@@ -58,12 +58,12 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm mt-1">28 January 2025</p>
             </div>
             <Image
-              src="/before.png"
+              src="/before minesota.png"
               alt="Geo-grid before — Rank #21"
-              width={799}
-              height={709}
+              width={800}
+              height={704}
               unoptimized
-              className="w-full h-auto block"
+              className="w-full h-[340px] sm:h-[420px] lg:h-[520px] object-cover object-top block"
             />
           </div>
           <div className="glass-card overflow-hidden rounded-2xl border border-[#00E676]/30">
@@ -72,12 +72,12 @@ export default function Results() {
               <p className="text-[#8B949E] text-sm mt-1">8 March 2025</p>
             </div>
             <Image
-              src="/after.png"
+              src="/after minesota.png"
               alt="Geo-grid after — Rank Top 3"
               width={800}
               height={704}
               unoptimized
-              className="w-full h-auto block"
+              className="w-full h-[340px] sm:h-[420px] lg:h-[520px] object-cover object-top block"
             />
           </div>
         </div>
