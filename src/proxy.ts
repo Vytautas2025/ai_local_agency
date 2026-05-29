@@ -8,7 +8,7 @@ export function proxy(request: NextRequest) {
   const csp = [
     "default-src 'self'",
     // 'nonce-...' replaces 'unsafe-inline' — only scripts with the matching nonce attribute execute
-    `script-src 'self' 'nonce-${nonce}' https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com`,
+    `script-src 'self' 'nonce-${nonce}' https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms`,
     // Styles: Calendly widget.css + Next.js runtime inline styles (inline styles cannot use nonces)
     "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
     // Fonts: fully self-hosted via next/font — no external origin needed
@@ -16,7 +16,7 @@ export function proxy(request: NextRequest) {
     // Images: own origin, data URIs, GA tracking pixel
     "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com",
     // XHR/fetch: form API, all GA4 collection endpoints, Calendly availability API
-    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://api.calendly.com https://calendly.com",
+    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://api.calendly.com https://calendly.com https://e.clarity.ms",
     // Calendly popup renders inside an iframe from these origins
     "frame-src https://calendly.com https://scheduling.calendly.com",
     // Block Flash/plugins entirely

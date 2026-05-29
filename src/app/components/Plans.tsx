@@ -1,3 +1,11 @@
+"use client";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 
 const plans = [
@@ -151,6 +159,7 @@ export default function Plans() {
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => window.gtag?.('event', 'begin_checkout', { event_category: 'calendly', event_label: `plans_${plan.name.toLowerCase().replace(' ', '_')}` })}
                 className={`text-center ${plan.featured ? "btn-primary" : "btn-ghost"}`}
               >
                 Book a Free Call →

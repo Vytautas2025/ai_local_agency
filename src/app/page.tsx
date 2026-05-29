@@ -61,6 +61,8 @@ const AnchorScroller = dynamic(() => import("./components/AnchorScroller"), {
 
 const ScrollToTop = dynamic(() => import("./components/ScrollToTop"));
 
+const StickyMobileBar = dynamic(() => import("./components/StickyMobileBar"));
+
 export default function Home() {
   return (
     <>
@@ -85,6 +87,7 @@ export default function Home() {
       <Footer />
       <AnchorScroller />
       <ScrollToTop />
+      <StickyMobileBar />
     </>
   );
 }

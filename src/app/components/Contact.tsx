@@ -7,6 +7,8 @@ declare global {
     Calendly?: {
       initPopupWidget: (options: { url: string }) => void;
     };
+    gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -47,6 +49,8 @@ export default function Contact() {
       }
 
       setSubmitted(true);
+      window.gtag?.('event', 'generate_lead', { event_category: 'contact', event_label: 'audit_form' });
+      window.fbq?.('track', 'Lead');
     } catch {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -168,7 +172,7 @@ export default function Contact() {
                   disabled={loading}
                   className="btn-primary w-full mt-6 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Sending6" : "Start For Free"}
+                  {loading ? "Sending..." : "Start For Free"}
                 </button>
                 {error && (
                   <p className="text-red-400 text-sm text-center mt-3">{error}</p>
@@ -213,6 +217,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => {
+                window.gtag?.('event', 'begin_checkout', { event_category: 'calendly', event_label: 'contact_section' });
                 if (window.Calendly) {
                   e.preventDefault();
                   window.Calendly.initPopupWidget({
