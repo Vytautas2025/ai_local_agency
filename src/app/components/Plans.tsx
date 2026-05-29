@@ -25,7 +25,6 @@ const plans = [
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
     included: [
-      "Free 7-day trial",
       "Cloud stack service",
       "Medium pages",
       "Google pages",
