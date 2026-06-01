@@ -67,7 +67,7 @@ export default function Home() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.has("fbclid")) {
+    if (params.get("meta_ad") === "1") {
       sessionStorage.setItem("meta_visitor", "true");
     }
     if (sessionStorage.getItem("meta_visitor") === "true") {
