@@ -1,7 +1,10 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { ShieldCheck } from "lucide-react";
+import BusinessAutocomplete, {
+  BusinessValue,
+  emptyBusinessValue,
+} from "./BusinessAutocomplete";
 
 declare global {
   interface Window {
@@ -13,12 +16,12 @@ declare global {
 
 export default function MetaForm() {
   const [step, setStep] = useState(1);
-  const [businessName, setBusinessName] = useState("");
+  const [business, setBusiness] = useState<BusinessValue>(emptyBusinessValue);
 
   // Step 2 fields
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [website, setWebsite] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -35,8 +38,11 @@ export default function MetaForm() {
         body: JSON.stringify({
           name,
           email,
-          businessWebsite: website ? `https://${website}` : "",
-          message: `Business: ${businessName}${message ? `\n${message}` : ""}`,
+          phone,
+          businessName: business.businessName,
+          businessWebsite: business.website,
+          googleMapsUrl: business.mapsUri,
+          message,
         }),
       });
       if (!res.ok) throw new Error();
@@ -111,23 +117,11 @@ export default function MetaForm() {
                   onSubmit={(e) => { e.preventDefault(); setStep(2); }}
                   className="space-y-4"
                 >
-                  <div>
-                    <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                      Your Business Name{" "}
-                      <span className="text-[#8B949E] font-normal">(as listed on Google)</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={businessName}
-                      onChange={(e) => setBusinessName(e.target.value)}
-                      placeholder="Enter your business name"
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
-                    />
-                    <p className="text-[#8B949E] text-xs mt-1.5">
-                      Can&apos;t find your business? Enter it manually above.
-                    </p>
-                  </div>
+                  <BusinessAutocomplete
+                    value={business}
+                    onChange={setBusiness}
+                    required
+                  />
                   <button type="submit" className="btn-primary w-full">
                     Next →
                   </button>
@@ -191,21 +185,41 @@ export default function MetaForm() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="meta-website" className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                          Business Website
+                        <label htmlFor="meta-phone" className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                          Phone
                         </label>
-                        <div className="flex items-center bg-white/5 border border-white/10 rounded-lg focus-within:border-[#00E676]/50 focus-within:ring-1 focus-within:ring-[#00E676]/30 transition-all overflow-hidden">
-                          <span className="px-3 py-3 text-[#8B949E] text-sm select-none border-r border-white/10 whitespace-nowrap">
-                            https://
-                          </span>
-                          <input
-                            id="meta-website"
-                            type="text"
-                            value={website}
-                            onChange={(e) => setWebsite(e.target.value)}
-                            placeholder="yourbusiness.com"
-                            className="flex-1 bg-transparent px-3 py-3 text-white placeholder-[#8B949E] focus:outline-none"
-                          />
+                        <input
+                          id="meta-phone"
+                          type="tel"
+                          required
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          placeholder="07123 456789"
+                          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                          Your Business
+                        </label>
+                        <div className="flex items-center justify-between gap-3 bg-white/5 border border-white/10 rounded-lg px-4 py-3">
+                          <div className="min-w-0">
+                            <p className="text-white text-sm font-medium truncate">
+                              {business.businessName || "Not provided"}
+                            </p>
+                            {business.website && (
+                              <p className="text-[#8B949E] text-xs truncate">
+                                {business.website.replace(/^https?:\/\//, "")}
+                              </p>
+                            )}
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => setStep(1)}
+                            className="text-[#00E676] text-xs hover:underline shrink-0"
+                          >
+                            Edit
+                          </button>
                         </div>
                       </div>
                       <div>

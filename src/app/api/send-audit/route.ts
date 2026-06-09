@@ -16,7 +16,10 @@ export async function POST(req: NextRequest) {
     const raw = await req.json();
     const name            = escapeHtml(raw.name            || '');
     const email           = escapeHtml(raw.email           || '');
+    const phone           = escapeHtml(raw.phone           || '');
+    const businessName    = escapeHtml(raw.businessName    || '');
     const businessWebsite = escapeHtml(raw.businessWebsite || '');
+    const googleMapsUrl   = escapeHtml(raw.googleMapsUrl   || '');
     const message         = escapeHtml(raw.message         || '');
 
     // Validate required fields
@@ -42,12 +45,19 @@ export async function POST(req: NextRequest) {
       to: process.env.EMAIL_USER,
       replyTo: email,
       subject: `New Audit Request from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nWebsite: ${businessWebsite || "Not provided"}\nMessage: ${message || "Not provided"}`,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nBusiness: ${businessName || "Not provided"}\nWebsite: ${businessWebsite || "Not provided"}\nGoogle listing: ${googleMapsUrl || "Not provided"}\nMessage: ${message || "Not provided"}`,
       html: `
         <h2>New Visibility Audit Request</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Business:</strong> ${businessName || "Not provided"}</p>
         <p><strong>Website:</strong> ${businessWebsite || "Not provided"}</p>
+        <p><strong>Google listing:</strong> ${
+          googleMapsUrl
+            ? `<a href="${googleMapsUrl}">${googleMapsUrl}</a>`
+            : "Not provided"
+        }</p>
         <p><strong>Message:</strong> ${message || "Not provided"}</p>
       `,
     });

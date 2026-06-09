@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import BusinessAutocomplete, {
+  BusinessValue,
+  emptyBusinessValue,
+} from "./BusinessAutocomplete";
 
 declare global {
   interface Window {
@@ -16,9 +20,10 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    website: "",
+    phone: "",
     message: "",
   });
+  const [business, setBusiness] = useState<BusinessValue>(emptyBusinessValue);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -39,7 +44,10 @@ export default function Contact() {
         body: JSON.stringify({
           name: form.name,
           email: form.email,
-          businessWebsite: form.website ? `https://${form.website}` : "",
+          phone: form.phone,
+          businessName: business.businessName,
+          businessWebsite: business.website,
+          googleMapsUrl: business.mapsUri,
           message: form.message,
         }),
       });
@@ -137,23 +145,24 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-website" className="block text-[#C9D1D9] text-sm font-medium mb-2">
-                    Business Website
+                  <label htmlFor="contact-phone" className="block text-[#C9D1D9] text-sm font-medium mb-2">
+                    Phone
                   </label>
-                  <div className="flex items-center bg-white/5 border border-white/10 rounded-lg focus-within:border-[#00E676]/50 focus-within:ring-1 focus-within:ring-[#00E676]/30 transition-all overflow-hidden">
-                    <span className="px-3 py-3 text-[#8B949E] text-sm select-none border-r border-white/10 whitespace-nowrap">
-                      https://
-                    </span>
-                    <input
-                      id="contact-website"
-                      type="text"
-                      value={form.website}
-                      onChange={(e) => handleChange("website", e.target.value)}
-                      placeholder="yourbusiness.com"
-                      className="flex-1 bg-transparent px-3 py-3 text-white placeholder-[#8B949E] focus:outline-none"
-                    />
-                  </div>
+                  <input
+                    id="contact-phone"
+                    type="tel"
+                    required
+                    value={form.phone}
+                    onChange={(e) => handleChange("phone", e.target.value)}
+                    placeholder="07123 456789"
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                  />
                 </div>
+                <BusinessAutocomplete
+                  value={business}
+                  onChange={setBusiness}
+                  required
+                />
                 <div>
                   <label htmlFor="contact-message" className="block text-[#C9D1D9] text-sm font-medium mb-2">
                     Short Description (optional)
