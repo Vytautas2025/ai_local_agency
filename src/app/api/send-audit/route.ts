@@ -35,7 +35,7 @@ Securing a spot in the top 3 organic positions on Google Maps is the single high
 
 Capture high-intent customers: You will connect directly with local people who are searching specifically for what you offer right now.
 
-Streamline your marketing: You will generate a steady, predictable stream of inbound calls and enquiries every month. This completely eliminates the need to burn budget on separate Google Ads, expensive web hosting for landing pages, or other costly marketing tactics.
+Streamline your marketing: You will generate a steady, predictable stream of inbound calls and enquiries every month. This completely eliminates the need to burn budget on separate Google Ads or other costly marketing tactics.
 
 Future-proof your visibility: Our system not only boosts your website rankings but also ensures that emerging AI agents naturally recommend your business first.
 
@@ -67,7 +67,7 @@ https://Tier3labs.co.uk`;
         <h2 style="font-size:18px;color:#0D1117;margin:28px 0 8px;">Why the &ldquo;Top 3&rdquo; Changes Everything</h2>
         <p style="margin:0 0 16px;">Securing a spot in the top 3 organic positions on Google Maps is the single highest-leverage move for a local business. Once you are there, the opportunities are massive:</p>
         <p style="margin:0 0 16px;"><strong>Capture high-intent customers:</strong> You will connect directly with local people who are searching specifically for what you offer right now.</p>
-        <p style="margin:0 0 16px;"><strong>Streamline your marketing:</strong> You will generate a steady, predictable stream of inbound calls and enquiries every month. This completely eliminates the need to burn budget on separate Google Ads, expensive web hosting for landing pages, or other costly marketing tactics.</p>
+        <p style="margin:0 0 16px;"><strong>Streamline your marketing:</strong> You will generate a steady, predictable stream of inbound calls and enquiries every month. This completely eliminates the need to burn budget on separate Google Ads or other costly marketing tactics.</p>
         <p style="margin:0 0 16px;"><strong>Future-proof your visibility:</strong> Our system not only boosts your website rankings but also ensures that emerging AI agents naturally recommend your business first.</p>
 
         <h2 style="font-size:18px;color:#0D1117;margin:28px 0 8px;">Next Step: Secure Your Spot</h2>
