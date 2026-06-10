@@ -17,7 +17,7 @@ const plans = [
       { label: "Rating grid", value: "within area of 25 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "10", highlight: false, suffix: "" },
     ],
-    included: ["Free 7-day trial", "Cloud stack service"],
+    included: ["Free 7-day trial", "Cloud stacks"],
     notIncluded: ["Medium pages", "Google pages", "Google documents", "PDF"],
     purpose:
       "Subtly increase your GMB profile and visibility. Google Maps TOP 3 and your website's organic growth in Google Maps algorithms.",
@@ -33,7 +33,7 @@ const plans = [
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
     included: [
-      "Cloud stack service",
+      "Cloud stacks",
       "Medium pages",
       "Google pages",
       "Google documents",
