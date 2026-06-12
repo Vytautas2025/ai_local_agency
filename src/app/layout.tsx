@@ -129,9 +129,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Local SEO & AI Search Optimization",
   provider: {
-    "@type": "ProfessionalService",
-    name: "Tier3Labs",
-    url: "https://www.tier3labs.co.uk",
+    "@id": "https://www.tier3labs.co.uk/#organization",
   },
   description:
     "Comprehensive local SEO service combining Google Maps optimization, AI search citation building, and local engagement and authority signals.",
