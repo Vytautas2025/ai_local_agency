@@ -73,10 +73,10 @@ export default function Contact() {
     >
       <div className="section-container">
         <div className="text-center mb-6">
-          <p className="section-title">
+          <h2 className="section-title">
             Ready to{" "}
             <span className="green-gradient-text">Own the Map Pack</span>?
-          </p>
+          </h2>
           <p className="text-[#8B949E] text-lg mt-4">
             Stop renting visibility. Start owning it.
           </p>

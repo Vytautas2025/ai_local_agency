@@ -59,18 +59,6 @@ export default function TechStack() {
           <div className="glass-card-hover p-5 flex-1">
             <div className="mb-3">
               <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="10" width="40" height="28" rx="6" stroke="#00E676" strokeWidth="2" />
-                <path d="M20 18L32 24L20 30V18Z" stroke="#00E676" strokeWidth="2" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <h3 className="text-base font-bold text-white mb-2">YouTube Content</h3>
-            <p className="text-[#8B949E] text-sm">
-              SEO-optimized video content targeting your local keywords, building authority and driving engagement signals.
-            </p>
-          </div>
-          <div className="glass-card-hover p-5 flex-1">
-            <div className="mb-3">
-              <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="8" y="4" width="32" height="40" rx="4" stroke="#00E676" strokeWidth="2" />
                 <path d="M16 14H32" stroke="#00E676" strokeWidth="2" strokeLinecap="round" />
                 <path d="M16 22H32M16 28H28M16 34H24" stroke="#00E676" strokeWidth="1.5" strokeLinecap="round" />
@@ -103,7 +91,7 @@ export default function TechStack() {
             </div>
             <h3 className="text-base font-bold text-white mb-2">Keyword Ranking Tracker</h3>
             <p className="text-[#8B949E] text-sm">
-              Stay on top of your most valuable local keywords with bi-monthly ranking reports — so you always know where you stand.
+              Stay on top of your most valuable local keywords with bi-weekly ranking reports — so you always know where you stand.
             </p>
           </div>
           <div className="glass-card-hover p-5 flex-1">

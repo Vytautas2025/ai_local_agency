@@ -10,10 +10,10 @@ const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 
 const plans = [
   {
-    name: "MINI Plan",
+    name: "Community Plan",
     featured: false,
     specs: [
-      { label: "Daily commutes", value: "10–20 / day", highlight: false, suffix: "" },
+      { label: "Daily Engagement Signals", value: "Standard", highlight: false, suffix: "" },
       { label: "Rating grid", value: "within area of 25 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "10", highlight: false, suffix: "" },
     ],
@@ -25,10 +25,10 @@ const plans = [
       "Ideal for smaller businesses looking to start strengthening their position and increasing their visibility.",
   },
   {
-    name: "MAXI Plan",
+    name: "City Plan",
     featured: true,
     specs: [
-      { label: "Daily commutes", value: "30–40 / day", highlight: true, suffix: "" },
+      { label: "Daily Engagement Signals", value: "Intensive", highlight: true, suffix: "" },
       { label: "Rating grid", value: "within area of 100 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
@@ -56,7 +56,7 @@ export default function Plans() {
             <span className="green-gradient-text">Growth Plan</span>
           </h2>
               <p className="section-subtitle mx-auto mt-4">
-                Start with a free 7-day trial — no credit card, no contracts, cancel anytime.
+                Every customer starts with a free 7-day trial — no credit card, no contracts, cancel anytime.
           </p>
         </div>
 

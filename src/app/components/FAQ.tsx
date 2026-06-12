@@ -36,7 +36,7 @@ const faqData = [
   {
     question: "What's included in the monthly deliverables?",
     answer:
-      "Each month you receive: YouTube content, authority articles, ranking signal stacks, multi-platform presence building, AI-driven keyword strategy, and bi-weekly geo-grid ranking reports showing exactly where you stand.",
+      "Each month you receive: authority articles, ranking signal stacks, multi-platform presence building, AI-driven keyword strategy, and bi-weekly geo-grid ranking reports showing exactly where you stand.",
   },
   {
     question: "How do your engagement signals work?",
@@ -73,21 +73,22 @@ export default function FAQ() {
       />
       <div className="section-container">
         <div className="text-center mb-16">
-          <p className="section-title">
+          <h2 className="section-title">
             Frequently Asked{" "}
             <span className="green-gradient-text">Questions</span>
-          </p>
+          </h2>
         </div>
 
         <div className="max-w-3xl mx-auto">
           {faqData.map((item, index) => (
             <div key={item.question} className="border-b border-white/10">
-              <button
-                onClick={() => toggle(index)}
-                aria-expanded={openIndex === index}
-                className="w-full flex justify-between items-center py-6 text-left text-white font-semibold text-lg hover:text-[#00E676] transition-colors cursor-pointer"
-              >
-                <span className="pr-4">{item.question}</span>
+              <h3>
+                <button
+                  onClick={() => toggle(index)}
+                  aria-expanded={openIndex === index}
+                  className="w-full flex justify-between items-center py-6 text-left text-white font-semibold text-lg hover:text-[#00E676] transition-colors cursor-pointer"
+                >
+                  <span className="pr-4">{item.question}</span>
                 <svg
                   width="20"
                   height="20"
@@ -105,7 +106,8 @@ export default function FAQ() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </button>
+                </button>
+              </h3>
               <div
                 className="overflow-hidden transition-all duration-300"
                 style={{

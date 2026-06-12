@@ -20,7 +20,7 @@ export default function MetaLandingPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#0D1117]/80 backdrop-blur-xl border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Image
-            src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
+            src="/tier3labs-logo.png"
             alt="Tier3Labs"
             width={120}
             height={36}

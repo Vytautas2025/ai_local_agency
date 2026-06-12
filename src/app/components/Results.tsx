@@ -33,10 +33,10 @@ export default function Results() {
     <section id="results" className="bg-[#0D1117]">
       <div className="section-container">
         <div className="text-center mb-16">
-          <p className="section-title">
+          <h2 className="section-title">
             Results That Speak{" "}
             <span className="green-gradient-text">Louder Than Promises</span>
-          </p>
+          </h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
@@ -59,7 +59,7 @@ export default function Results() {
             </div>
               <Image
                 src="/image before .png"
-              alt="Geo-grid before — Rank #21"
+              alt="Geo-grid ranking report before optimization — business ranking around position 11 across the local area"
               width={799}
               height={709}
               unoptimized
@@ -73,7 +73,7 @@ export default function Results() {
             </div>
             <Image
               src="/image after.png"
-              alt="Geo-grid after — Rank Top 3"
+              alt="Geo-grid ranking report after optimization — business ranking position 1 across the local area"
               width={799}
               height={709}
               unoptimized

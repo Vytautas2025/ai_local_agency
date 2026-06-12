@@ -14,24 +14,14 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.tier3labs.co.uk"),
-  title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency",
+  title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency UK",
   description:
     "Tier3Labs gets your business into the Google Maps Top 3 where 60% of local traffic converts. Local SEO & AI Search Optimization.",
-  keywords: [
-    "local SEO",
-    "Google Maps SEO",
-    "Map Pack optimization",
-    "AI SEO",
-    "GEO optimization",
-    "local search marketing",
-    "Google Business Profile optimization",
-    "AI search citations",
-  ],
   authors: [{ name: "Tier3Labs" }],
   creator: "Tier3Labs",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_GB",
     url: "https://www.tier3labs.co.uk",
     siteName: "Tier3Labs",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
@@ -57,20 +47,48 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://www.tier3labs.co.uk/#organization",
   name: "Tier3Labs",
   description:
     "Local SEO & AI Search Optimization agency specializing in Google Maps Top 3 rankings and AI citation optimization.",
   url: "https://www.tier3labs.co.uk",
-  logo: "https://www.tier3labs.co.uk/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png",
+  logo: "https://www.tier3labs.co.uk/tier3labs-logo.png",
   image: "https://www.tier3labs.co.uk/icon.png",
-  priceRange: "$$",
+  telephone: "+44 7518 701075",
+  email: "info@tier3labs.co.uk",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "167-169 Great Portland Street, 5th Floor",
+    addressLocality: "London",
+    postalCode: "W1W 5PF",
+    addressCountry: "GB",
+  },
+  sameAs: [
+    "https://www.facebook.com/profile.php?id=61585545124093",
+    "https://www.instagram.com/tier3labs",
+  ],
+  founder: [
+    {
+      "@type": "Person",
+      name: "Vytautas Briauka",
+      jobTitle: "Co-founder & Director",
+      sameAs: ["https://www.linkedin.com/in/vytautasbriauka/"],
+    },
+    {
+      "@type": "Person",
+      name: "Aivis Orentas",
+      jobTitle: "Co-founder",
+      sameAs: ["https://www.linkedin.com/in/aivis-orentas-bbbb6447/"],
+    },
+  ],
+  priceRange: "££",
   serviceType: [
     "Local SEO",
     "AI Search Optimization",
     "Google Maps Optimization",
     "GEO Optimization",
   ],
-  areaServed: "Worldwide",
+  areaServed: "United Kingdom",
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Local SEO Services",
@@ -99,7 +117,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "Local Content Authority Building",
           description:
-            "Monthly content stacks including YouTube, Medium articles, Google Stacks, and Cloud Stacks.",
+            "Monthly content stacks including Medium articles, Google Stacks, and Cloud Stacks.",
         },
       },
     ],
@@ -116,8 +134,8 @@ const serviceSchema = {
     url: "https://www.tier3labs.co.uk",
   },
   description:
-    "Comprehensive local SEO service combining Google Maps optimization, AI search citation building, and authentic human engagement signals.",
-  areaServed: "Worldwide",
+    "Comprehensive local SEO service combining Google Maps optimization, AI search citation building, and local engagement and authority signals.",
+  areaServed: "United Kingdom",
 };
 
 export default async function RootLayout({
@@ -129,7 +147,7 @@ export default async function RootLayout({
   const nonce = (await headers()).get("x-nonce") ?? "";
 
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en-GB" className={inter.variable}>
       <head>
         {/* ✅ FIX 1: Preconnect to third-party origins BEFORE any requests */}
         <link rel="preconnect" href="https://assets.calendly.com" />

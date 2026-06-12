@@ -13,6 +13,7 @@ export default function Navbar() {
     { label: 'AI Search', href: '#ai-search' },
     { label: 'Plans', href: '#plans' },
     { label: 'Success Score', href: '#success-score' },
+    { label: 'About', href: '/about' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -23,7 +24,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 flex-shrink-0">
             <Image
-              src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
+              src="/tier3labs-logo.png"
               alt="Tier3Labs"
               width={140}
               height={40}

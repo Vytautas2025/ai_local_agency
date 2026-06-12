@@ -14,7 +14,7 @@ function escapeHtml(str: string): string {
 // Booking link shown in the confirmation email
 const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 const LOGO_URL =
-  "https://www.tier3labs.co.uk/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png";
+  "https://www.tier3labs.co.uk/tier3labs-logo.png";
 
 // Builds the automatic confirmation email sent to the person who submitted the form.
 // `name` and `email` are already HTML-escaped by the caller.

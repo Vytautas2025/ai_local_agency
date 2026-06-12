@@ -23,9 +23,9 @@ export default function IsThisYou() {
   return (
     <section className="bg-gray-900/40 py-12 border-y border-gray-800">
       <div className="max-w-4xl mx-auto px-6">
-        <p className="text-sm uppercase tracking-widest text-gray-400 mb-8 text-center">
+        <h2 className="text-sm uppercase tracking-widest text-gray-400 mb-8 text-center font-normal">
           Sound familiar?
-        </p>
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((item) => (

@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="flex justify-center md:justify-end">
             <Image
               src="/telefonai.png"
-              alt="Phones preview"
+              alt="Two mobile phones showing a local business ranked in the Google Maps Top 3 results"
               width={900}
               height={700}
               priority

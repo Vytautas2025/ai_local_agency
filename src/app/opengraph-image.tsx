@@ -125,7 +125,7 @@ export default async function Image() {
             }}
           />
           <span style={{ color: "#00E676", fontSize: 22, fontWeight: 700 }}>
-            70% of local search traffic converts from the Top 3
+            60% of local search traffic converts from the Top 3
           </span>
         </div>
       </div>

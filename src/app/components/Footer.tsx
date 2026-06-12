@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Facebook, Instagram } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61585545124093';
@@ -15,6 +15,7 @@ export default function Footer() {
     { label: 'Results', href: '#results' },
     { label: 'AI Search', href: '#ai-search' },
     { label: 'Plans', href: '#plans' },
+    { label: 'About', href: '/about' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -26,7 +27,7 @@ export default function Footer() {
           {/* Column 1: Logo & Tagline */}
           <div className="md:col-span-1">
             <Image
-              src="/8cb2679b-8ec4-4084-958d-e1f806c655fe_removalai_preview.png"
+              src="/tier3labs-logo.png"
               alt="Tier3Labs"
               width={140}
               height={40}
@@ -64,6 +65,26 @@ export default function Footer() {
               Ready to dominate your local market? Get a free audit and see
               exactly where you stand in the Map Pack.
             </p>
+            <address className="not-italic flex flex-col gap-3 mb-6 text-sm text-[#8B949E]">
+              <span className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 text-[#00E676] shrink-0 mt-0.5" aria-hidden="true" />
+                <span>167-169 Great Portland Street, 5th Floor, London W1W 5PF</span>
+              </span>
+              <a
+                href="tel:+447518701075"
+                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+              >
+                <Phone className="h-4 w-4 text-[#00E676] shrink-0" aria-hidden="true" />
+                +44 7518 701075
+              </a>
+              <a
+                href="mailto:info@tier3labs.co.uk"
+                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+              >
+                <Mail className="h-4 w-4 text-[#00E676] shrink-0" aria-hidden="true" />
+                info@tier3labs.co.uk
+              </a>
+            </address>
             <a
               href="#contact"
               className="btn-primary text-sm px-6 py-3"
@@ -121,6 +142,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Legal / trading disclosure (UK Companies Act requirements) */}
+        <p className="text-[#8B949E]/70 text-xs leading-relaxed mt-8">
+          Tier3Labs Ltd &middot; Registered in England &amp; Wales No.&nbsp;15734938 &middot; Registered office: 167-169 Great Portland Street, 5th Floor, London W1W&nbsp;5PF
+        </p>
       </div>
     </footer>
   );

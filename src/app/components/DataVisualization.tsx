@@ -4,10 +4,10 @@ export default function DataVisualization() {
       <div className="section-container">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="section-title">
+          <h2 className="section-title">
             The Numbers{" "}
             <span className="green-gradient-text">Don&apos;t Lie</span>
-          </p>
+          </h2>
         </div>
 
         {/* [Tier3Labs Audit] — Horizontal traffic distribution bar replacing donut chart */}
