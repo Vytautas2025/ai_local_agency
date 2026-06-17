@@ -5,6 +5,26 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Tier3 Labs",
   description: "Tier3 Labs Privacy Policy — how we collect, use, and protect your information.",
   robots: { index: false, follow: false },
+  alternates: {
+    canonical: "https://www.tier3labs.co.uk/privacy",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tier3Labs",
+    url: "https://www.tier3labs.co.uk/privacy",
+    title: "Privacy Policy | Tier3Labs",
+    description:
+      "How Tier3Labs collects, uses, and protects your information.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+      },
+    ],
+  },
 };
 
 export default function PrivacyPage() {

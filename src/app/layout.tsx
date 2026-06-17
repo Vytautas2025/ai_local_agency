@@ -28,13 +28,6 @@ export const metadata: Metadata = {
     description:
       "We put your business in the Google Maps Top 3 where 60% of local search traffic converts. Local SEO & AI Search Optimization.",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Tier3Labs | Dominate the Google Maps Top 3",
-    description:
-      "We put your business in the Google Maps Top 3 where 60% of local search traffic converts.",
-    images: ["/opengraph-image"],
-  },
   robots: {
     index: true,
     follow: true,

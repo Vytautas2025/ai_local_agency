@@ -5,6 +5,26 @@ export const metadata: Metadata = {
   title: "Terms of Service | Tier3Labs",
   description: "Tier3Labs Terms of Service — the rules governing use of our website and services.",
   robots: { index: false, follow: false },
+  alternates: {
+    canonical: "https://www.tier3labs.co.uk/terms",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tier3Labs",
+    url: "https://www.tier3labs.co.uk/terms",
+    title: "Terms of Service | Tier3Labs",
+    description:
+      "The rules governing use of the Tier3Labs website and services.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+      },
+    ],
+  },
 };
 
 export default function TermsPage() {

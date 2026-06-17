@@ -10,6 +10,23 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.tier3labs.co.uk/about",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    siteName: "Tier3Labs",
+    url: "https://www.tier3labs.co.uk/about",
+    title: "About Tier3Labs — The Team Behind Your Map Pack Rankings",
+    description:
+      "Meet the London-registered team helping UK businesses reach the Google Maps Top 3, with transparent bi-weekly proof of progress.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+      },
+    ],
+  },
 };
 
 type Founder = {
