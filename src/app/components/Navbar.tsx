@@ -14,6 +14,7 @@ export default function Navbar() {
     { label: 'Plans', href: '#plans' },
     { label: 'Success Score', href: '#success-score' },
     { label: 'About', href: '/about' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '#contact' },
   ];
 

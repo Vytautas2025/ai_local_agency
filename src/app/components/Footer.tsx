@@ -16,6 +16,7 @@ export default function Footer() {
     { label: 'AI Search', href: '#ai-search' },
     { label: 'Plans', href: '#plans' },
     { label: 'About', href: '/about' },
+    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '#contact' },
   ];
 
