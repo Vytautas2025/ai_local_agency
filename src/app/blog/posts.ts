@@ -17,6 +17,70 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "fake-reviews-fake-backlinks-shortcuts-that-backfire",
+    title:
+      "Fake Reviews, Bought Backlinks and Other SEO Shortcuts That Backfire",
+    metaTitle:
+      "Fake Reviews & Backlinks: Why SEO Shortcuts Backfire (UK) | Tier3Labs",
+    description:
+      "Fake reviews, bought backlinks and keyword-stuffed business names promise quick wins for UK local businesses — and quietly do lasting damage. Here's why every shortcut fails, and what works instead.",
+    excerpt:
+      "Hundreds of five-star reviews overnight. A thousand backlinks for fifty quid. The shortcuts are tempting — and they're built to be detected. Here's why they backfire on UK local businesses, and what to do instead.",
+    date: "2026-06-26",
+    readingTime: "4 min read",
+    author: "Vytautas Briauka",
+    content: [
+      {
+        type: "p",
+        text: "Every UK local business owner has, at some point, been pitched a shortcut. Hundreds of five-star reviews overnight. A thousand backlinks for fifty quid. A clever tweak to your business name that promises to vault you up the rankings. They're tempting precisely because the honest route — earning reviews, building genuine local relevance — takes patience. But these shortcuts share one fatal flaw: they're built to be detected, and when they are, the damage lands on you, not the person who sold them.",
+      },
+      { type: "h2", text: "Fake reviews aren't just risky — they're illegal" },
+      {
+        type: "p",
+        text: "Buying reviews used to sit in a grey area. It doesn't any more. Under the Digital Markets, Competition and Consumers Act 2024, writing, commissioning or publishing fake reviews is now explicitly illegal in the UK, and the Competition and Markets Authority can act directly — with fines of up to 10% of a company's global turnover. That's the legal exposure. The practical reality is just as bleak: Google's systems are built to spot review patterns that don't add up — a sudden flood of five stars, reviewers with no history, accounts clustered in the wrong places — and when they catch it, the reviews disappear and your profile can be suspended.",
+      },
+      {
+        type: "p",
+        text: "So you pay for reviews, take on a legal risk, and quite possibly end up with fewer reviews and a damaged profile than if you'd done nothing at all. It's the worst trade in local marketing.",
+      },
+      { type: "h2", text: "Bought backlinks are a debt, not an asset" },
+      {
+        type: "p",
+        text: "Backlinks — other websites linking to yours — are a genuine ranking signal, which is exactly why a whole industry exists to sell fake ones. Bulk links from link farms, private blog networks and £20 gig-economy packages all fall foul of Google's link-spam policies. Google either ignores them outright or, worse, hits your site with a manual action that can wipe out your rankings overnight.",
+      },
+      {
+        type: "p",
+        text: "And here's the part the sellers never mention: cleaning up a toxic backlink profile once you've built one is far harder, slower and more expensive than never buying it. You inherit a problem that long outlives the brief boost you paid for.",
+      },
+      {
+        type: "h2",
+        text: "Keyword-stuffing your name is a fast route to suspension",
+      },
+      {
+        type: "p",
+        text: "The other common shortcut is cosmetic: changing your Google Business Profile name from “Smith Plumbing” to “Smith Plumbing | Emergency Plumber Manchester 24/7”. It can nudge rankings for a while — and it's a direct breach of Google's guidelines. Competitors report it, Google suspends it, and getting a suspended profile reinstated is a slow, uncertain process that can leave you invisible for weeks.",
+      },
+      { type: "h2", text: "Why every shortcut fails for the same reason" },
+      {
+        type: "p",
+        text: "Fake reviews, bought links and stuffed names look different, but they fail for one shared reason: each tries to fake a signal that Google and your customers use to judge trust. The platforms are very good — and getting better — at telling manufactured trust from the real thing. When the gap is found, the correction is brutal. You don't just lose the boost; you often drop below where you started, and you spend months digging out instead of building.",
+      },
+      {
+        type: "p",
+        text: "Worse, a penalty follows you. A clean business that simply hasn't started yet is in a far stronger position than one carrying a suspension or a manual action. Starting from zero beats starting from negative.",
+      },
+      { type: "h2", text: "The unglamorous route wins anyway" },
+      {
+        type: "p",
+        text: "The frustrating truth is that the legitimate version of every shortcut works better in the end. Real reviews from real customers rank you and convince the next buyer. Genuine local links — your trade body, a respected directory, a supplier, a sponsored community event — carry real weight and never come back to bite you. An accurate, complete profile with your services listed properly earns relevance honestly. It's slower, yes. It also compounds, and it can't be taken away from you in a single enforcement sweep.",
+      },
+      {
+        type: "p",
+        text: "If you're not sure whether your current profile is built on solid ground — or you've inherited tactics from a previous agency and you're not certain what was done — it's worth a proper look. Every customer starts with a free 7-day trial, and we'll show you exactly where you stand before you commit to anything.",
+      },
+    ],
+  },
+  {
     slug: "optimise-google-business-profile-uk",
     title:
       "How to Optimise Your Google Business Profile: A Practical Guide for UK Businesses",
