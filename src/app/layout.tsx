@@ -4,6 +4,7 @@ import Script from "next/script";
 import { headers } from "next/headers";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import WhatsAppButton from "./components/WhatsAppButton";
 import "./globals.css";
 
 const inter = Inter({
@@ -205,6 +206,7 @@ export default async function RootLayout({
       </head>
       <body className="antialiased">
         {children}
+        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
 

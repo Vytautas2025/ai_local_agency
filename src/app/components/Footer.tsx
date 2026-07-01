@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import { Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
+import { WHATSAPP_URL } from '../lib/whatsapp';
 
 export default function Footer() {
   const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61585545124093';
@@ -84,6 +86,15 @@ export default function Footer() {
               >
                 <Mail className="h-4 w-4 text-[#00E676] shrink-0" aria-hidden="true" />
                 info@tier3labs.co.uk
+              </a>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+              >
+                <WhatsAppIcon className="h-4 w-4 text-[#00E676] shrink-0" />
+                WhatsApp us
               </a>
             </address>
             <a
