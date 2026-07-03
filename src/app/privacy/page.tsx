@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Tier3 Labs",
-  description: "Tier3 Labs Privacy Policy, how we collect, use, and protect your information.",
+  title: "Privacy Policy | Tier3Labs",
+  description: "Tier3Labs Privacy Policy, how we collect, use, and protect your information.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.tier3labs.co.uk/privacy",
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           <section>
             <p className="text-xl font-bold text-white mb-3">1. Who We Are</p>
             <p>
-              Tier3 Labs (&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;) respects your privacy and is
+              Tier3Labs (&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo; or &ldquo;our&rdquo;) respects your privacy and is
               committed to protecting it through our compliance with this policy.
             </p>
             <p className="mt-3">
@@ -168,7 +168,7 @@ export default function PrivacyPage() {
               </li>
               <li>To comply with any court order, law, or legal process, including to respond to any government or regulatory request.</li>
               <li>To enforce or apply our terms of use and other agreements.</li>
-              <li>If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of Tier3 Labs, our customers, or others.</li>
+              <li>If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of Tier3Labs, our customers, or others.</li>
             </ul>
             <p className="mt-4">
               We do not sell, trade, or otherwise transfer your personal information to

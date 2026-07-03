@@ -47,8 +47,8 @@ export default function TermsPage() {
           <section>
             <p className="text-xl font-bold text-white mb-3">1. Introduction</p>
             <p className="mb-3">
-              Tier3 Labs Ltd (company number 15734938), registered in England &amp; Wales, whose
-              registered address is 12 Old Mill Gardens, Berkhamsted, England, HP4 2NZ
+              Tier3Labs Ltd (company number 15734938), registered in England &amp; Wales, whose
+              registered address is 167-169 Great Portland Street, 5th Floor, London W1W 5PF
               (&ldquo;Company&rdquo;, &ldquo;We&rdquo;, &ldquo;Us&rdquo;, or &ldquo;Our&rdquo;)
               provides its Services (as defined below) to you, the customer
               (&ldquo;Customer&rdquo;, &ldquo;You&rdquo;, or &ldquo;Your&rdquo;).
@@ -416,12 +416,12 @@ export default function TermsPage() {
             <p>
               Questions about this Agreement? Contact us at{" "}
               <a
-                href="mailto:legal@tier3labs.com"
+                href="mailto:legal@tier3labs.co.uk"
                 className="text-green-primary hover:underline"
               >
-                legal@tier3labs.com
+                legal@tier3labs.co.uk
               </a>{" "}
-              or by post at Tier3 Labs Ltd, 12 Old Mill Gardens, Berkhamsted, England, HP4 2NZ.
+              or by post at Tier3Labs Ltd, 167-169 Great Portland Street, 5th Floor, London W1W 5PF.
             </p>
           </section>
 

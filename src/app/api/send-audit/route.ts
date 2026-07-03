@@ -49,7 +49,7 @@ Speak soon,
 Tier3Labs | Dominate the Map Pack
 +44 7518 701075
 info@tier3labs.co.uk
-https://Tier3labs.co.uk`;
+https://www.tier3labs.co.uk`;
 
   const html = `
   <div style="background:#f4f6f8;padding:24px 0;font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6;">
