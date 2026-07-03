@@ -17,6 +17,150 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "on-page-seo-for-local-businesses",
+    title:
+      "On-Page SEO for Local Businesses: How Your Website Helps You Rank",
+    metaTitle:
+      "On-Page SEO for UK Local Businesses (Website Guide) | Tier3Labs",
+    description:
+      "Your Google Business Profile gets you found, but your website has to back it up. Here's the on-page SEO, NAP, a footer map embed, headings, titles and local schema, that helps UK businesses rank locally.",
+    excerpt:
+      "Your Google Business Profile does a lot of the work in local search, but it doesn't work alone. Here's how your website's on-page SEO, from your footer to your headings to your schema, reinforces every local ranking signal you have.",
+    date: "2026-07-03",
+    readingTime: "8 min read",
+    author: "Aivis Orentas",
+    content: [
+      {
+        type: "p",
+        text: "If you run a local business, you've probably been told that your Google Business Profile is what gets you found, and that's true. But your profile doesn't work in isolation. Before Google decides whether to put you in the Map Pack, the block of three businesses shown at the top of a local search, it cross-checks what your profile claims against what your website says. Your website is where those claims are either confirmed or quietly contradicted. Get the two working together and you strengthen every local ranking signal you have. Let them drift apart and you undermine them. This is the part of local SEO that happens on your own website, and most businesses never touch it.",
+      },
+      { type: "h2", text: "Your website and your profile are read as a pair" },
+      {
+        type: "p",
+        text: "Google's whole job is to send people to a business it can trust. To judge that trust, it looks for agreement: does your profile, your website and the rest of the web all tell the same story about who you are, where you are and what you do? When your website independently confirms the details on your profile, Google's confidence goes up, and confidence is what earns the ranking. When the details don't line up, even by accident, that confidence erodes. So on-page SEO for a local business isn't about tricking anything. It's about making your website say the same true things as your profile, clearly, and in a format Google can read.",
+      },
+      {
+        type: "h2",
+        text: "Start with NAP: name, address and phone, identical everywhere",
+      },
+      {
+        type: "p",
+        text: "Your name, address and phone number (NAP, in the trade) are the anchor of your local identity, and they need to be identical everywhere they appear on your website, not just on the contact page. A discrepancy that looks trivial to a human, “Road” written out on one page and “Rd” on another, or an old phone number lingering in the footer, chips away at Google's certainty that every mention is the same business. The simplest way to keep them consistent is to put them somewhere that appears on every single page, and the footer is the natural home.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Write your business name exactly as it appears on your Google profile and your signage, no added keywords, no abbreviating it on one page and spelling it out on another.",
+          "Match your address and phone number character for character across the whole site, right down to the same phone formatting throughout.",
+          "Put the full NAP in your site-wide footer, so every page carries the same details automatically.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Embed your Google Business Profile in the footer",
+      },
+      {
+        type: "p",
+        text: "This is one of the most useful things you can do to your website, and one of the most overlooked: embed the Google map of your business listing in your footer. Because the footer shows on every page, that map, and the verified listing behind it, then sits on every page too. It confirms your exact location to visitors at a glance, it gives customers a one-tap route to directions from anywhere on your site, and it ties your website directly to your verified Google Business Profile. Instead of that connection living on a single contact page, it's reinforced everywhere.",
+      },
+      {
+        type: "p",
+        text: "It's genuinely simple to add. In your Google Business Profile, or on Google Maps, choose to share your listing and copy the “embed a map” code, then drop it into your footer alongside your written NAP and a link to the profile itself. The result is that a visitor, and Google, can move from any page straight to your verified listing, and the location pinned on that map matches the address written in your text. It's a small thing that quietly reinforces the link between your site and your profile, page after page.",
+      },
+      {
+        type: "h2",
+        text: "Your headings should say what you do, and where",
+      },
+      {
+        type: "p",
+        text: "Every page has a heading structure, whether you've thought about it or not. The H1 is the main headline, there should be just one per page, and it's the single clearest statement of what that page is about. The H2s are the subheadings beneath it. Google leans heavily on these to work out what a page covers, which makes them a free opportunity to state your services and your area in plain terms. Yet countless local business homepages still lead with an H1 that says “Welcome” or “Home”, telling Google nothing at all.",
+      },
+      {
+        type: "p",
+        text: "Make your H1 say what you actually do and where you do it: “Emergency Electrician in Sheffield” rather than “Welcome to Our Website”. Then use your H2s to name your real services the way customers search for them: “Fuse Board Replacements”, “EV Charger Installation”, “Landlord Electrical Certificates”. Each heading works twice over, as a signpost for a customer skimming the page, and as a strong relevance signal for Google. Ideally they mirror the services listed on your Google profile, because that agreement between site and profile is exactly what you're building.",
+      },
+      {
+        type: "ul",
+        items: [
+          "One H1 per page, stating the main service and location in words a real customer would use.",
+          "H2s for your individual services, named plainly, the service itself rather than a vague “What We Offer”.",
+          "Write them for people first. A heading that reads naturally to a customer almost always reads well to Google too, so resist the urge to cram in keywords.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Title tags and meta descriptions: your advert in the results",
+      },
+      {
+        type: "p",
+        text: "Two things decide whether anyone clicks your listing in the search results, and neither of them is visible on the page itself. The title tag is the clickable headline Google shows, and the meta description is the short summary underneath it. Together they're the first impression a searcher gets of your business, before they've even reached your site. Leave them blank and Google will write its own, usually less compelling than something you'd craft yourself, and often not the message you'd choose.",
+      },
+      {
+        type: "p",
+        text: "Write a title for every important page that leads with the service and the location, and keep it reasonably short so Google doesn't trim the end off. Then write a description that reads like a genuine, inviting sentence or two about what you do and why someone should pick you, not a string of keywords. Crucially, give each page its own; two pages sharing the same title and description is a wasted opportunity and can leave Google unsure which one to show.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Title: lead with your main service and area, keep it concise, and make it unique to each page.",
+          "Description: a natural, persuasive summary written to earn the click, not a list of keywords.",
+          "Never let two pages share the same title and description.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Give each service and area its own page, and link them together",
+      },
+      {
+        type: "p",
+        text: "If you offer several services, or cover several towns, a single catch-all page trying to rank for all of it will usually rank strongly for none of it. Give each important service its own page, and if you genuinely serve distinct areas, consider a dedicated page for each. That gives every heading, title and paragraph room to focus on one thing, which is exactly how Google prefers to match a page to a specific search. A focused page about boiler repairs will always beat a paragraph about boiler repairs buried on a page about everything.",
+      },
+      {
+        type: "p",
+        text: "Then link those pages to one another. Internal links, the links from one page of your own site to another, help visitors find their way around and help Google discover and understand every page you have. Link your service pages from your main navigation, mention related services within your text where it's natural, and make sure nothing important sits more than a click or two from your homepage. A tidy, well-linked structure means a customer and a search engine can both move through your site without hitting a dead end.",
+      },
+      {
+        type: "h2",
+        text: "Local schema: telling Google in its own language",
+      },
+      {
+        type: "p",
+        text: "Everything so far is written for people, and Google reads it well enough. But there's also a way to hand Google the very same facts in a format built specifically for machines, which removes the guesswork entirely. It's called schema markup: a small piece of code sitting in the background of your site that spells out, unambiguously, your business name, address, phone number, opening hours, the area you serve and the services you provide. Your visitors never see it. It exists purely to make your details machine-readable.",
+      },
+      {
+        type: "p",
+        text: "For a local business, the relevant type is LocalBusiness schema. It lets Google read your key details directly rather than inferring them from the page, and it can help you qualify for the richer, more prominent listings Google sometimes shows. There's one rule that matters above all: the details in your schema must exactly match your visible text, your footer NAP and your Google Business Profile. Schema that contradicts the rest of your site does more harm than good. Done properly, it's the clearest possible confirmation that your website and your profile are describing one and the same business.",
+      },
+      {
+        type: "h2",
+        text: "The thread running through all of it is consistency",
+      },
+      {
+        type: "p",
+        text: "Step back, and a single idea runs through every point here: your website's job in local SEO is to agree with your profile, clearly and consistently. The same name, the same address, the same phone number, the same services, repeated across your headings, your titles, your footer, your schema and your embedded map, all matching your Google Business Profile and all matching each other. None of it is technically hard. The hard part is being meticulous, and staying that way as the business changes. A new phone number, a service you've dropped, a move to new premises, each one is a chance for something to slip out of step, and it usually does so quietly.",
+      },
+      { type: "h2", text: "Where to start" },
+      {
+        type: "p",
+        text: "If this feels like a lot at once, start with the handful of things that move the needle most and cost nothing but attention:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Make your NAP identical across your website, your footer, your Google profile and every directory that lists you.",
+          "Add your Google Business Profile map embed and full details to your site-wide footer.",
+          "Rewrite your homepage H1 and your service headings so they name what you do and where.",
+          "Give each main service its own page, with its own title and meta description, linked from your navigation.",
+          "Add or check your LocalBusiness schema, and make sure it matches everything else on the site.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this replaces a strong Google Business Profile; it reinforces it. Your website and your profile are two halves of the same local ranking, and they're at their strongest when they say precisely the same thing. If you'd like to see how well your website and profile currently line up, and where the gaps might be quietly costing you customers, that's the simplest place to begin. Every customer starts with a free 7-day trial, and we'll show you exactly where you stand before you commit to anything.",
+      },
+    ],
+  },
+  {
     slug: "why-seo-matters-for-uk-small-businesses",
     title: "Why SEO Matters for UK Small Businesses",
     metaTitle: "Why SEO Matters for UK Small Businesses | Tier3Labs",
