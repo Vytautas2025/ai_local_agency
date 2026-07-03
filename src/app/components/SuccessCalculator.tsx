@@ -18,12 +18,12 @@ export default function SuccessCalculator() {
     answers.address !== null &&
     answers.website !== null;
 
-  // [Tier3Labs Audit] — Count of answered questions for progress dots
+  // [Tier3Labs Audit], Count of answered questions for progress dots
   const answeredCount = [answers.reviews, answers.address, answers.website].filter(
     (v) => v !== null
   ).length;
 
-  // [Tier3Labs Audit] — Score is simply the count of Yes answers (0–3)
+  // [Tier3Labs Audit], Score is simply the count of Yes answers (0–3)
   const score = [answers.reviews, answers.address, answers.website].filter(
     (v) => v === true
   ).length;
@@ -50,10 +50,10 @@ export default function SuccessCalculator() {
   };
 
   const getHeading = () => {
-    if (score === 3) return "Your foundation is strong — now it's time to dominate.";
+    if (score === 3) return "Your foundation is strong, now it's time to dominate.";
     if (score === 2) return "You're close, but competitors are filling the spots you could own.";
     if (score === 1) return "There are clear gaps holding you back from the Top 3.";
-    return "You're starting from scratch — that's actually an advantage. Here's why.";
+    return "You're starting from scratch, that's actually an advantage. Here's why.";
   };
 
   const getParagraph = () => {
@@ -161,7 +161,7 @@ export default function SuccessCalculator() {
                   />
                 </div>
                 <span className="text-sm text-gray-300 whitespace-nowrap">
-                  {score}/3 — {getLabel()}
+                  {score}/3: {getLabel()}
                 </span>
               </div>
 

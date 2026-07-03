@@ -6,17 +6,17 @@ const faqData = [
   {
     question: "What is the Google Maps 3-Pack and why does it matter?",
     answer:
-      "The Google Maps 3-Pack is the top 3 business listings that appear in Google Maps results. It captures 60% of all local search clicks — making it the most valuable digital real estate for any local business.",
+      "The Google Maps 3-Pack is the top 3 business listings that appear in Google Maps results. It captures 60% of all local search clicks, making it the most valuable digital real estate for any local business.",
   },
   {
     question: "How is this different from traditional SEO?",
     answer:
-      "Traditional SEO focuses on website rankings. We focus on Google Maps dominance AND AI search citations. Our approach builds the content authority, citation networks, and engagement signals that Google's algorithm rewards — not just technical tweaks.",
+      "Traditional SEO focuses on website rankings. We focus on Google Maps dominance AND AI search citations. Our approach builds the content authority, citation networks, and engagement signals that Google's algorithm rewards, not just technical tweaks.",
   },
   {
     question: "Do you need access to my Google Business Profile?",
     answer:
-      "No. We never need access to your GBP or website. Our entire strategy works through external signals — content authority, citation networks, and engagement patterns that boost your local relevance.",
+      "No. We never need access to your GBP or website. Our entire strategy works through external signals: content authority, citation networks, and engagement patterns that boost your local relevance.",
   },
   {
     question: "What are AI Search Overviews and why should I care?",
@@ -41,7 +41,7 @@ const faqData = [
   {
     question: "How do your engagement signals work?",
     answer:
-      "We build the behavioural signals that Google uses to measure local relevance — content authority, citation consistency, and real-world engagement patterns. These compound over time, strengthening your position in the Map Pack month after month.",
+      "We build the behavioural signals that Google uses to measure local relevance: content authority, citation consistency, and real-world engagement patterns. These compound over time, strengthening your position in the Map Pack month after month.",
   },
 ];
 

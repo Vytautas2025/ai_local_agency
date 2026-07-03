@@ -14,7 +14,7 @@ declare global {
 
 // Floating WhatsApp widget: a brand-green bubble that expands into a two-item menu
 // (Message / Call). WhatsApp has no deep link to start a call, so both actions open the
-// same wa.me chat — the call action lands the user where the in-app call button lives.
+// same wa.me chat, the call action lands the user where the in-app call button lives.
 export default function WhatsAppButton() {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -57,7 +57,7 @@ export default function WhatsAppButton() {
       // bottom-24 on mobile clears the StickyMobileBar (fixed bottom-0); md:bottom-6 on desktop.
       className="fixed right-5 bottom-24 md:bottom-6 z-50 flex flex-col items-end gap-3"
     >
-      {/* Expanding menu — kept in the layout (opacity/translate) so the bubble never shifts.
+      {/* Expanding menu, kept in the layout (opacity/translate) so the bubble never shifts.
           Neutral id (no "whatsapp" token) so ad-blocker cosmetic filters don't hide it. */}
       <div
         id="contact-chat-menu"
@@ -95,7 +95,7 @@ export default function WhatsAppButton() {
               Call on WhatsApp
             </span>
             <span className="text-xs text-[#8B949E] whitespace-nowrap">
-              Opens WhatsApp — tap the call icon
+              Opens WhatsApp, tap the call icon
             </span>
           </span>
         </a>

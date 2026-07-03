@@ -65,7 +65,7 @@ export default function Comparison() {
 
           {rows.map((row) => (
             <div key={row.feature} className="rounded-xl border border-white/10 overflow-hidden">
-              {/* Feature name — full-width header */}
+              {/* Feature name, full-width header */}
               <div className="bg-white/5 px-4 py-2.5 border-b border-white/10">
                 <p className="text-white font-semibold text-sm">{row.feature}</p>
               </div>

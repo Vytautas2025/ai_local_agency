@@ -56,7 +56,7 @@ export default function Plans() {
             <span className="green-gradient-text">Growth Plan</span>
           </h2>
               <p className="section-subtitle mx-auto mt-4">
-                Every customer starts with a free 7-day trial — no credit card, no contracts, cancel anytime.
+                Every customer starts with a free 7-day trial, no credit card, no contracts, cancel anytime.
           </p>
         </div>
 

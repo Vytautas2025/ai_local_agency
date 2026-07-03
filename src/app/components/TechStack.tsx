@@ -7,13 +7,13 @@ export default function TechStack() {
           <span className="green-gradient-text">Content Strategy</span>
         </h2>
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
-          You already have a Google Business Profile. Here&apos;s what&apos;s been missing — and what we add every month to get you into the Top 3.
+          You already have a Google Business Profile. Here&apos;s what&apos;s been missing, and what we add every month to get you into the Top 3.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-        {/* Column 1 — Visibility & Authority */}
+        {/* Column 1, Visibility & Authority */}
         <div className="flex flex-col gap-4">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-white flex items-center justify-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
@@ -31,7 +31,7 @@ export default function TechStack() {
             </div>
             <h3 className="text-base font-bold text-white mb-2">Ranking Signals That Google Loves</h3>
             <p className="text-[#8B949E] text-sm">
-              Leveraging Google&apos;s own properties — Docs, Sheets, Sites — to create high-authority signal stacks that boost your local relevance.
+              Leveraging Google&apos;s own properties (Docs, Sheets, Sites) to create high-authority signal stacks that boost your local relevance.
             </p>
           </div>
           <div className="glass-card-hover p-5 flex-1">
@@ -50,7 +50,7 @@ export default function TechStack() {
           </div>
         </div>
 
-        {/* Column 2 — Content That Ranks */}
+        {/* Column 2, Content That Ranks */}
         <div className="flex flex-col gap-4">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-white flex items-center justify-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
@@ -71,7 +71,7 @@ export default function TechStack() {
           </div>
         </div>
 
-        {/* Column 3 — Strategy & Reporting */}
+        {/* Column 3, Strategy & Reporting */}
         <div className="flex flex-col gap-4">
           <h3 className="text-sm font-semibold uppercase tracking-widest text-white flex items-center justify-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" />
@@ -91,7 +91,7 @@ export default function TechStack() {
             </div>
             <h3 className="text-base font-bold text-white mb-2">Keyword Ranking Tracker</h3>
             <p className="text-[#8B949E] text-sm">
-              Stay on top of your most valuable local keywords with bi-weekly ranking reports — so you always know where you stand.
+              Stay on top of your most valuable local keywords with bi-weekly ranking reports, so you always know where you stand.
             </p>
           </div>
           <div className="glass-card-hover p-5 flex-1">
@@ -110,7 +110,7 @@ export default function TechStack() {
             </div>
             <h3 className="text-base font-bold text-white mb-2">Bi-Weekly Geo-Grid Reports</h3>
             <p className="text-[#8B949E] text-sm">
-              See exactly where you rank, every two weeks, on an interactive geo-grid map. No guesswork — just transparent, verifiable proof of your progress.
+              See exactly where you rank, every two weeks, on an interactive geo-grid map. No guesswork, just transparent, verifiable proof of your progress.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function TechStack() {
       <div className="glass-card p-6 md:p-8 max-w-3xl mx-auto text-center mt-8 border-[#00E676]/20">
         <h3 className="text-2xl font-bold text-white mb-2">One fixed monthly fee. No retainers. No surprises.</h3>
         <p className="text-[#8B949E] text-sm mb-6">
-          Pricing is based on your market, competition level, and the number of services you want to rank for. Every plan is tailored — no cookie-cutter packages.
+          Pricing is based on your market, competition level, and the number of services you want to rank for. Every plan is tailored, no cookie-cutter packages.
         </p>
         <a
           href="#contact"

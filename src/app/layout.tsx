@@ -177,7 +177,7 @@ export default async function RootLayout({
           />
         </noscript>
 
-        {/* Calendly CSS — loaded directly, it's ~4 KB and needed for the popup */}
+        {/* Calendly CSS, loaded directly, it's ~4 KB and needed for the popup */}
         <link
           rel="stylesheet"
           href="https://assets.calendly.com/assets/external/widget.css"
@@ -210,7 +210,7 @@ export default async function RootLayout({
         <Analytics />
         <SpeedInsights />
 
-        {/* Calendly JS — afterInteractive so it's ready before user interaction */}
+        {/* Calendly JS, afterInteractive so it's ready before user interaction */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
@@ -228,7 +228,7 @@ export default async function RootLayout({
           `}
         </Script>
 
-        {/* ✅ Google Analytics GA4 — afterInteractive (unchanged, already correct) */}
+        {/* ✅ Google Analytics GA4, afterInteractive (unchanged, already correct) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-2E0J5WWEDC"
           strategy="afterInteractive"

@@ -1,15 +1,15 @@
-// [Tier3Labs] — "Is This You?" qualification block between Hero and Numbers section
+// [Tier3Labs], "Is This You?" qualification block between Hero and Numbers section
 import { CheckCircle, MapPin, PhoneOff } from "lucide-react";
 
 const items = [
   {
     icon: <CheckCircle size={20} className="text-green-400" />,
     title: "You have a Google Business Profile",
-    body: "You're verified and listed — the foundation is there.",
+    body: "You're verified and listed, the foundation is there.",
   },
   {
     icon: <MapPin size={20} className="text-amber-400" />,
-    title: "You rank — just not in the Top 3",
+    title: "You rank, just not in the Top 3",
     body: "You show up somewhere on Google. Just not where 60% of clicks happen.",
   },
   {
@@ -38,7 +38,7 @@ export default function IsThisYou() {
         </div>
 
         <p className="text-green-400 font-semibold text-base mt-8 text-center">
-          If that sounds like your business — you&apos;re in exactly the right place.
+          If that sounds like your business, you&apos;re in exactly the right place.
         </p>
       </div>
     </section>

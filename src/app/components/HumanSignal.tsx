@@ -2,19 +2,19 @@ export default function HumanSignal() {
   return (
     <section id="human-signals" className="section-container">
       <div className="text-center mb-16">
-        {/* [Tier3Labs Audit] — Updated section headline */}
+        {/* [Tier3Labs Audit], Updated section headline */}
         <h2 className="section-title mb-6">
           More Visits. Stronger Signals.
           <br />
           <span className="green-gradient-text">Higher Rankings.</span>
         </h2>
-        {/* [Tier3Labs Audit] — Updated sub-headline */}
+        {/* [Tier3Labs Audit], Updated sub-headline */}
         <p className="text-[#8B949E] text-lg max-w-3xl mx-auto">
-          We build the local authority signals Google actually trusts — through content, citations, and verified engagement patterns.
+          We build the local authority signals Google actually trusts, through content, citations, and verified engagement patterns.
         </p>
       </div>
 
-      {/* [Tier3Labs Audit] — Process flow layout with step badges + connectors */}
+      {/* [Tier3Labs Audit], Process flow layout with step badges + connectors */}
       <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-0">
         {/* Step 1 */}
         <div className="glass-card-hover p-8 flex-1 flex flex-col items-center text-center">
@@ -54,7 +54,7 @@ export default function HumanSignal() {
           </div>
           <h3 className="text-xl font-bold text-white mb-3">We generate trips to your Google Business profile</h3>
           <p className="text-[#8B949E]">
-            We optimise how your Google Business Profile is engaged with — strengthening the behavioural signals that tell Google your business is the most relevant local choice.
+            We optimise how your Google Business Profile is engaged with, strengthening the behavioural signals that tell Google your business is the most relevant local choice.
           </p>
         </div>
 

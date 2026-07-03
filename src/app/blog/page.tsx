@@ -6,7 +6,7 @@ import { sortedPosts, formatDate } from "./posts";
 export const metadata: Metadata = {
   title: "Blog | Local SEO & Google Maps Insights for UK Businesses | Tier3Labs",
   description:
-    "Practical local SEO and Google Maps advice for UK businesses — from the team that helps local businesses reach the Google Maps Top 3.",
+    "Practical local SEO and Google Maps advice for UK businesses, from the team that helps local businesses reach the Google Maps Top 3.",
   alternates: {
     canonical: "https://www.tier3labs.co.uk/blog",
   },
@@ -48,7 +48,7 @@ export default function BlogIndexPage() {
           The <span className="green-gradient-text">Tier3Labs</span> Blog
         </h1>
         <p className="text-lg leading-relaxed mb-16 max-w-2xl">
-          Practical local SEO and Google Maps advice for UK businesses — no
+          Practical local SEO and Google Maps advice for UK businesses, no
           jargon, no fluff, just what actually moves rankings.
         </p>
 

@@ -114,7 +114,7 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
     const sheetId      = process.env.TRACKING_SHEET_ID;
 
     if (!clientId || !clientSecret || !refreshToken || !sheetId) {
-      console.warn('[track] Missing env vars — sheet logging skipped');
+      console.warn('[track] Missing env vars, sheet logging skipped');
       return;
     }
 
@@ -134,13 +134,13 @@ async function logToSheet(trackingId: string, event: string, ip: string, ua: str
           new Date().toISOString(),
           ip,
           ua.substring(0, 200),
-          ''                      // email column — backfilled by sync_tracking.py
+          ''                      // email column, backfilled by sync_tracking.py
         ]],
       },
     });
     console.log('[track] Logged to sheet:', trackingId, event);
   } catch (err) {
-    // Non-blocking — log error but never fail the pixel response
+    // Non-blocking, log error but never fail the pixel response
     console.error('[track] Sheet logging error:', err);
   }
 }
@@ -152,7 +152,7 @@ export async function GET(request: NextRequest) {
   const trackingId = searchParams.get('id')       || '';
   const event      = searchParams.get('event')    || 'open';
   const redirect   = searchParams.get('redirect') || '';
-  // NOTE: &email= param intentionally ignored — email in URL is a spam signal
+  // NOTE: &email= param intentionally ignored, email in URL is a spam signal
 
   const ip = request.headers.get('x-forwarded-for') || '';
   const ua = request.headers.get('user-agent')       || '';
@@ -161,7 +161,7 @@ export async function GET(request: NextRequest) {
     const human = isHumanOpen(ip, ua);
     const botScore = scoreBotLikelihood(ip, ua);
 
-    // Log to Vercel console (always — for debugging)
+    // Log to Vercel console (always, for debugging)
     console.log(JSON.stringify({
       event,
       tracking_id: trackingId,
@@ -176,7 +176,7 @@ export async function GET(request: NextRequest) {
     if (human) {
       await logToSheet(trackingId, event, ip, ua);
     } else {
-      console.log('[track] Suppressed bot/suspicious open — not logged to sheet. Score:', botScore);
+      console.log('[track] Suppressed bot/suspicious open, not logged to sheet. Score:', botScore);
     }
   }
 

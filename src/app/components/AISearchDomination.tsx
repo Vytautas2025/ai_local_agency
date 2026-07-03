@@ -1,9 +1,9 @@
-// [Tier3Labs Audit] — lucide-react icons for feature cards
+// [Tier3Labs Audit], lucide-react icons for feature cards
 import { Brain, MessageSquare, Award } from "lucide-react";
 
 export default function AISearchDomination() {
   return (
-    // [Tier3Labs] — Reduced section bottom padding
+    // [Tier3Labs], Reduced section bottom padding
     <section id="ai-search" className="section-container pb-16">
       <div className="text-center mb-16">
         <h2 className="section-title mb-6">
@@ -19,48 +19,48 @@ export default function AISearchDomination() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         {/* Card 1 - AI Search Overviews */}
         <div className="glass-card-hover p-8">
-          {/* [Tier3Labs Audit] — replaced icon with lucide-react Brain */}
+          {/* [Tier3Labs Audit], replaced icon with lucide-react Brain */}
           <div className="mb-6">
             <Brain size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">AI Search Overviews</h3>
-          {/* [Tier3Labs] — Rewritten card body for business owners */}
+          {/* [Tier3Labs], Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            When someone asks Google &apos;who&apos;s the best dentist near me?&apos; — we make sure Google&apos;s AI says your name, not your competitor&apos;s.
+            When someone asks Google &apos;who&apos;s the best dentist near me?&apos;, we make sure Google&apos;s AI says your name, not your competitor&apos;s.
           </p>
         </div>
 
         {/* Card 2 - Answer Engine Optimization */}
         <div className="glass-card-hover p-8">
-          {/* [Tier3Labs Audit] — replaced icon with lucide-react MessageSquare */}
+          {/* [Tier3Labs Audit], replaced icon with lucide-react MessageSquare */}
           <div className="mb-6">
             <MessageSquare size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Answer Engine Optimization</h3>
-          {/* [Tier3Labs] — Rewritten card body for business owners */}
+          {/* [Tier3Labs], Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            Millions of people now ask AI instead of searching Google. We build the signals that make AI recommend you — not the business down the road.
+            Millions of people now ask AI instead of searching Google. We build the signals that make AI recommend you, not the business down the road.
           </p>
         </div>
 
         {/* Card 3 - Citation > Ranking */}
         <div className="glass-card-hover p-8">
-          {/* [Tier3Labs Audit] — replaced icon with lucide-react Award */}
+          {/* [Tier3Labs Audit], replaced icon with lucide-react Award */}
           <div className="mb-6">
             <Award size={28} className="text-green-400" />
           </div>
           <h3 className="text-xl font-bold text-white mb-3">Citation &gt; Ranking</h3>
-          {/* [Tier3Labs] — Rewritten card body for business owners */}
+          {/* [Tier3Labs], Rewritten card body for business owners */}
           <p className="text-[#8B949E]">
-            An AI citation is the most trusted recommendation a business can get online. We make it yours — so when AI is asked, your name comes up first.
+            An AI citation is the most trusted recommendation a business can get online. We make it yours, so when AI is asked, your name comes up first.
           </p>
         </div>
       </div>
 
-      {/* AI Search Mockups — Two Platforms */}
+      {/* AI Search Mockups, Two Platforms */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-8">
         {/* Google AI Overview Mockup */}
-        {/* [Tier3Labs Audit] — Google AI card with blue accent badge */}
+        {/* [Tier3Labs Audit], Google AI card with blue accent badge */}
         <div className="glass-card p-6 border-blue-500/20">
           <div className="flex items-center gap-2 mb-4">
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-500/20">
@@ -82,7 +82,7 @@ export default function AISearchDomination() {
           </p>
         </div>
 
-        {/* [Tier3Labs Audit] — ChatGPT card with teal accent badge */}
+        {/* [Tier3Labs Audit], ChatGPT card with teal accent badge */}
         <div className="glass-card p-6 border-teal-500/20">
           <div className="flex items-center gap-2 mb-4">
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-teal-500/20">
@@ -104,7 +104,7 @@ export default function AISearchDomination() {
         </div>
       </div>
 
-      {/* [Tier3Labs] — Replaced AI-Ready badge with CTA link */}
+      {/* [Tier3Labs], Replaced AI-Ready badge with CTA link */}
       <p className="text-center mt-6 text-sm text-gray-400">
         Want AI to recommend your business?{" "}
         <a href="#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">

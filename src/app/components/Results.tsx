@@ -13,19 +13,19 @@ export default function Results() {
       beforeAfter: "Position #12 → Position #1",
       improvement: "+340% Map Views",
       quote: "Our phone hasn't stopped ringing since we hit the top 3.",
-      attribution: "— G. Treinkman, East Village Dental Centre, Chicago",
+      attribution: "G. Treinkman, East Village Dental Centre, Chicago",
     },
     {
       beforeAfter: "Position #15 → Position #3",
       improvement: "+520% Direction Requests",
       quote: "Within weeks our schedule was fuller than it's ever been. The results speak for themselves.",
-      attribution: "— Sarah M., EHC Inc Electrical Heating Cooling, Boston",
+      attribution: "Sarah M., EHC Inc Electrical Heating Cooling, Boston",
     },
     {
       beforeAfter: "Position #8 → Position #1",
       improvement: "+280% Phone Calls",
       quote: "The quality of leads we get now is on a completely different level.",
-      attribution: "— David K., Lonnie Lawyer LLC, Miami Beach",
+      attribution: "David K., Lonnie Lawyer LLC, Miami Beach",
     },
   ];
 
@@ -59,7 +59,7 @@ export default function Results() {
             </div>
               <Image
                 src="/image before .png"
-              alt="Geo-grid ranking report before optimization — business ranking around position 11 across the local area"
+              alt="Geo-grid ranking report before optimization, business ranking around position 11 across the local area"
               width={799}
               height={709}
               unoptimized
@@ -73,7 +73,7 @@ export default function Results() {
             </div>
             <Image
               src="/image after.png"
-              alt="Geo-grid ranking report after optimization — business ranking position 1 across the local area"
+              alt="Geo-grid ranking report after optimization, business ranking position 1 across the local area"
               width={799}
               height={709}
               unoptimized

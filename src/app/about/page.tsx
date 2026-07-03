@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ShieldCheck, BarChart3, CalendarCheck, BadgePoundSterling, Linkedin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us | Tier3Labs — Local SEO Agency, London UK",
+  title: "About Us | Tier3Labs, Local SEO Agency, London UK",
   description:
-    "Meet the team behind Tier3Labs. A London-registered local SEO agency helping UK businesses reach the Google Maps Top 3 — with transparent, bi-weekly proof of progress.",
+    "Meet the team behind Tier3Labs. A London-registered local SEO agency helping UK businesses reach the Google Maps Top 3, with transparent, bi-weekly proof of progress.",
   alternates: {
     canonical: "https://www.tier3labs.co.uk/about",
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     siteName: "Tier3Labs",
     url: "https://www.tier3labs.co.uk/about",
-    title: "About Tier3Labs — The Team Behind Your Map Pack Rankings",
+    title: "About Tier3Labs, The Team Behind Your Map Pack Rankings",
     description:
       "Meet the London-registered team helping UK businesses reach the Google Maps Top 3, with transparent bi-weekly proof of progress.",
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+        alt: "Tier3Labs, Dominate the Google Maps Top 3",
       },
     ],
   },
@@ -66,7 +66,7 @@ const principles = [
   {
     icon: BarChart3,
     title: "Proof every two weeks",
-    body: "Geo-grid ranking reports show exactly where you stand — no guesswork.",
+    body: "Geo-grid ranking reports show exactly where you stand, no guesswork.",
   },
   {
     icon: CalendarCheck,
@@ -129,12 +129,12 @@ export default function AboutPage() {
         <p className="text-lg leading-relaxed mb-4">
           Tier3Labs is a London-registered local SEO agency built on a simple
           belief: local businesses shouldn&apos;t have to rent visibility through
-          ads — they should own it.
+          ads: they should own it.
         </p>
         <p className="text-lg leading-relaxed mb-16">
           We help UK businesses climb into the Google Maps Top 3 and stay there,
           and we prove our progress with geo-grid ranking reports every two
-          weeks. No long contracts, no jargon, no hiding behind dashboards — you
+          weeks. No long contracts, no jargon, no hiding behind dashboards. You
           see exactly what we see.
         </p>
 
@@ -203,7 +203,7 @@ export default function AboutPage() {
             Want to see where your business really ranks?
           </h2>
           <p className="text-text-muted mb-8 max-w-xl mx-auto">
-            Get a free audit — we&apos;ll show you your current Map Pack position
+            Get a free audit, we&apos;ll show you your current Map Pack position
             and what&apos;s holding you back.
           </p>
           <Link href="/#contact" className="btn-primary inline-block">

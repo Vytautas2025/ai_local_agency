@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Tier3 Labs",
-  description: "Tier3 Labs Privacy Policy — how we collect, use, and protect your information.",
+  description: "Tier3 Labs Privacy Policy, how we collect, use, and protect your information.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.tier3labs.co.uk/privacy",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+        alt: "Tier3Labs, Dominate the Google Maps Top 3",
       },
     ],
   },
@@ -211,12 +211,12 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-white mb-3">8. Your Rights (UK GDPR)</h2>
             <p>Under UK data protection law, you have rights including:</p>
             <ul className="list-disc list-inside mt-3 space-y-2 text-text-muted">
-              <li><span className="text-white">Right of access</span> — you have the right to ask us for copies of your personal data.</li>
-              <li><span className="text-white">Right to rectification</span> — you have the right to ask us to correct personal data you think is inaccurate or incomplete.</li>
-              <li><span className="text-white">Right to erasure</span> — you have the right to ask us to delete your personal data in certain circumstances.</li>
-              <li><span className="text-white">Right to restriction of processing</span> — you have the right to ask us to restrict the processing of your data in certain circumstances.</li>
-              <li><span className="text-white">Right to data portability</span> — you have the right to ask that we transfer your data to another organisation, or to you, in certain circumstances.</li>
-              <li><span className="text-white">Right to object</span> — you have the right to object to the processing of your personal data in certain circumstances.</li>
+              <li><span className="text-white">Right of access</span>: you have the right to ask us for copies of your personal data.</li>
+              <li><span className="text-white">Right to rectification</span>: you have the right to ask us to correct personal data you think is inaccurate or incomplete.</li>
+              <li><span className="text-white">Right to erasure</span>: you have the right to ask us to delete your personal data in certain circumstances.</li>
+              <li><span className="text-white">Right to restriction of processing</span>: you have the right to ask us to restrict the processing of your data in certain circumstances.</li>
+              <li><span className="text-white">Right to data portability</span>: you have the right to ask that we transfer your data to another organisation, or to you, in certain circumstances.</li>
+              <li><span className="text-white">Right to object</span>: you have the right to object to the processing of your personal data in certain circumstances.</li>
             </ul>
             <p className="mt-4">
               To exercise any of these rights, please contact us at{" "}

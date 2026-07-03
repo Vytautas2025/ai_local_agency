@@ -170,7 +170,7 @@ export default function BusinessAutocomplete({
         placeId: s.placeId,
       });
     } catch {
-      // Keep the name even if details lookup fails — never block the lead.
+      // Keep the name even if details lookup fails, never block the lead.
     } finally {
       // A new session starts after each completed lookup.
       sessionTokenRef.current = newSessionToken();

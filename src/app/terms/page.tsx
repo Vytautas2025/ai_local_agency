@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service | Tier3Labs",
-  description: "Tier3Labs Terms of Service — the rules governing use of our website and services.",
+  description: "Tier3Labs Terms of Service, the rules governing use of our website and services.",
   robots: { index: false, follow: false },
   alternates: {
     canonical: "https://www.tier3labs.co.uk/terms",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Tier3Labs — Dominate the Google Maps Top 3",
+        alt: "Tier3Labs, Dominate the Google Maps Top 3",
       },
     ],
   },
@@ -60,8 +60,8 @@ export default function TermsPage() {
               Agreement. The Agreement includes the Order Form.
             </p>
             <p className="mb-3">
-              By accepting this Agreement — either by clicking a box indicating your acceptance or
-              by executing an Order Form that references this Agreement — You agree to its terms.
+              By accepting this Agreement, either by clicking a box indicating your acceptance or
+              by executing an Order Form that references this Agreement, You agree to its terms.
               If you are entering into this Agreement on behalf of a company or other legal entity,
               you represent that you have the authority to bind such entity and its affiliates to
               these terms, in which case &ldquo;Customer&rdquo;, &ldquo;You&rdquo;, and

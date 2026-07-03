@@ -7,11 +7,11 @@ export function proxy(request: NextRequest) {
 
   const csp = [
     "default-src 'self'",
-    // 'nonce-...' replaces 'unsafe-inline' — only scripts with the matching nonce attribute execute
+    // 'nonce-...' replaces 'unsafe-inline', only scripts with the matching nonce attribute execute
     `script-src 'self' 'nonce-${nonce}' https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com https://*.clarity.ms https://connect.facebook.net`,
     // Styles: Calendly widget.css + Next.js runtime inline styles (inline styles cannot use nonces)
     "style-src 'self' 'unsafe-inline' https://assets.calendly.com",
-    // Fonts: fully self-hosted via next/font — no external origin needed
+    // Fonts: fully self-hosted via next/font, no external origin needed
     "font-src 'self'",
     // Images: own origin, data URIs, GA tracking pixel, Meta Pixel tracking pixel
     "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://*.clarity.ms https://www.facebook.com",

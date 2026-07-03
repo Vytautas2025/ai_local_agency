@@ -24,7 +24,7 @@ export default function MetaHero() {
             <p className="text-lg md:text-xl text-gray-300 max-w-xl mt-6 leading-relaxed">
               If your business isn&apos;t in the Google Maps Top 3, you&apos;re
               invisible to the majority of people searching for exactly what you
-              offer — right now, in your area. Tier3Labs changes that.
+              offer, right now, in your area. Tier3Labs changes that.
             </p>
             <p className="text-2xl md:text-3xl text-white font-bold max-w-xl mt-3 leading-relaxed">
               We will work 7 days for free so{" "}
@@ -39,7 +39,7 @@ export default function MetaHero() {
 
             <div className="flex items-center gap-2 text-xs text-gray-400 mt-4 border border-green-900 rounded-full px-4 py-2 w-fit max-w-full">
               <ShieldCheck size={16} className="text-green-400" />
-              Zero Access Required — we never need your GBP or website credentials.
+              Zero Access Required, we never need your GBP or website credentials.
             </div>
           </div>
 

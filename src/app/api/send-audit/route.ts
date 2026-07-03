@@ -83,7 +83,7 @@ https://Tier3labs.co.uk`;
       </div>
 
       <div style="background:#0D1117;padding:28px 32px;text-align:center;">
-        <img src="${LOGO_URL}" alt="Tier3Labs — Dominate the Map Pack" width="220" style="max-width:220px;height:auto;display:inline-block;margin-bottom:12px;" />
+        <img src="${LOGO_URL}" alt="Tier3Labs, Dominate the Map Pack" width="220" style="max-width:220px;height:auto;display:inline-block;margin-bottom:12px;" />
         <p style="margin:0 0 6px;color:#8B949E;font-size:13px;">
           <a href="tel:+447518701075" style="color:#00E676;text-decoration:none;">+44 7518 701075</a>
         </p>
@@ -159,7 +159,7 @@ export async function POST(req: NextRequest) {
     });
 
     // 2. Send an automatic confirmation email back to the person who submitted.
-    //    A failure here must not fail the request — the lead is already captured.
+    //    A failure here must not fail the request, the lead is already captured.
     try {
       await transporter.sendMail(buildAutoReply(name, email));
     } catch (autoReplyError) {

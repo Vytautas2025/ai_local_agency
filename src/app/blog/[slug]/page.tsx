@@ -166,7 +166,7 @@ export default async function BlogPostPage({
         {/* CTA */}
         <div className="glass-card p-8 text-center border-green-primary/20 mt-16">
           <h2 className="text-2xl font-bold text-white mb-3">
-            See where you rank — free for 7 days
+            See where you rank, free for 7 days
           </h2>
           <p className="text-text-muted mb-8 max-w-xl mx-auto">
             Every customer starts with a free 7-day trial. We&apos;ll show you
