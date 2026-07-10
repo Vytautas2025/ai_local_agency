@@ -17,6 +17,111 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "h1-tags-that-match-your-google-business-profile",
+    title:
+      "Why Your H1 Tag Should Match Your Google Business Profile Categories and Services",
+    metaTitle:
+      "H1 Tags That Match Your Google Business Profile | Tier3Labs",
+    description:
+      "Your H1 is the strongest keyword signal on your website. Here's why matching it to your Google Business Profile's primary category and listed services gives UK service businesses the clearest local ranking signal, and how to write one.",
+    excerpt:
+      "The H1 is the most prominent line on any page, yet most local businesses waste it on “Welcome” or a logo. Here's why your H1 should echo the category and services on your Google Business Profile, and how that match turns two signals into one strong one.",
+    date: "2026-07-10",
+    readingTime: "8 min read",
+    author: "Aivis Orentas",
+    content: [
+      {
+        type: "p",
+        text: "Of all the text on a web page, there's one line Google reads first and weighs most heavily: the H1, your page's main headline. For a local service business, that single line is the biggest keyword opportunity on your whole site. And the clearest, safest way to know what it should say isn't to guess or to cram it with search terms. It's already written down for you, in your Google Business Profile. Match your H1 to the category and services on your profile, and the two reinforce each other into one strong, consistent signal. This post is about why that match matters so much, and how to get it right.",
+      },
+      { type: "h2", text: "What the H1 actually is" },
+      {
+        type: "p",
+        text: "Every web page has a heading structure, a hierarchy Google uses to work out what the page is about. At the top sits the H1, the main headline of the page, and there should be only one of them. Below it come the H2s, the subheadings that break the page into sections, and H3s beneath those if you need them. Think of the H1 as the title of a book and the H2s as its chapter names. The H1 answers one question in a handful of words: what is this page about? Get that line right and everything beneath it has a clear frame. Leave it vague, or let your website builder fill it with your logo or the word “Home”, and you've handed away the most valuable piece of on-page real estate you own.",
+      },
+      { type: "h2", text: "Why the H1 is your strongest on-page keyword" },
+      {
+        type: "p",
+        text: "Google doesn't read a page the way a person does. It weighs different parts of the page differently, and the H1 carries more weight than ordinary body text because, by convention, it's the page's headline. When your H1 states a service and a location in plain words, you're telling Google in the most prominent way available exactly which search this page deserves to appear for. That's why a homepage whose H1 reads “Emergency Electrician in Leeds” has a real advantage over one that reads “Welcome to Our Website”. Both pages might sell the same service, but only one has said so where it counts most. The H1 is a keyword signal you get to write yourself, and most of your competitors are wasting theirs.",
+      },
+      {
+        type: "h2",
+        text: "Your Google Business Profile is a keyword list Google already trusts",
+      },
+      {
+        type: "p",
+        text: "Here's the part most people miss. When you set up your Google Business Profile, Google asks you to choose a primary category, add any additional categories, and list your individual services. Those aren't just menu labels. They're Google's own vocabulary for what your business does, chosen from a fixed list it maintains and understands precisely. Your primary category in particular is one of the strongest factors in whether you appear in local results at all. And because your profile is verified, Google already accepts those terms as an accurate description of your business. In effect, you've handed Google a short, authoritative list of exactly the words you want to rank for.",
+      },
+      {
+        type: "p",
+        text: "The Services section on your profile deserves special attention. Each service you list, “Fuse Board Replacement”, “EV Charger Installation”, “Landlord Electrical Certificate”, works as a keyword in its own right, in language Google has already accepted from you. So between your primary category and your listed services, your profile spells out both the headline of what you do and the specific jobs beneath it. That's the exact structure a well-built website uses too: one main service up top, individual services underneath. The vocabulary you need has already been decided, and Google already trusts it.",
+      },
+      {
+        type: "h2",
+        text: "The multiplier: when your H1 says what your profile says",
+      },
+      {
+        type: "p",
+        text: "Google's confidence in a business grows when different sources agree. Your profile says one thing, your website says the same thing, and the wider web backs it up: that agreement is what earns trust, and trust is what earns rankings. Your H1 is where that agreement is most visible on your own site. When the H1 on your homepage uses the same core term as your profile's primary category, and your service pages use the same terms as your listed services, you're not sending two separate signals that happen to point the same way. You're sending one signal, stated twice, in the two places Google looks hardest. A profile category of “Electrician” and a homepage H1 of “Electrician in Sheffield” corroborate each other; a category of “Electrician” and an H1 of “Your Trusted Local Property Experts” quietly pull apart, and Google is left a little less sure what you actually are.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Profile primary category: the anchor term for your whole business. Your homepage H1 should contain it, phrased the way a customer would search, so category “Plumber” becomes an H1 like “Emergency Plumber in Bristol”.",
+          "Profile services: each one is a ready-made H1 for a service page. “Boiler Repair” on your profile becomes the H1 “Boiler Repair in Bristol” on the page about that service.",
+          "Same words, not synonyms. If your profile says “Physiotherapist” but your H1 says “Sports Injury Clinic”, a person sees the link, but you've spent the signal on two different terms instead of doubling down on one.",
+        ],
+      },
+      { type: "h2", text: "How to write your homepage H1" },
+      {
+        type: "p",
+        text: "Start from your profile, not a blank page. Open your Google Business Profile, note your primary category and your service area, and build your homepage H1 from those two things: the service you lead with, and where you do it. Keep it to a single line a real customer might say out loud, and the rest tends to fall into place.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Lead with your primary category, in customer language. Keep Google's category word at the core but phrase it naturally: “Electrician” can become “Emergency Electrician”, “Dentist” can become “Family Dentist”, as long as the category term stays in.",
+          "Add your location. “...in Nottingham”, “...serving South Manchester”. Local intent is half of every local search, so say where you work.",
+          "One H1 per page. If your site builder has styled other text as an H1, fix it, because competing H1s blur the very signal you're trying to sharpen.",
+          "Write for the customer first. A heading that reads naturally to a person almost always reads well to Google too, so don't stuff it with extra towns or terms.",
+        ],
+      },
+      { type: "h2", text: "Then match every service page too" },
+      {
+        type: "p",
+        text: "Your homepage H1 handles your main category. Your individual services deserve the same treatment: one page each, and each page's H1 matched to a service on your profile. This is where a lot of the ranking for specific, high-intent searches is won, because someone searching “landlord electrical certificate near me” is far closer to booking than someone searching “electrician”. A page built tightly around one service, led by an H1 that names it, will beat that same service buried as a line on a crowded page every time.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Give each important service its own page rather than listing everything on one page.",
+          "Make that page's H1 the service exactly as customers search for it, mirroring the wording in your profile's Services section.",
+          "Add the location here too where it reads naturally, so the page targets the service and the area together.",
+        ],
+      },
+      { type: "h2", text: "The mistakes that throw the signal away" },
+      {
+        type: "p",
+        text: "Most local business H1s fail in one of a handful of predictable ways, and each one hands an easy advantage to a competitor who got it right.",
+      },
+      {
+        type: "ul",
+        items: [
+          "“Welcome”, “Home”, or your business name on its own. None of these tell Google what you do. Your business name belongs in the title tag and the logo, not in the one line meant to describe the page.",
+          "A tagline instead of a service. “Quality You Can Trust” says nothing a search engine can match to a search. Say the service.",
+          "Different words from your profile. Synonyms split your signal in two. Pick the term on your profile and use it consistently.",
+          "Keyword stuffing. “Electrician Leeds, Electrician Bradford, Cheap Electrician” reads as spam to Google and as desperation to a customer. One clear H1 beats a crammed one.",
+          "More than one H1 on a page. It muddies which line is the real headline. Keep it to one.",
+        ],
+      },
+      { type: "h2", text: "One vocabulary, in every place that counts" },
+      {
+        type: "p",
+        text: "The thread running through all of this is consistency. Your Google Business Profile category, your listed services, your page H1s, and your title tags should all draw from the same small set of words: the words your customers actually type, and the words Google has already verified about you. When they line up, every part of your online presence reinforces the same message, and Google has no reason to doubt what you are or who to show you to. The H1 is the single highest-leverage place to start, because it's the most prominent line on the page and, for most local businesses, the most neglected. Open your profile, read your primary category, and go and check that your homepage says the same thing. It's one of the quickest on-page wins there is.",
+      },
+    ],
+  },
+  {
     slug: "on-page-seo-for-local-businesses",
     title:
       "On-Page SEO for Local Businesses: How Your Website Helps You Rank",
