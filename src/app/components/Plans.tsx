@@ -8,16 +8,30 @@ declare global {
 
 const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 
-const plans = [
+type IncludedItem = string | { label: string; quantity: number };
+
+type Plan = {
+  name: string;
+  featured: boolean;
+  specs: { label: string; value: string; highlight: boolean; suffix: string }[];
+  included: IncludedItem[];
+  includedCadence: string;
+  notIncluded: string[];
+  purpose: string;
+  whoIsItFor: string;
+};
+
+const plans: Plan[] = [
   {
     name: "Community Plan",
     featured: false,
     specs: [
-      { label: "Daily Engagement Signals", value: "Standard", highlight: false, suffix: "" },
+      { label: "Daily Engagement Signals", value: "10-20", highlight: false, suffix: "" },
       { label: "Rating grid", value: "within area of 25 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "10", highlight: false, suffix: "" },
     ],
     included: ["Free 7-day trial", "Cloud stacks"],
+    includedCadence: "",
     notIncluded: ["Medium pages", "Google pages", "Google documents", "PDF"],
     purpose:
       "Subtly increase your GMB profile and visibility. Google Maps TOP 3 and your website's organic growth in Google Maps algorithms.",
@@ -28,17 +42,18 @@ const plans = [
     name: "City Plan",
     featured: true,
     specs: [
-      { label: "Daily Engagement Signals", value: "Intensive", highlight: true, suffix: "" },
+      { label: "Daily Engagement Signals", value: "30-40", highlight: true, suffix: "" },
       { label: "Rating grid", value: "within area of 100 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
     included: [
-      "Cloud stacks",
-      "Medium pages",
-      "Google pages",
-      "Google documents",
-      "PDF",
+      { label: "Cloud stacks", quantity: 4 },
+      { label: "Medium pages", quantity: 1 },
+      { label: "Google pages", quantity: 1 },
+      { label: "Google documents", quantity: 1 },
+      { label: "PDF", quantity: 1 },
     ],
+    includedCadence: "per month",
     notIncluded: [],
     purpose: "Organically strengthen your position and reach the TOP 3 position in searches.",
     whoIsItFor:
@@ -116,14 +131,26 @@ export default function Plans() {
               </div>
 
               <div className="mb-4">
-                <p className="text-sm font-bold text-white mb-2">Included:</p>
+                <p className="text-sm font-bold text-white mb-2">
+                  Included{plan.includedCadence && ` (${plan.includedCadence})`}:
+                </p>
                 <ul className="space-y-1.5">
-                  {plan.included.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-[#C9D1D9]">
-                      <span className="text-[#00E676] font-bold">•</span>
-                      {item}
-                    </li>
-                  ))}
+                  {plan.included.map((item) => {
+                    const label = typeof item === "string" ? item : item.label;
+                    return (
+                      <li key={label} className="flex items-center gap-2 text-sm text-[#C9D1D9]">
+                        <span className="text-[#00E676] font-bold">•</span>
+                        {typeof item === "string" ? (
+                          item
+                        ) : (
+                          <span>
+                            {item.label}{" "}
+                            <span className="font-semibold text-white">×{item.quantity}</span>
+                          </span>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
