@@ -20,10 +20,8 @@ export default function Hero() {
 
             {/* [Tier3Labs], Updated headline */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-white leading-[1.15]">
-              For businesses on Google but{" "}
-              <span className="text-green-400 italic">not yet</span>{" "}
-              <span className="text-green-400 italic">in the</span>{" "}
-              <span className="text-green-400 italic">Top 3.</span>
+              <span className="text-green-400">Google Maps Top 3</span> Local SEO
+              Agency for UK Businesses
             </h1>
 
             {/* [Tier3Labs], Updated sub-headline for target audience */}
