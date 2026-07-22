@@ -45,7 +45,8 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Apply to all routes except Next.js internals and static public assets
-    "/((?!_next/static|_next/image|favicon\\.svg|favicon\\.png|icon\\.png|logo-dark\\.png|logo-dark\\.svg).*)",
+    // Apply to all routes except Next.js internals, static public assets, and
+    // non-HTML metadata routes (sitemap.xml / robots.txt) that don't need a CSP.
+    "/((?!_next/static|_next/image|favicon\\.svg|favicon\\.png|icon\\.png|logo-dark\\.png|logo-dark\\.svg|sitemap\\.xml|robots\\.txt).*)",
   ],
 };

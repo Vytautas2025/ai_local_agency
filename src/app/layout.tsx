@@ -187,17 +187,16 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/icon.png" />
 
+        {/* JSON-LD is a non-executable data block, so it is not gated by the
+            CSP script-src nonce. Injected without a nonce to match the schema
+            blocks on every other page (about, blog, FAQ). */}
         <script
-          nonce={nonce}
-          suppressHydrationWarning
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
           }}
         />
         <script
-          nonce={nonce}
-          suppressHydrationWarning
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(serviceSchema),
