@@ -85,6 +85,15 @@ export default async function BlogPostPage({
       url: "https://www.tier3labs.co.uk/about",
     },
     publisher: { "@id": "https://www.tier3labs.co.uk/#organization" },
+    ...(post.sources && post.sources.length > 0
+      ? {
+          citation: post.sources.map((s) => ({
+            "@type": "CreativeWork",
+            name: s.label,
+            url: s.url,
+          })),
+        }
+      : {}),
   };
 
   const breadcrumbSchema = {
@@ -162,6 +171,29 @@ export default async function BlogPostPage({
             <Block key={i} block={block} />
           ))}
         </div>
+
+        {/* Sources — visible citation list for readers + AI search */}
+        {post.sources && post.sources.length > 0 && (
+          <div className="mt-16 border-t border-white/10 pt-8">
+            <h2 className="text-xs uppercase tracking-wider text-text-muted mb-3">
+              Sources
+            </h2>
+            <ul className="text-sm text-text-muted space-y-2">
+              {post.sources.map((s) => (
+                <li key={s.url}>
+                  <a
+                    href={s.url}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    className="hover:text-green-primary transition-colors underline underline-offset-2 decoration-white/20"
+                  >
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* CTA */}
         <div className="glass-card p-8 text-center border-green-primary/20 mt-16">

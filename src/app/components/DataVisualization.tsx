@@ -1,3 +1,35 @@
+// [Tier3Labs], External citations for the stat block (GEO "cite sources" signal)
+const sources = [
+  {
+    n: 1,
+    label: "BrightLocal — Local Services Ads Click Study",
+    url: "https://www.brightlocal.com/research/local-services-ads-click-study/",
+  },
+  {
+    n: 2,
+    label: "SOCi Consumer Behavior Index, via Search Engine Land",
+    url: "https://searchengineland.com/guide/google-local-pack",
+  },
+];
+
+function Cite({ n }: { n: number }) {
+  const source = sources.find((s) => s.n === n);
+  if (!source) return null;
+  return (
+    <sup className="text-sm align-super ml-0.5 font-normal">
+      <a
+        href={source.url}
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        aria-label={`Source: ${source.label}`}
+        className="text-gray-500 hover:text-green-400 transition-colors"
+      >
+        {n}
+      </a>
+    </sup>
+  );
+}
+
 export default function DataVisualization() {
   return (
     <section id="method" className="relative bg-[#0D1117]">
@@ -35,12 +67,13 @@ export default function DataVisualization() {
           </div>
         </div>
 
-        {/* [Tier3Labs Audit], Updated stat cards: 4 cards with sources */}
+        {/* [Tier3Labs Audit], Stat cards re-anchored to citable sources */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {/* Card 1 */}
           <div className="glass-card p-8 text-center">
-            <div className="text-5xl font-extrabold green-gradient-text mb-4">
-              70%
+            <div className="text-5xl font-extrabold mb-4">
+              <span className="green-gradient-text">70%</span>
+              <Cite n={1} />
             </div>
             <p className="text-[#8B949E] text-base leading-relaxed">
               of all local search clicks are organic, not paid ads
@@ -49,25 +82,24 @@ export default function DataVisualization() {
 
           {/* Card 2 */}
           <div className="glass-card p-8 text-center">
-            <div className="text-5xl font-extrabold green-gradient-text mb-4">
-              9 in 10
+            <div className="text-5xl font-extrabold mb-4">
+              <span className="green-gradient-text">126%</span>
+              <Cite n={2} />
             </div>
-            {/* [Tier3Labs], Updated card 2 description for target audience */}
             <p className="text-[#8B949E] text-base leading-relaxed">
-              of your potential customers choose from the first 3 results, if you’re not there, you don’t exist to them
+              more traffic to businesses in the Top 3 than those ranked 4–10
             </p>
-            <p className="text-xs text-gray-500 mt-1">Google Search Data</p>
           </div>
 
           {/* Card 3 */}
           <div className="glass-card p-8 text-center">
-            <div className="text-5xl font-extrabold green-gradient-text mb-4">
-              3x
+            <div className="text-5xl font-extrabold mb-4">
+              <span className="green-gradient-text">93%</span>
+              <Cite n={2} />
             </div>
             <p className="text-[#8B949E] text-base leading-relaxed">
-              higher conversion rate from Map Pack vs traditional ads
+              more calls, clicks and directions than ranks 4–10
             </p>
-            <p className="text-xs text-gray-500 mt-1">Google Business Profile Insights</p>
           </div>
         </div>
 
@@ -78,6 +110,28 @@ export default function DataVisualization() {
             Top 3 captures the single biggest share of every local search, and
             unlike ads, it doesn’t stop working the moment you stop paying.
           </p>
+        </div>
+
+        {/* [Tier3Labs], Sources — machine-readable citation layer for AI search */}
+        <div className="max-w-3xl mx-auto mt-10">
+          <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">
+            Sources
+          </p>
+          <ol className="text-xs text-gray-500 space-y-1">
+            {sources.map((s) => (
+              <li key={s.n} className="flex gap-2">
+                <span className="text-gray-600 shrink-0">{s.n}.</span>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="hover:text-green-400 transition-colors underline underline-offset-2 decoration-gray-700"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
     </section>

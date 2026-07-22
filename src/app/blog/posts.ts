@@ -13,6 +13,7 @@ export type Post = {
   readingTime: string;
   author: string;
   content: ContentBlock[];
+  sources?: { label: string; url: string }[];
 };
 
 export const posts: Post[] = [
@@ -528,6 +529,16 @@ export const posts: Post[] = [
         text: "If you'd rather see exactly where your profile stands today, and what's holding it back, every customer starts with a free 7-day trial. We'll show you your current Google Maps position and the specific gaps to fix, before you commit to anything.",
       },
     ],
+    sources: [
+      {
+        label: "BrightLocal — Local Services Ads Click Study",
+        url: "https://www.brightlocal.com/research/local-services-ads-click-study/",
+      },
+      {
+        label: "Google Business Profile Help — Tips to improve your local ranking",
+        url: "https://support.google.com/business/answer/7091",
+      },
+    ],
   },
   {
     slug: "local-seo-vs-google-ads",
@@ -610,6 +621,16 @@ export const posts: Post[] = [
       {
         type: "p",
         text: "Want to know where your business currently stands in the Map Pack? Every customer starts with a free 7-day trial, and we'll show you exactly where you rank before you commit to anything.",
+      },
+    ],
+    sources: [
+      {
+        label: "BrightLocal — Local Services Ads Click Study",
+        url: "https://www.brightlocal.com/research/local-services-ads-click-study/",
+      },
+      {
+        label: "SOCi Consumer Behavior Index, via Search Engine Land",
+        url: "https://searchengineland.com/guide/google-local-pack",
       },
     ],
   },
