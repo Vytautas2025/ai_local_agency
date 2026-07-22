@@ -8,7 +8,7 @@ declare global {
 
 const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 
-type IncludedItem = string | { label: string; quantity: number };
+type IncludedItem = string | { label: string; quantity: number; cadence?: string };
 
 type Plan = {
   name: string;
@@ -30,7 +30,7 @@ const plans: Plan[] = [
       { label: "Rating grid", value: "within area of 25 square miles", highlight: false, suffix: "" },
       { label: "Keywords", value: "10", highlight: false, suffix: "" },
     ],
-    included: ["Free 7-day trial", "Cloud stacks"],
+    included: ["Free 7-day trial", { label: "Cloud stacks", quantity: 4, cadence: "/month" }],
     includedCadence: "",
     notIncluded: ["Medium pages", "Google pages", "Google documents", "PDF"],
     purpose:
@@ -47,7 +47,7 @@ const plans: Plan[] = [
       { label: "Keywords", value: "20", highlight: false, suffix: "" },
     ],
     included: [
-      { label: "Cloud stacks", quantity: 4 },
+      { label: "Cloud stacks", quantity: 8 },
       { label: "Medium pages", quantity: 1 },
       { label: "Google pages", quantity: 1 },
       { label: "Google documents", quantity: 1 },
@@ -146,6 +146,9 @@ export default function Plans() {
                           <span>
                             {item.label}{" "}
                             <span className="font-semibold text-white">×{item.quantity}</span>
+                            {item.cadence && (
+                              <span className="text-[#8B949E]">{item.cadence}</span>
+                            )}
                           </span>
                         )}
                       </li>
