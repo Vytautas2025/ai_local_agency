@@ -125,7 +125,7 @@ export default async function Image() {
             }}
           />
           <span style={{ color: "#00E676", fontSize: 22, fontWeight: 700 }}>
-            60% of local search traffic converts from the Top 3
+            70% of local search clicks are organic, not ads
           </span>
         </div>
       </div>
