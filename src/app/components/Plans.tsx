@@ -119,9 +119,9 @@ export default function Plans() {
           ))}
         </div>
 
-        {/* Feature comparison */}
-        <div className="max-w-3xl mx-auto overflow-x-auto">
-          <table className="w-full border-collapse min-w-[560px]">
+        {/* Feature comparison — table on desktop */}
+        <div className="hidden md:block max-w-3xl mx-auto">
+          <table className="w-full border-collapse">
             <thead>
               <tr>
                 <th className="text-left text-[#8B949E] text-sm font-semibold py-4 px-4">
@@ -149,6 +149,34 @@ export default function Plans() {
               ))}
             </tbody>
           </table>
+        </div>
+
+        {/* Feature comparison — stacked cards on mobile */}
+        <div className="md:hidden max-w-3xl mx-auto space-y-3">
+          {features.map((row) => (
+            <div
+              key={row.label}
+              className="rounded-xl border border-white/10 bg-white/[0.03] p-4"
+            >
+              <div className="text-[#C9D1D9] text-sm font-medium mb-3">
+                {row.label}
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-lg bg-white/[0.04] px-3 py-2.5 text-center">
+                  <div className="text-[#8B949E] text-[10px] font-semibold uppercase tracking-wide mb-1.5">
+                    Community
+                  </div>
+                  <FeatureCell value={row.community} />
+                </div>
+                <div className="rounded-lg bg-[#00E676]/[0.06] px-3 py-2.5 text-center">
+                  <div className="text-[#00E676] text-[10px] font-semibold uppercase tracking-wide mb-1.5">
+                    City
+                  </div>
+                  <FeatureCell value={row.city} />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}

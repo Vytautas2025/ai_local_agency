@@ -41,17 +41,17 @@ export default function StandardVsUs() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto overflow-x-auto">
-          <table className="w-full border-collapse min-w-[520px]">
+        <div className="max-w-3xl mx-auto">
+          <table className="w-full border-collapse table-fixed">
             <thead>
               <tr>
-                <th className="text-left text-[#8B949E] text-sm font-semibold py-4 px-4">
+                <th className="text-left text-[#8B949E] text-xs sm:text-sm font-semibold py-4 px-2 sm:px-4">
                   What matters for local
                 </th>
-                <th className="text-center text-[#8B949E] text-sm font-semibold py-4 px-4">
+                <th className="w-16 sm:w-32 text-center text-[#8B949E] text-xs sm:text-sm font-semibold py-4 px-2 sm:px-4">
                   Typical SEO agency
                 </th>
-                <th className="text-center text-[#00E676] text-sm font-semibold py-4 px-4">
+                <th className="w-16 sm:w-32 text-center text-[#00E676] text-xs sm:text-sm font-semibold py-4 px-2 sm:px-4">
                   Tier3Labs
                 </th>
               </tr>
@@ -59,13 +59,13 @@ export default function StandardVsUs() {
             <tbody>
               {rows.map((r) => (
                 <tr key={r.feature} className="border-t border-white/10">
-                  <td className="text-[#C9D1D9] text-sm py-4 px-4">{r.feature}</td>
-                  <td className="py-4 px-4">
+                  <td className="text-[#C9D1D9] text-sm py-4 px-2 sm:px-4">{r.feature}</td>
+                  <td className="py-4 px-2 sm:px-4">
                     <div className="flex justify-center">
                       {r.standard ? <Check /> : <Cross />}
                     </div>
                   </td>
-                  <td className="py-4 px-4">
+                  <td className="py-4 px-2 sm:px-4">
                     <div className="flex justify-center">
                       <Check />
                     </div>
