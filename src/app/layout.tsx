@@ -141,6 +141,7 @@ export default async function RootLayout({
   return (
     <html lang="en-GB" className={inter.variable}>
       <head>
+        <meta name="color-scheme" content="dark" />
         {/* ✅ FIX 1: Preconnect to third-party origins BEFORE any requests */}
         <link rel="preconnect" href="https://assets.calendly.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

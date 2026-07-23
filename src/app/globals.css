@@ -35,12 +35,14 @@
     scroll-padding-top: 5rem;
     overflow-x: hidden; /* must be on html AND body, body alone doesn't block horizontal scroll on Chrome/Android */
     max-width: 100%;
+    color-scheme: dark;
   }
 
   body {
     background-color: var(--color-dark-bg);
     color: var(--color-text-secondary);
     font-family: var(--font-sans);
+    color-scheme: dark;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -60,16 +62,27 @@
     color: #FFFFFF;
   }
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.05) inset !important;
+  .dark-input:-webkit-autofill,
+  .dark-input:-webkit-autofill:hover,
+  .dark-input:-webkit-autofill:focus,
+  .dark-input:-webkit-autofill:active,
+  .dark-input:-internal-autofill-selected,
+  .dark-input:-internal-autofill-previewed,
+  .dark-input:autofill,
+  .dark-input:autofill:hover,
+  .dark-input:autofill:focus,
+  .dark-input:autofill:active {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -webkit-box-shadow: 0 0 0 1000px var(--color-dark-card) inset !important;
+    box-shadow: 0 0 0 1000px var(--color-dark-card) inset !important;
+    background-color: var(--color-dark-card) !important;
+    background-image: none !important;
+    background-clip: padding-box !important;
     -webkit-text-fill-color: #ffffff !important;
-    caret-color: #ffffff;
-    transition: background-color 5000s ease-in-out 0s;
+    caret-color: #ffffff !important;
+    color: #ffffff !important;
+    transition: background-color 0s ease-in-out 0s;
   }
 
   ::-webkit-scrollbar {

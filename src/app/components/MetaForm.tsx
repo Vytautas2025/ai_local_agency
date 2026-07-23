@@ -162,12 +162,14 @@ export default function MetaForm() {
                         </label>
                         <input
                           id="meta-name"
+                          name="name"
                           type="text"
                           required
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder="John Smith"
-                          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                          autoComplete="name"
+                          className="dark-input w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
                         />
                       </div>
                       <div>
@@ -176,12 +178,14 @@ export default function MetaForm() {
                         </label>
                         <input
                           id="meta-email"
+                          name="email"
                           type="email"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="john@business.com"
-                          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                          autoComplete="email"
+                          className="dark-input w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
                         />
                       </div>
                       <div>
@@ -190,12 +194,14 @@ export default function MetaForm() {
                         </label>
                         <input
                           id="meta-phone"
+                          name="phone"
                           type="tel"
                           required
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
                           placeholder="07123 456789"
-                          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
+                          autoComplete="tel"
+                          className="dark-input w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all"
                         />
                       </div>
                       <div>
@@ -232,7 +238,7 @@ export default function MetaForm() {
                           value={message}
                           onChange={(e) => setMessage(e.target.value)}
                           placeholder="Write a short description about your business"
-                          className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
+                          className="dark-input w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all resize-none"
                         />
                       </div>
                       <button

@@ -105,7 +105,7 @@ export default function AuditForm({
   }
 
   const inputCls =
-    "w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all";
+    "dark-input w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-[#8B949E] focus:outline-none focus:border-[#00E676]/50 focus:ring-1 focus:ring-[#00E676]/30 transition-all";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
@@ -115,11 +115,13 @@ export default function AuditForm({
         </label>
         <input
           id={`${uid}-name`}
+          name="name"
           type="text"
           required
           value={form.name}
           onChange={(e) => handleChange("name", e.target.value)}
           placeholder="John Smith"
+          autoComplete="name"
           className={inputCls}
         />
       </div>
@@ -129,11 +131,13 @@ export default function AuditForm({
         </label>
         <input
           id={`${uid}-email`}
+          name="email"
           type="email"
           required
           value={form.email}
           onChange={(e) => handleChange("email", e.target.value)}
           placeholder="john@business.com"
+          autoComplete="email"
           className={inputCls}
         />
       </div>
@@ -143,11 +147,13 @@ export default function AuditForm({
         </label>
         <input
           id={`${uid}-phone`}
+          name="phone"
           type="tel"
           required
           value={form.phone}
           onChange={(e) => handleChange("phone", e.target.value)}
           placeholder="07123 456789"
+          autoComplete="tel"
           className={inputCls}
         />
       </div>
