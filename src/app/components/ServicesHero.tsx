@@ -11,9 +11,9 @@ export default function ServicesHero() {
           Local SEO &amp; <span className="green-gradient-text">Google Maps</span>{" "}
           Services for UK Businesses
         </h1>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto mt-6 leading-relaxed">
-          Everything we do to move your business into the Map Pack Top 3, and the
-          plans that deliver it.
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto mt-6 leading-relaxed text-balance">
+          The services, the strategy, and the plans that put you in the Google
+          Maps&nbsp;top&nbsp;3.
         </p>
       </div>
     </section>
