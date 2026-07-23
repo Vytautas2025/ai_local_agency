@@ -322,7 +322,7 @@
 /* ============================================================
    ✅ PERFORMANCE FIX: GPU-composited glow pulse
    Replaces Tailwind animate-pulse which causes forced reflow.
-   
+
    Strategy: animate opacity on a ::after pseudo-element that
    holds the box-shadow. The parent never repaints, only the
    pseudo-element's opacity changes, which runs on the GPU
