@@ -8,78 +8,85 @@ declare global {
 
 const CALENDLY_URL = "https://calendly.com/tier3labs-info/30min";
 
-type IncludedItem = string | { label: string; quantity: number; cadence?: string };
-
 type Plan = {
   name: string;
+  badge: string;
   featured: boolean;
-  specs: { label: string; value: string; highlight: boolean; suffix: string }[];
-  included: IncludedItem[];
-  includedCadence: string;
-  notIncluded: string[];
-  purpose: string;
   whoIsItFor: string;
 };
 
 const plans: Plan[] = [
   {
     name: "Community Plan",
+    badge: "Start free · 7 days",
     featured: false,
-    specs: [
-      { label: "Daily Engagement Signals", value: "10-20", highlight: false, suffix: "" },
-      { label: "Rating grid", value: "within area of 25 square miles", highlight: false, suffix: "" },
-      { label: "Keywords", value: "10", highlight: false, suffix: "" },
-    ],
-    included: ["Free 7-day trial", { label: "Cloud stacks", quantity: 4, cadence: "/month" }],
-    includedCadence: "",
-    notIncluded: ["Medium pages", "Google pages", "Google documents", "PDF"],
-    purpose:
-      "Subtly increase your GMB profile and visibility. Google Maps TOP 3 and your website's organic growth in Google Maps algorithms.",
     whoIsItFor:
-      "Ideal for smaller businesses looking to start strengthening their position and increasing their visibility.",
+      "For smaller local businesses tired of being invisible, consistent gains that build lasting visibility and move you up the Map Pack.",
   },
   {
     name: "City Plan",
+    badge: "Full power",
     featured: true,
-    specs: [
-      { label: "Daily Engagement Signals", value: "30-40", highlight: true, suffix: "" },
-      { label: "Rating grid", value: "within area of 100 square miles", highlight: false, suffix: "" },
-      { label: "Keywords", value: "20", highlight: false, suffix: "" },
-    ],
-    included: [
-      { label: "Cloud stacks", quantity: 8 },
-      { label: "Medium pages", quantity: 1 },
-      { label: "Google pages", quantity: 1 },
-      { label: "Google documents", quantity: 1 },
-      { label: "PDF", quantity: 1 },
-    ],
-    includedCadence: "per month",
-    notIncluded: [],
-    purpose: "Organically strengthen your position and reach the TOP 3 position in searches.",
     whoIsItFor:
-      "Perfect for businesses seeking intensive growth and wanting to quickly secure a leading position in the market.",
+      "For businesses that intend to dominate local search, not just show up. City is built to take the Top 3 and hold it.",
   },
 ];
+
+type Cell = boolean | string;
+type FeatureRow = { label: string; community: Cell; city: Cell };
+
+const features: FeatureRow[] = [
+  { label: "Google Business Profiles", community: "multi-location discounts", city: "multi-location discounts" },
+  { label: "Daily engagement signals", community: "10–20 / day", city: "30–40 / day" },
+  { label: "Rating grid coverage", community: "25 sq mi", city: "100 sq mi" },
+  { label: "Tracked keywords", community: "10", city: "20" },
+  { label: "Guaranteed Top 3 positions", community: true, city: true },
+  { label: "Google Business Profile SEO", community: true, city: true },
+  { label: "Website internal local SEO", community: true, city: true },
+  { label: "Cloud stack service", community: "×4 / month", city: "×8 / month" },
+  { label: "Local rank tracking", community: true, city: true },
+  { label: "Progress reports, every 2 weeks", community: true, city: true },
+  { label: "Free 7-day trial", community: true, city: false },
+  { label: "Medium pages", community: false, city: true },
+  { label: "Google pages", community: false, city: true },
+  { label: "Google documents", community: false, city: true },
+  { label: "PDF", community: false, city: true },
+];
+
+function FeatureCell({ value }: { value: Cell }) {
+  if (value === true) {
+    return (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="inline-block" aria-label="Included">
+        <path d="M20 6L9 17l-5-5" stroke="#00E676" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  if (value === false) {
+    return <span className="text-[#8B949E]/50" aria-label="Not included">—</span>;
+  }
+  return <span className="text-white text-sm font-medium">{value}</span>;
+}
 
 export default function Plans() {
   return (
     <section id="plans" className="bg-[#0D1117]">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="section-title">
-            Choose Your{" "}
-            <span className="green-gradient-text">Growth Plan</span>
+            Choose Your <span className="green-gradient-text">Growth Plan</span>
           </h2>
-              <p className="section-subtitle mx-auto mt-4">
-                Every customer starts with a free 7-day trial, no credit card, no contracts, cancel anytime.
+          <p className="section-subtitle mx-auto mt-4">
+            Every customer starts with a free 7-day trial, no credit card, no
+            contracts, cancel anytime.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {/* Plan headers */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-10">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex flex-col rounded-2xl p-8 ${
+              className={`relative flex flex-col rounded-2xl p-6 ${
                 plan.featured
                   ? "border-2 border-[#00E676] bg-[#00E676]/5 shadow-[0_0_48px_rgba(0,230,118,0.12)]"
                   : "border border-white/10 bg-white/[0.04]"
@@ -93,109 +100,73 @@ export default function Plans() {
                 </div>
               )}
 
-              <h3 className={`text-2xl font-extrabold text-white mb-8 ${plan.featured ? "mt-6" : "mt-2"}`}>{plan.name}</h3>
-
-              <div className="space-y-3 pb-6 mb-6 border-b border-white/10">
-                {plan.specs.map((spec) => (
-                  <div key={spec.label} className="flex items-start justify-between gap-3">
-                    <span className="text-[#8B949E] text-sm shrink-0">{spec.label}:</span>
-                    <div className="flex items-center gap-2">
-                      <div className="flex flex-col items-end text-right">
-                        <span
-                          className={`text-sm font-semibold leading-snug ${
-                            spec.highlight ? "text-[#00E676]" : "text-white"
-                          }`}
-                        >
-                          {spec.value}
-                        </span>
-                        {spec.suffix && (
-                          <span className="text-xs text-[#8B949E] leading-snug">{spec.suffix}</span>
-                        )}
-                      </div>
-                      <svg
-                        className="text-[#00E676] shrink-0 mt-0.5"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M20 6L9 17l-5-5" />
-                      </svg>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mb-4">
-                <p className="text-sm font-bold text-white mb-2">
-                  Included{plan.includedCadence && ` (${plan.includedCadence})`}:
-                </p>
-                <ul className="space-y-1.5">
-                  {plan.included.map((item) => {
-                    const label = typeof item === "string" ? item : item.label;
-                    return (
-                      <li key={label} className="flex items-center gap-2 text-sm text-[#C9D1D9]">
-                        <span className="text-[#00E676] font-bold">•</span>
-                        {typeof item === "string" ? (
-                          item
-                        ) : (
-                          <span>
-                            {item.label}{" "}
-                            <span className="font-semibold text-white">×{item.quantity}</span>
-                            {item.cadence && (
-                              <span className="text-[#8B949E]">{item.cadence}</span>
-                            )}
-                          </span>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-
-              {plan.notIncluded.length > 0 && (
-                <div className="mb-6">
-                  <p className="text-sm font-bold text-[#8B949E] mb-2">Not included:</p>
-                  <ul className="space-y-1.5">
-                    {plan.notIncluded.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-[#8B949E]/50">
-                        <span>•</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              <div className="border-t border-white/10 my-6" />
-
-              <div className="mb-4 flex-1">
-                <p className="text-sm font-bold text-white mb-1">Purpose:</p>
-                <p className="text-sm text-[#8B949E] leading-relaxed">{plan.purpose}</p>
-              </div>
-
-              <div className="mb-8">
-                <p className="text-sm text-[#8B949E] leading-relaxed">
-                  <span className="font-bold text-white">Who is it for?: </span>
-                  {plan.whoIsItFor}
-                </p>
-              </div>
-
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => window.gtag?.('event', 'begin_checkout', { event_category: 'calendly', event_label: `plans_${plan.name.toLowerCase().replace(' ', '_')}` })}
-                className={`text-center ${plan.featured ? "btn-primary" : "btn-ghost"}`}
+              <h3 className={`text-2xl font-extrabold text-white ${plan.featured ? "mt-4" : "mt-1"}`}>
+                {plan.name}
+              </h3>
+              <span
+                className={`inline-block w-fit mt-3 text-xs font-semibold uppercase tracking-wide rounded-full px-4 py-1.5 border ${
+                  plan.featured
+                    ? "text-[#58A6FF] border-[#58A6FF]/35 bg-[#58A6FF]/10"
+                    : "text-[#00E676] border-[#00E676]/35 bg-[#00E676]/10"
+                }`}
               >
-                Book a Free Call →
-              </a>
+                {plan.badge}
+              </span>
+              <p className="text-[#8B949E] text-sm mt-4 leading-relaxed flex-1">
+                {plan.whoIsItFor}
+              </p>
             </div>
           ))}
+        </div>
+
+        {/* Feature comparison */}
+        <div className="max-w-3xl mx-auto overflow-x-auto">
+          <table className="w-full border-collapse min-w-[560px]">
+            <thead>
+              <tr>
+                <th className="text-left text-[#8B949E] text-sm font-semibold py-4 px-4">
+                  What&apos;s included
+                </th>
+                <th className="text-center text-white text-sm font-semibold py-4 px-4">
+                  Community
+                </th>
+                <th className="text-center text-[#00E676] text-sm font-semibold py-4 px-4">
+                  City
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((row) => (
+                <tr key={row.label} className="border-t border-white/10">
+                  <td className="text-[#C9D1D9] text-sm py-3.5 px-4">{row.label}</td>
+                  <td className="text-center py-3.5 px-4">
+                    <FeatureCell value={row.community} />
+                  </td>
+                  <td className="text-center py-3.5 px-4">
+                    <FeatureCell value={row.city} />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-10">
+          <a
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() =>
+              window.gtag?.("event", "begin_checkout", {
+                event_category: "calendly",
+                event_label: "plans_book_call",
+              })
+            }
+            className="btn-ghost"
+          >
+            Book a Free Call →
+          </a>
         </div>
       </div>
     </section>

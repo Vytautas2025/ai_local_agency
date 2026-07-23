@@ -22,19 +22,7 @@ const Results = dynamic(() => import("./components/Results"), {
   loading: () => <div className="min-h-[400px]" />,
 });
 
-const AISearchDomination = dynamic(() => import("./components/AISearchDomination"), {
-  loading: () => <div className="min-h-[400px]" />,
-});
-
-const HumanSignal = dynamic(() => import("./components/HumanSignal"), {
-  loading: () => <div className="min-h-[400px]" />,
-});
-
-const TechStack = dynamic(() => import("./components/TechStack"), {
-  loading: () => <div className="min-h-[300px]" />,
-});
-
-const Plans = dynamic(() => import("./components/Plans"), {
+const Offer = dynamic(() => import("./components/Offer"), {
   loading: () => <div className="min-h-[400px]" />,
 });
 
@@ -87,11 +75,8 @@ export default function Home() {
         <IsThisYou />
         <DataVisualization />
         <Comparison />
-        <Plans />
         <Results />
-        <AISearchDomination />
-        <HumanSignal />
-        <TechStack />
+        <Offer />
         <SuccessCalculator />
         <FAQ />
         <Contact />
