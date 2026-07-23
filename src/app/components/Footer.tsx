@@ -19,6 +19,7 @@ export default function Footer() {
     { label: 'Plans', href: '#plans' },
     { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
+    { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '#contact' },
   ];
 
