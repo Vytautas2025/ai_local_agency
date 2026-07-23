@@ -43,7 +43,7 @@ const features: FeatureRow[] = [
   { label: "Guaranteed Top 3 positions", community: true, city: true },
   { label: "Google Business Profile SEO", community: true, city: true },
   { label: "Website internal local SEO", community: true, city: true },
-  { label: "Cloud stack service", community: "×4 / month", city: "×8 / month" },
+  { label: "Cloud stacks", community: "×4 / month", city: "×8 / month" },
   { label: "Local rank tracking", community: true, city: true },
   { label: "Progress reports, every 2 weeks", community: true, city: true },
   { label: "Free 7-day trial", community: true, city: false },
