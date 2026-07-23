@@ -56,7 +56,7 @@ const features: FeatureRow[] = [
 function FeatureCell({ value }: { value: Cell }) {
   if (value === true) {
     return (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="inline-block" aria-label="Included">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="inline-block" aria-label="Included">
         <path d="M20 6L9 17l-5-5" stroke="#00E676" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     );
@@ -64,7 +64,7 @@ function FeatureCell({ value }: { value: Cell }) {
   if (value === false) {
     return <span className="text-[#8B949E]/50" aria-label="Not included">—</span>;
   }
-  return <span className="text-white text-sm font-medium">{value}</span>;
+  return <span className="text-[#C9D1D9] text-[13px]">{value}</span>;
 }
 
 export default function Plans() {
@@ -73,7 +73,7 @@ export default function Plans() {
       <div className="section-container">
         <div className="text-center mb-12">
           <h2 className="section-title">
-            Choose Your <span className="green-gradient-text">Growth Plan</span>
+            Choose your <span className="green-gradient-text">plan</span>
           </h2>
           <p className="section-subtitle mx-auto mt-4">
             Every customer starts with a free 7-day trial, no credit card, no
@@ -86,33 +86,30 @@ export default function Plans() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex flex-col rounded-2xl p-6 ${
+              className={`relative flex flex-col rounded-2xl p-6 bg-white/[0.04] ${
                 plan.featured
-                  ? "border-2 border-[#00E676] bg-[#00E676]/5 shadow-[0_0_48px_rgba(0,230,118,0.12)]"
-                  : "border border-white/10 bg-white/[0.04]"
+                  ? "border border-[#00E676]/50 shadow-[0_0_32px_rgba(0,230,118,0.10)]"
+                  : "border border-white/10"
               }`}
             >
-              {plan.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-[#00E676] text-[#0D1117] text-xs font-extrabold tracking-wide px-5 py-1.5 rounded-full shadow-[0_0_16px_rgba(0,230,118,0.5)]">
+              <div className="flex items-center justify-between gap-3">
+                <h3 className="text-lg font-bold text-white">{plan.name}</h3>
+                {plan.featured && (
+                  <span className="shrink-0 bg-[#00E676] text-[#0D1117] text-[10px] font-bold uppercase tracking-wide px-3 py-1 rounded-full">
                     Most Popular
                   </span>
-                </div>
-              )}
-
-              <h3 className={`text-2xl font-extrabold text-white ${plan.featured ? "mt-4" : "mt-1"}`}>
-                {plan.name}
-              </h3>
+                )}
+              </div>
               <span
-                className={`inline-block w-fit mt-3 text-xs font-semibold uppercase tracking-wide rounded-full px-4 py-1.5 border ${
+                className={`inline-block w-fit mt-3 text-[11px] font-semibold uppercase tracking-wide rounded-full px-3 py-1 border ${
                   plan.featured
-                    ? "text-[#58A6FF] border-[#58A6FF]/35 bg-[#58A6FF]/10"
-                    : "text-[#00E676] border-[#00E676]/35 bg-[#00E676]/10"
+                    ? "text-[#58A6FF] border-[#58A6FF]/40 bg-[#58A6FF]/10"
+                    : "text-[#00E676] border-[#00E676]/40 bg-[#00E676]/10"
                 }`}
               >
                 {plan.badge}
               </span>
-              <p className="text-[#8B949E] text-sm mt-4 leading-relaxed flex-1">
+              <p className="text-[#8B949E] text-sm mt-3 leading-relaxed flex-1">
                 {plan.whoIsItFor}
               </p>
             </div>
@@ -124,25 +121,28 @@ export default function Plans() {
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="text-left text-[#8B949E] text-sm font-semibold py-4 px-4">
+                <th className="text-left text-[#C9D1D9] text-[13px] font-bold py-3 px-4">
                   What&apos;s included
                 </th>
-                <th className="text-center text-white text-sm font-semibold py-4 px-4">
+                <th className="text-center text-[#C9D1D9] text-[13px] font-bold py-3 px-4">
                   Community
                 </th>
-                <th className="text-center text-[#00E676] text-sm font-semibold py-4 px-4">
+                <th className="text-center text-[#00E676] text-[13px] font-bold py-3 px-4">
                   City
                 </th>
               </tr>
             </thead>
             <tbody>
-              {features.map((row) => (
-                <tr key={row.label} className="border-t border-white/10">
-                  <td className="text-[#C9D1D9] text-sm py-3.5 px-4">{row.label}</td>
-                  <td className="text-center py-3.5 px-4">
+              {features.map((row, i) => (
+                <tr
+                  key={row.label}
+                  className={`border-t border-white/10 ${i % 2 === 0 ? "bg-white/[0.015]" : ""}`}
+                >
+                  <td className="text-[#C9D1D9] text-[13px] py-3 px-4">{row.label}</td>
+                  <td className="text-center py-3 px-4">
                     <FeatureCell value={row.community} />
                   </td>
-                  <td className="text-center py-3.5 px-4">
+                  <td className="text-center py-3 px-4">
                     <FeatureCell value={row.city} />
                   </td>
                 </tr>
