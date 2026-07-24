@@ -2,7 +2,7 @@ export default function Comparison() {
   const rows = [
     {
       feature: "Traffic Share",
-      ppc: "~19% of clicks",
+      ppc: "~18% of clicks",
       mapPack: "Leads the ~80% organic share",
     },
     {
