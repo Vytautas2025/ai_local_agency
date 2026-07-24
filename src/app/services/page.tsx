@@ -15,7 +15,7 @@ import ScrollToTop from "../components/ScrollToTop";
 export const metadata: Metadata = {
   title: "Services & Plans | Tier3Labs Local SEO for UK Businesses",
   description:
-    "Google Maps and local SEO services that put UK businesses in the Map Pack Top 3: Google Business Profile SEO, local ranking signals, cloud stacks and rank tracking. Community and City plans, free 7-day trial.",
+    "Local SEO and Google Maps services that put UK businesses in the Map Pack Top 3, from Google Business Profile SEO to rank tracking. Includes a free 7-day trial.",
   alternates: {
     canonical: "https://www.tier3labs.co.uk/services",
   },
