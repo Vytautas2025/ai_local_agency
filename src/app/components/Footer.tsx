@@ -15,8 +15,6 @@ export default function Footer() {
     { label: 'Services', href: '#services' },
     { label: 'Statistics', href: '#method' },
     { label: 'Results', href: '#results' },
-    { label: 'AI Search', href: '#ai-search' },
-    { label: 'Plans', href: '#plans' },
     { label: 'About', href: '/about' },
     { label: 'Blog', href: '/blog' },
     { label: 'FAQ', href: '/faq' },
@@ -54,7 +52,7 @@ export default function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-[#8B949E] hover:text-[#00E676] transition-colors block py-1 text-sm"
+                  className="text-[#8B949E] hover:text-[#00E676] transition-colors block py-2 text-sm"
                 >
                   {link.label}
                 </a>
@@ -76,14 +74,14 @@ export default function Footer() {
               </span>
               <a
                 href="tel:+447518701075"
-                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+                className="flex items-center gap-2.5 py-1.5 hover:text-[#00E676] transition-colors"
               >
                 <Phone className="h-4 w-4 text-[#00E676] shrink-0" aria-hidden="true" />
                 +44 7518 701075
               </a>
               <a
                 href="mailto:info@tier3labs.co.uk"
-                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+                className="flex items-center gap-2.5 py-1.5 hover:text-[#00E676] transition-colors"
               >
                 <Mail className="h-4 w-4 text-[#00E676] shrink-0" aria-hidden="true" />
                 info@tier3labs.co.uk
@@ -92,7 +90,7 @@ export default function Footer() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 hover:text-[#00E676] transition-colors"
+                className="flex items-center gap-2.5 py-1.5 hover:text-[#00E676] transition-colors"
               >
                 <WhatsAppIcon className="h-4 w-4 text-[#00E676] shrink-0" />
                 WhatsApp us
@@ -116,13 +114,13 @@ export default function Footer() {
             <div className="flex items-center gap-6 shrink-0">
               <a
                 href="/privacy"
-                className="text-[#8B949E] text-sm hover:text-[#00E676] transition-colors"
+                className="text-[#8B949E] text-sm py-2 hover:text-[#00E676] transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="/terms"
-                className="text-[#8B949E] text-sm hover:text-[#00E676] transition-colors"
+                className="text-[#8B949E] text-sm py-2 hover:text-[#00E676] transition-colors"
               >
                 Terms of Service
               </a>

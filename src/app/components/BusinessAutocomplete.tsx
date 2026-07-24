@@ -252,7 +252,7 @@ export default function BusinessAutocomplete({
         <button
           type="button"
           onClick={switchToSearch}
-          className="text-[#00E676] text-xs mt-2 hover:underline"
+          className="inline-block text-[#00E676] text-xs mt-1 py-2 hover:underline"
         >
           ← Search Google instead
         </button>
@@ -296,7 +296,7 @@ export default function BusinessAutocomplete({
         <button
           type="button"
           onClick={switchToSearch}
-          className="text-[#00E676] text-xs mt-2 hover:underline"
+          className="inline-block text-[#00E676] text-xs mt-1 py-2 hover:underline"
         >
           Change business
         </button>
@@ -372,7 +372,7 @@ export default function BusinessAutocomplete({
       <button
         type="button"
         onClick={switchToManual}
-        className="text-[#8B949E] text-xs mt-1.5 hover:text-[#00E676] transition-colors"
+        className="inline-block text-[#8B949E] text-xs mt-1 py-2 hover:text-[#00E676] transition-colors"
       >
         Can&apos;t find your business? Enter manually
       </button>
