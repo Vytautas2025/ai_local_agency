@@ -433,7 +433,7 @@ export const posts: Post[] = [
       { type: "h2", text: "Why the profile matters more than your website" },
       {
         type: "p",
-        text: "On a local search (“electrician near me”, “dentist in Leeds”, “accountant Bristol”), Google leads with a map and three business listings. Around 70% of local search clicks go to organic results rather than paid ads, and that block, the “Map Pack”, takes the biggest share of them. Your website, sitting in the blue links below, competes for what's left. For a local business, ranking in those three slots is worth more than almost anything you can do on your own site.",
+        text: "On a local search (“electrician near me”, “dentist in Leeds”, “accountant Bristol”), Google leads with a map and three business listings. Around 80% of local search clicks go to organic results rather than paid ads, and that block, the “Map Pack”, takes the biggest share of them. Your website, sitting in the blue links below, competes for what's left. For a local business, ranking in those three slots is worth more than almost anything you can do on your own site.",
       },
       {
         type: "p",
@@ -569,7 +569,7 @@ export const posts: Post[] = [
       { type: "h2", text: "Where the clicks actually go" },
       {
         type: "p",
-        text: "It's easy to assume the ads at the very top of Google soak up most of the clicks. They don't. On local searches, roughly 70% of clicks go to organic results, led by the Google Maps Top 3, the “Map Pack” — while paid ads take under 20%.",
+        text: "It's easy to assume the ads at the very top of Google soak up most of the clicks. They don't. On local searches, roughly 80% of clicks go to organic results, led by the Google Maps Top 3, the “Map Pack” — while paid ads take under 20%.",
       },
       {
         type: "p",
@@ -629,8 +629,8 @@ export const posts: Post[] = [
         url: "https://www.brightlocal.com/research/local-services-ads-click-study/",
       },
       {
-        label: "SOCi Consumer Behavior Index, via Search Engine Land",
-        url: "https://searchengineland.com/guide/google-local-pack",
+        label: "SOCi — Consumer Behavior Index (Local SEO Statistics)",
+        url: "https://www.soci.ai/blog/local-seo-statistics/",
       },
     ],
   },

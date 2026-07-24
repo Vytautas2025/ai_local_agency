@@ -7,8 +7,8 @@ const sources = [
   },
   {
     n: 2,
-    label: "SOCi Consumer Behavior Index, via Search Engine Land",
-    url: "https://searchengineland.com/guide/google-local-pack",
+    label: "SOCi — Consumer Behavior Index (Local SEO Statistics)",
+    url: "https://www.soci.ai/blog/local-seo-statistics/",
   },
 ];
 
@@ -46,23 +46,23 @@ export default function DataVisualization() {
         <div className="max-w-3xl mx-auto mb-16">
           {/* Bar */}
           <div className="flex rounded-full overflow-hidden h-6 w-full">
-            <div className="bg-green-500" style={{ width: "73%" }} />
-            <div className="bg-gray-600" style={{ width: "19%" }} />
-            <div className="bg-gray-700" style={{ width: "8%" }} />
+            <div className="bg-green-500" style={{ width: "80%" }} />
+            <div className="bg-gray-600" style={{ width: "18%" }} />
+            <div className="bg-gray-700" style={{ width: "2%" }} />
           </div>
           {/* Legend row, uses wrapping flex + colored dots to avoid overflow from tight segment widths */}
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-1.5 mt-3 text-xs text-gray-400">
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-green-500 shrink-0" />
-              Organic traffic: ~70%
+              Organic traffic: ~80%
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-gray-600 shrink-0" />
-              Paid Ads (PPC/LSA): ~19%
+              Paid Ads (PPC/LSA): ~18%
             </div>
             <div className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-sm bg-gray-700 shrink-0" />
-              Other / zero-click: ~8%
+              Other / zero-click: ~2%
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function DataVisualization() {
           {/* Card 1 */}
           <div className="glass-card p-8 text-center">
             <div className="text-5xl font-extrabold mb-4">
-              <span className="green-gradient-text">70%</span>
+              <span className="green-gradient-text">80%</span>
               <Cite n={1} />
             </div>
             <p className="text-[#8B949E] text-base leading-relaxed">

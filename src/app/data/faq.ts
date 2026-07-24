@@ -9,7 +9,7 @@ export const faqItems: FaqItem[] = [
     question:
       "What is the Google Maps Top 3 (Map Pack), and why does it matter for UK businesses?",
     answer:
-      "The Map Pack (or “3-Pack”) is the block of three business listings Google shows at the top of Maps and local search, above the traditional blue links. It captures the majority of attention — and with around 70% of local search clicks going to organic results rather than paid ads, the Top 3 is the most valuable position a UK local business can hold. Businesses in the local pack earn 126% more traffic and 93% more customer actions — calls, direction requests and clicks — than those ranked 4th to 10th.",
+      "The Map Pack (or “3-Pack”) is the block of three business listings Google shows at the top of Maps and local search, above the traditional blue links. It captures the majority of attention — and with around 80% of local search clicks going to organic results rather than paid ads, the Top 3 is the most valuable position a UK local business can hold. Businesses in the local pack earn 126% more traffic and 93% more customer actions — calls, direction requests and clicks — than those ranked 4th to 10th.",
   },
   {
     question:
@@ -61,7 +61,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How is this different from Google Ads or PPC?",
     answer:
-      "Google Ads charges you for every click, and the moment you stop paying, your visibility disappears. Local SEO works differently: once you rank in the Map Pack, the clicks, calls and direction requests are free, and your position keeps working around the clock. Around 70% of local search clicks go to organic results rather than paid ads — reaching the majority of searchers that ads alone miss. Many businesses run both, but local SEO builds a lasting asset rather than a cost that resets every month.",
+      "Google Ads charges you for every click, and the moment you stop paying, your visibility disappears. Local SEO works differently: once you rank in the Map Pack, the clicks, calls and direction requests are free, and your position keeps working around the clock. Around 80% of local search clicks go to organic results rather than paid ads — reaching the majority of searchers that ads alone miss. Many businesses run both, but local SEO builds a lasting asset rather than a cost that resets every month.",
   },
   {
     question: "Which UK businesses and areas do you work with?",

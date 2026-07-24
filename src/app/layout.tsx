@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.tier3labs.co.uk"),
   title: "Tier3Labs | Google Maps Top 3 & Local SEO Agency UK",
   description:
-    "70% of local search clicks are organic, not ads. Tier3Labs ranks your business in the Google Maps Top 3 — Local SEO & AI Search Optimization.",
+    "80% of local search clicks are organic, not ads. Tier3Labs ranks your business in the Google Maps Top 3 — Local SEO & AI Search Optimization.",
   authors: [{ name: "Tier3Labs" }],
   creator: "Tier3Labs",
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Tier3Labs",
     title: "Tier3Labs | Dominate the Google Maps Top 3",
     description:
-      "70% of local search clicks are organic, not paid ads. We rank your business in the Google Maps Top 3 — Local SEO & AI Search Optimization.",
+      "80% of local search clicks are organic, not paid ads. We rank your business in the Google Maps Top 3 — Local SEO & AI Search Optimization.",
   },
   robots: {
     index: true,
