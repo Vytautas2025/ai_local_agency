@@ -15,7 +15,7 @@ export const faqItems: FaqItem[] = [
     question:
       "What local SEO and Google Business Profile services does Tier3Labs provide?",
     answer:
-      "We’re a local SEO agency focused entirely on Google Maps and Google Business Profile performance for UK businesses. Our services include Google Business Profile optimisation, local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and monthly local SEO reporting — all aimed at one outcome: moving your business into the Google Maps Top 3 for the searches your customers actually make.",
+      "We’re a local SEO agency focused entirely on Google Maps and Google Business Profile performance for UK businesses. Our services include Google Business Profile optimisation, local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and bi-weekly local SEO reporting — all aimed at one outcome: moving your business into the Google Maps Top 3 for the searches your customers actually make.",
   },
   {
     question: "How is Tier3Labs different from a traditional SEO agency?",
@@ -49,9 +49,9 @@ export const faqItems: FaqItem[] = [
       "We handle the heavy lifting. Once you’re set up, we manage the ongoing local SEO work behind the scenes — you don’t need to log in, change your website or learn anything technical. Your only job is to keep your business details accurate and respond to the new enquiries that come in.",
   },
   {
-    question: "What do I receive each month?",
+    question: "What do I receive, and how often?",
     answer:
-      "The main thing you’ll see each month is a clear ranking report — a geo-grid map showing where your business ranks across your local area for your target searches, and how that’s improving over time. Your Google Business Profile is optimised once at the start, only where it’s needed, and the ongoing work that moves your rankings runs quietly in the background. In short: we handle the work, and your report shows you the results.",
+      "The main thing you’ll see is a clear ranking report every two weeks — a geo-grid map showing where your business ranks across your local area for your target searches, and how that’s improving over time. Your Google Business Profile is optimised once at the start, only where it’s needed, and the ongoing work that moves your rankings runs quietly in the background. In short: we handle the work, and your report shows you the results.",
   },
   {
     question: "Is this “black hat” or against Google’s guidelines?",
