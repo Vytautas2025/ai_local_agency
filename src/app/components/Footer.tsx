@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 import { WHATSAPP_URL } from '../lib/whatsapp';
@@ -96,12 +97,14 @@ export default function Footer() {
                 WhatsApp us
               </a>
             </address>
-            <a
-              href="#contact"
+            {/* Root-relative: the footer renders on every page, but the
+                #contact form only exists on the homepage. */}
+            <Link
+              href="/#contact"
               className="btn-primary text-sm px-6 py-3"
             >
               Start For Free
-            </a>
+            </Link>
           </div>
         </div>
 

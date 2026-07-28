@@ -1,5 +1,6 @@
 // [Tier3Labs Audit], lucide-react icons for feature cards
 import { Brain, MessageSquare, Award } from "lucide-react";
+import Link from "next/link";
 
 export default function AISearchDomination() {
   return (
@@ -107,9 +108,9 @@ export default function AISearchDomination() {
       {/* [Tier3Labs], Replaced AI-Ready badge with CTA link */}
       <p className="text-center mt-6 text-sm text-gray-400">
         Want AI to recommend your business?{" "}
-        <a href="#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">
+        <Link href="/#contact" className="text-green-400 underline underline-offset-4 hover:text-green-300">
           Get your free audit →
-        </a>
+        </Link>
       </p>
     </section>
   );

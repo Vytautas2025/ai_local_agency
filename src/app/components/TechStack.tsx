@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TechStack() {
   return (
     <section id="services" className="section-container">
@@ -123,12 +125,11 @@ export default function TechStack() {
         <p className="text-[#8B949E] text-sm mb-6">
           Pricing is based on your market, competition level, and the number of services you want to rank for. Every plan is tailored, no cookie-cutter packages.
         </p>
-        <a
-          href="#contact"
-          className="btn-primary inline-block"
-        >
+        {/* Root-relative: this section also renders on /services, where the
+            #contact form does not exist. */}
+        <Link href="/#contact" className="btn-primary inline-block">
           Get My Fixed-Price Quote →
-        </a>
+        </Link>
       </div>
     </section>
   );
