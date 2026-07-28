@@ -18,6 +18,109 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "how-to-rank-in-the-google-map-pack",
+    title:
+      "How Do I Rank in the Google Map Pack? A Guide for UK Local Businesses",
+    metaTitle:
+      "How to Rank in the Google Map Pack (UK Guide) | Tier3Labs",
+    description:
+      "How to rank in the Google Map Pack: how local ranking works, how to reach the Top 3, why you might not be showing up, and how long it takes.",
+    excerpt:
+      "It's the question we're asked most: how do I get into those top three local results? Here's a straight answer, how Google actually decides, why you might not be showing up, and how long it takes.",
+    date: "2026-07-28",
+    readingTime: "5 min read",
+    author: "Vytautas Briauka",
+    content: [
+      {
+        type: "p",
+        text: "If you run a local business, the most valuable spot in all of Google is the Map Pack: the block of three businesses shown at the top of a local search, with the little map beside it. It's the first thing most people see and where most of them click, and getting in is the question we're asked more than any other. Here's a straight answer to what everyone really wants to know: how the Map Pack works, how to reach the Top 3, why you might not be showing up, and how long it takes.",
+      },
+      { type: "h2", text: "What the Map Pack is, and why the Top 3 is everything" },
+      {
+        type: "p",
+        text: "The Map Pack (or “3-Pack”) is the block of three listings Google shows at the top of Maps and local search, above the traditional blue links. On a phone, those three often fill the whole first screen. That placement is worth fighting for: around 80% of local search clicks go to organic results rather than paid ads, and businesses in the local pack earn 126% more traffic and 93% more customer actions, calls, direction requests and website clicks, than those ranked 4th to 10th. The gap between 3rd and 4th place isn't one position; it's the difference between being seen and being scrolled past.",
+      },
+      { type: "h2", text: "How Google decides who ranks" },
+      {
+        type: "p",
+        text: "Google is unusually open about this. Three things decide who appears: relevance, how well you match the search; distance, how close you are to the searcher; and prominence, how well-known and trusted your business is across the web. You can't change distance, but relevance and prominence are almost entirely in your hands, and that's where Map Pack rankings are won. Relevance comes mostly from your Google Business Profile, your primary category, your listed services, and a website that says the same thing. Prominence is the long game: genuine reviews, consistent citations, links and a profile kept active.",
+      },
+      { type: "h2", text: "How do I get into the Top 3 local results?" },
+      {
+        type: "p",
+        text: "There's no single switch. A Top 3 ranking is the sum of a few signals that, done together and kept up, tell Google you're the most relevant, most trusted option nearby:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Claim, verify and complete your profile, an unverified or half-finished listing can't compete.",
+          "Get your primary category right, it's the single strongest relevance signal you have.",
+          "List every service you offer; each one widens the searches you can appear for.",
+          "Make your website agree with your profile: same name, address and phone everywhere, and a headline that names your service and town.",
+          "Earn genuine reviews steadily, and reply to them, it's one of the clearest prominence signals there is.",
+          "Keep your citations consistent, and your profile active with posts, photos and up-to-date details.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Notice what isn't there: a trick. It's the combination and the consistency that move you, not any one clever move.",
+      },
+      { type: "h2", text: "Why am I not showing up at all?" },
+      {
+        type: "p",
+        text: "If you can't find yourself even when you search your own service and town, it's usually one of a few fixable causes:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Your profile isn't verified, or has been suspended.",
+          "Your primary category is wrong or missing, so Google isn't matching you to the right searches.",
+          "The profile is too thin, no services, few photos, no reviews, for Google to rank it confidently.",
+          "You're being judged on distance, and only appear when the searcher is closer to you.",
+          "The profile is brand new and hasn't built any prominence yet.",
+          "A guideline breach is holding you down, a keyword-stuffed name, a questionable address or fake reviews, or you have duplicate listings splitting your signals.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The reassuring part is that almost every one of these is something you can put right.",
+      },
+      { type: "h2", text: "Can I do this myself?" },
+      {
+        type: "p",
+        text: "In theory, yes, every factor above is public. The catch is that knowing what to do and being able to sustain it are very different things. It's slow: local prominence compounds over months, so spare-evening effort takes a long time to bite. It's relentless: the reviews, citations and signals have to keep coming, and the moment they stop, rankings ease back down. And it's easy to get wrong, a miscategorised profile quietly caps you, and the shortcuts people reach for out of frustration, bought reviews and spun backlinks, are exactly what get profiles suppressed. Most businesses don't lose the Map Pack because they don't know what to do; they lose it because they can't keep it up while running the business.",
+      },
+      { type: "h2", text: "How long does it take to reach the Top 3?" },
+      {
+        type: "p",
+        text: "This is where the two paths really separate. On your own there's no fixed timeline: because every signal has to be built and then maintained, most businesses take many months to see real movement, and in a competitive area it can stretch to a year or more, with no guarantee of ever reaching the Top 3. The ingredients are public; the pace and the outcome simply aren't in your hands. With our proprietary system working on it full-time, the picture is very different, most of our UK clients reach the Map Pack Top 3 in around 90 days: the same signals Google rewards, built in the right order and kept up so the position holds.",
+      },
+      { type: "h2", text: "Where Tier3Labs comes in" },
+      {
+        type: "p",
+        text: "That system is the whole of what we do. Tier3Labs is a UK local SEO agency with a single focus: moving your business into the Google Maps Top 3 for the searches your customers actually make. Our proprietary system does the ongoing ranking-signal work in the background, building your prominence, keeping your citations consistent, and strengthening the authority and engagement signals Google's local algorithm rewards, while we track every move on a geo-grid map. You don't hand over any logins; your only job is to serve the customers it brings in.",
+      },
+      {
+        type: "p",
+        text: "And because we'd rather prove it than promise it, finding out where you stand is risk-free: every customer starts with a free 7-day trial, with a geo-grid report after your first week showing exactly where you rank today. There's no long-term contract and you can cancel anytime, so the risk sits with us, not you. On a plan, that report then arrives every two weeks so you can watch your position climb toward the Top 3.",
+      },
+    ],
+    sources: [
+      {
+        label: "SOCi — Consumer Behavior Index (Local SEO Statistics)",
+        url: "https://www.soci.ai/blog/local-seo-statistics/",
+      },
+      {
+        label: "BrightLocal — Local Services Ads Click Study",
+        url: "https://www.brightlocal.com/research/local-services-ads-click-study/",
+      },
+      {
+        label: "Google Business Profile Help — Tips to improve your local ranking",
+        url: "https://support.google.com/business/answer/7091",
+      },
+    ],
+  },
+  {
     slug: "h1-tags-that-match-your-google-business-profile",
     title:
       "Why Your H1 Tag Should Match Your Google Business Profile Categories and Services",
