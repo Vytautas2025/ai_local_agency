@@ -45,7 +45,7 @@ const pillars: Pillar[] = [
       "Crawl and index audit",
       "Robots, sitemap, canonicals and redirects",
       "Broken pages and error clean-up",
-      "Core Web Vitals and page speed",
+      "Core Web Vitals",
       "LocalBusiness and Service schema markup",
       "Mobile usability and HTTPS checks",
     ],
