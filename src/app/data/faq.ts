@@ -20,7 +20,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How is Tier3Labs different from a traditional SEO agency?",
     answer:
-      "Traditional agencies focus on ranking your website in the blue links. We focus on where local customers look first — the Google Maps Top 3 — and on getting your business cited in AI search. Rather than only tweaking your website, we build the authority, citation consistency and engagement signals that Google’s local algorithm rewards. It’s a narrower, more focused approach, built specifically for UK businesses that win or lose on local visibility.",
+      "Traditional agencies focus on ranking your website in the blue links. We focus on where local customers look first — the Google Maps Top 3 — and on getting your business cited in AI search. Rather than only tweaking your website, our proprietary system builds the authority, citation consistency and engagement signals that Google’s local algorithm rewards — and keeps them up, so your position holds rather than slipping back. It’s a narrower, more focused approach, built specifically for UK businesses that win or lose on local visibility.",
   },
   {
     question:
@@ -41,7 +41,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How long before I see results in the Map Pack?",
     answer:
-      "Most UK clients see measurable ranking improvements within 30–60 days. Meaningful movement into the Map Pack Top 3 typically happens within around 90 days, depending on how competitive your area and category are. You receive regular geo-grid ranking reports showing exactly where you rank across your local area, so you can track progress the whole way.",
+      "On your own, building and maintaining these signals can take many months — far longer in a competitive area — with no guarantee of ever reaching the Top 3. With our proprietary system working on it full-time, most UK clients see measurable ranking improvements within 30–60 days and reach the Map Pack Top 3 in around 90, depending on how competitive their area and category are. You receive bi-weekly geo-grid ranking reports showing exactly where you rank across your local area, and with a free 7-day trial and no long-term contract, the risk sits with us, not you.",
   },
   {
     question: "Do I need to do anything myself, or do you handle everything?",
