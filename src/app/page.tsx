@@ -1,10 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import MetaLandingPage from "./components/MetaLandingPage";
 
 const IsThisYou = dynamic(() => import("./components/IsThisYou"), {
   loading: () => <div className="min-h-[400px]" />,
@@ -51,22 +49,6 @@ const ScrollToTop = dynamic(() => import("./components/ScrollToTop"));
 const StickyMobileBar = dynamic(() => import("./components/StickyMobileBar"));
 
 export default function Home() {
-  const [isMetaVisitor, setIsMetaVisitor] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("meta_ad") === "1") {
-      sessionStorage.setItem("meta_visitor", "true");
-    }
-    if (sessionStorage.getItem("meta_visitor") === "true") {
-      setIsMetaVisitor(true);
-    }
-  }, []);
-
-  if (isMetaVisitor) {
-    return <MetaLandingPage />;
-  }
-
   return (
     <>
       <Navbar />
