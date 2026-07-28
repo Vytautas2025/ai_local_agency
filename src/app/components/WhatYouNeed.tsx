@@ -44,8 +44,9 @@ export default function WhatYouNeed() {
             ))}
           </ul>
           <p className="text-[#8B949E] text-sm mt-6 pt-6 border-t border-white/10 leading-relaxed">
-            Don&apos;t tick every box? We&apos;ll help you tighten the gaps, and
-            you never hand over a single login.
+            Don&apos;t tick every box? Essential Build is designed to close
+            exactly these gaps. And your ongoing plan never needs a single
+            login.
           </p>
         </div>
       </div>

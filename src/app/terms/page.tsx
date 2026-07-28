@@ -232,7 +232,7 @@ export default function TermsPage() {
               incorrectly, Customer must contact Company no later than 60 days after the closing
               date on the first billing statement in which the error appeared.
             </p>
-            <p>
+            <p className="mb-3">
               <strong className="text-white">6.2</strong> Where Company bills by invoice, full
               payment must be received within fourteen (14) days of the invoice date. Unpaid amounts
               are subject to statutory interest under the Late Payment of Commercial Debts (Interest)
@@ -240,6 +240,19 @@ export default function TermsPage() {
               collection, and may result in immediate suspension or termination of the Services.
               Customer shall be responsible for all taxes and duties associated with the Services,
               including UK value added tax (VAT) where applicable.
+            </p>
+            <p>
+              <strong className="text-white">6.3</strong> Certain Services, including the Essential
+              Build foundation service, are supplied as a single one-time engagement rather than a
+              recurring subscription. The scope of work, the Fee and the expected delivery period
+              for such Services are set out in the written quotation provided to Customer before
+              purchase, and that quotation forms part of this Agreement. One-time Fees are payable
+              as set out in the quotation and are earned as the work is performed. The pro-rated
+              refund provision in Section 7.3 applies only to recurring service terms and does not
+              apply to one-time Services. Where a one-time Service requires manager or
+              administrative access to Customer&apos;s Google Business Profile, website, or content
+              management system, Customer is responsible for granting that access, and any delivery
+              period is extended by any period during which such access is unavailable.
             </p>
           </section>
 
@@ -263,8 +276,8 @@ export default function TermsPage() {
               warranty disclaimers, and limitations of liability.
             </p>
             <p>
-              <strong className="text-white">7.3</strong> Customers who purchase Services with
-              initial service terms greater than one (1) month have the option to terminate this
+              <strong className="text-white">7.3</strong> Customers who purchase recurring Services
+              with initial service terms greater than one (1) month have the option to terminate this
               Agreement at any time during the first thirty (30) days of Service for any reason by
               emailing their assigned Customer Service Representative. If this option is exercised,
               Company will refund Customer for the pro-rated amount remaining on their initial

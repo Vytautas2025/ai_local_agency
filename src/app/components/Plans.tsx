@@ -41,12 +41,14 @@ const features: FeatureRow[] = [
   { label: "Rating grid coverage", community: "25 sq mi", city: "100 sq mi" },
   { label: "Tracked keywords", community: "10", city: "20" },
   { label: "Guaranteed Top 3 positions", community: true, city: true },
-  { label: "Google Business Profile SEO", community: true, city: true },
-  { label: "Website internal local SEO", community: true, city: true },
+  // Essential Build is a one-time product sold outside this table (see
+  // EssentialBuild.tsx). It replaces the former "Google Business Profile SEO"
+  // and "Website internal local SEO" rows, which it fully absorbs.
+  { label: "Essential Build — GBP, technical & website SEO", community: false, city: true },
   { label: "Cloud stacks", community: "×4 / month", city: "×8 / month" },
   { label: "Local rank tracking", community: true, city: true },
   { label: "Progress reports, every 2 weeks", community: true, city: true },
-  { label: "Free 7-day trial", community: true, city: false },
+  { label: "Free 7-day trial", community: true, city: true },
   { label: "Medium pages", community: false, city: true },
   { label: "Google pages", community: false, city: true },
   { label: "Google documents", community: false, city: true },

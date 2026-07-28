@@ -15,7 +15,7 @@ export const faqItems: FaqItem[] = [
     question:
       "What local SEO and Google Business Profile services does Tier3Labs provide?",
     answer:
-      "We’re a local SEO agency focused entirely on Google Maps and Google Business Profile performance for UK businesses. Our services include Google Business Profile optimisation, local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and bi-weekly local SEO reporting — all aimed at one outcome: moving your business into the Google Maps Top 3 for the searches your customers actually make.",
+      "We’re a local SEO agency focused entirely on Google Maps and Google Business Profile performance for UK businesses. Our services include the Essential Build foundation — Google Business Profile optimisation, technical SEO and website local SEO — plus local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and bi-weekly local SEO reporting. All of it aims at one outcome: moving your business into the Google Maps Top 3 for the searches your customers actually make.",
   },
   {
     question: "How is Tier3Labs different from a traditional SEO agency?",
@@ -29,9 +29,14 @@ export const faqItems: FaqItem[] = [
       "Google AI Overviews are the AI-generated answers now appearing above the traditional results, and AI assistants like ChatGPT and Gemini do the same — increasingly recommending specific businesses. We optimise your presence — profile, content authority and citations — so that when someone asks AI for the best option in your area, your business is among the names it puts forward. As AI answers replace blue links, this is becoming as important as the Map Pack itself.",
   },
   {
+    question: "What is Essential Build, and how is it different from a plan?",
+    answer:
+      "Essential Build is a one-time foundation build, separate from our monthly plans. It covers three things: a full Google Business Profile rebuild, including categories, description, attributes and your Services section built out as keyword targets; technical SEO across your website, covering crawl and index issues, Core Web Vitals and LocalBusiness schema markup; and website local SEO, covering NAP consistency, citation clean-up and your location and service pages. You finish with a baseline geo-grid report and a written before-and-after report documenting every change we made. Essential Build is included as part of the City plan at no extra cost, and can also be bought on its own, whether or not you ever take a monthly plan. Scope and price are quoted per business, because no two profiles and websites need the same work.",
+  },
+  {
     question: "Do you need access to my Google Business Profile or website?",
     answer:
-      "No. We never need the login details for your Google Business Profile, website or any other account. Our entire approach works through external signals — content authority, citation networks and engagement patterns — so there’s zero access required and zero risk to your accounts. You stay in full control of your profile at all times.",
+      "It depends which of our services you’re using. Our monthly Community and City plans need no access at all — that work runs entirely through external signals such as content authority, citation networks and engagement patterns, so there’s nothing to hand over. Essential Build is different, because it’s hands-on work on your profile and your website. For that, you add us as a manager on your Google Business Profile using our email address, and you give us access to your website or CMS so we can make the changes. We never ask for your Google password. You remain the owner of your profile throughout, and you can remove our manager access in a single click, whenever you choose.",
   },
   {
     question: "How do I get started?",
@@ -46,17 +51,17 @@ export const faqItems: FaqItem[] = [
   {
     question: "Do I need to do anything myself, or do you handle everything?",
     answer:
-      "We handle the heavy lifting. Once you’re set up, we manage the ongoing local SEO work behind the scenes — you don’t need to log in, change your website or learn anything technical. Your only job is to keep your business details accurate and respond to the new enquiries that come in.",
+      "We handle the heavy lifting. On a monthly plan, the ongoing local SEO work runs behind the scenes — you don’t need to log in, change your website or learn anything technical. If you take Essential Build, we do the hands-on profile and website work for you as well; all that’s asked of you is to grant access at the start. Your only ongoing job is to keep your business details accurate and respond to the new enquiries that come in.",
   },
   {
     question: "What do I receive, and how often?",
     answer:
-      "The main thing you’ll see is a clear ranking report every two weeks — a geo-grid map showing where your business ranks across your local area for your target searches, and how that’s improving over time. Your Google Business Profile is optimised once at the start, only where it’s needed, and the ongoing work that moves your rankings runs quietly in the background. In short: we handle the work, and your report shows you the results.",
+      "The main thing you’ll see is a clear ranking report every two weeks — a geo-grid map showing where your business ranks across your local area for your target searches, and how that’s improving over time. The ongoing work that moves your rankings runs quietly in the background. If your plan includes Essential Build, or you buy it separately, you also receive a written before-and-after report documenting every change made to your profile and website. In short: we handle the work, and your reports show you the results.",
   },
   {
     question: "Is this “black hat” or against Google’s guidelines?",
     answer:
-      "No. Tier3Labs is a UK-registered limited company, and everything we do is built around legitimate local SEO — genuine profile optimisation, consistent citations, content authority and engagement signals. There’s nothing that puts your profile at risk, which is also why we never need access to your accounts. We focus on earning your rankings sustainably, not on shortcuts that could get a profile penalised.",
+      "No. Tier3Labs is a UK-registered limited company, and everything we do is built around legitimate local SEO — genuine profile optimisation, consistent citations, content authority and engagement signals. Our monthly plan work runs entirely through external signals, so nothing we do there touches your profile directly. Where we do work on the profile itself, through Essential Build, it’s ordinary manager access that you grant, control and can revoke at any time — we never ask for your password. We focus on earning your rankings sustainably, not on shortcuts that could get a profile penalised.",
   },
   {
     question: "How is this different from Google Ads or PPC?",
@@ -71,7 +76,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What’s included in the free 7-day trial?",
     answer:
-      "Every customer starts with a free 7-day trial on our Community Plan. During the trial we begin your audit, start optimising your presence and lay the groundwork for your ranking signals, so you can see how we work before paying anything. The Community Plan is a full, ongoing plan in its own right — the trial is simply how everyone begins. After the 7 days, it’s entirely your choice whether to continue.",
+      "Every customer starts with a free 7-day trial, whichever plan you go on to choose. During the trial we begin your audit, start optimising your presence and lay the groundwork for your ranking signals, so you can see how we work before paying anything. The trial covers our monthly plan work; Essential Build is a separate one-time purchase and isn’t part of it. After the 7 days, it’s entirely your choice whether to continue.",
   },
   {
     question: "Is there a contract, and what happens if I cancel?",
@@ -81,7 +86,9 @@ export const faqItems: FaqItem[] = [
 ];
 
 // Subset surfaced as a teaser on the landing page; the full list lives on /faq.
-export const teaserFaqIndexes = [0, 2, 4, 6, 10, 12];
+// Positional — re-check these if items are inserted or reordered above.
+// Map Pack, how we differ, Essential Build, access, timelines, vs ads, trial.
+export const teaserFaqIndexes = [0, 2, 4, 5, 7, 11, 13];
 export const teaserFaqItems: FaqItem[] = teaserFaqIndexes.map((i) => faqItems[i]);
 
 // FAQPage structured data. Each page must only pass the items visible on it,

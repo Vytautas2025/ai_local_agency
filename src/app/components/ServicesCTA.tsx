@@ -10,7 +10,7 @@ export default function ServicesCTA() {
             <span className="green-gradient-text">free for 7 days</span>
           </h2>
           <p className="text-[#8B949E] mt-4">
-            No access to your accounts needed. No card required.
+            Your plan needs no access to your accounts. No card required.
           </p>
           <Link href="/#get-started" className="btn-primary mt-8 inline-block">
             Start your free trial →

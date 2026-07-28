@@ -17,7 +17,7 @@ export function GET() {
 
 > Tier3Labs is a UK local SEO agency that ranks service businesses in the Google Maps Top 3 (the "Map Pack") and builds their visibility across AI search engines.
 
-Tier3Labs is a London-registered local SEO and AI search optimisation agency serving businesses across the United Kingdom. We focus entirely on Google Business Profile and Google Maps performance, with one goal: moving a business into the local Top 3 for the searches its customers actually make. Our work includes Google Business Profile optimisation, local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and clear reporting every two weeks. Every customer starts with a free 7-day trial.
+Tier3Labs is a London-registered local SEO and AI search optimisation agency serving businesses across the United Kingdom. We focus entirely on Google Business Profile and Google Maps performance, with one goal: moving a business into the local Top 3 for the searches its customers actually make. Our work includes Essential Build (a one-time foundation covering Google Business Profile optimisation, technical SEO and website local SEO), local ranking-signal building, citation and directory consistency, review and reputation strategy, AI search and Google AI Overviews visibility, geo-grid rank tracking, and clear reporting every two weeks. Every customer starts with a free 7-day trial.
 
 ## Key statistics (with primary sources)
 
@@ -26,7 +26,7 @@ Tier3Labs is a London-registered local SEO and AI search optimisation agency ser
 
 ## Core pages
 
-- [Services & Plans](${baseUrl}/services): What we do to reach the Google Maps Top 3, plus the Community and City plans and the free 7-day trial.
+- [Services & Plans](${baseUrl}/services): What we do to reach the Google Maps Top 3, the Essential Build one-time foundation, plus the Community and City monthly plans and the free 7-day trial.
 - [About](${baseUrl}/about): The London-registered team behind Tier3Labs and how we prove progress every two weeks.
 - [FAQ](${baseUrl}/faq): Answers on local SEO, Google Business Profile, AI search, results timelines and the free trial.
 - [Blog](${baseUrl}/blog): Practical local SEO and Google Business Profile guides for UK businesses.

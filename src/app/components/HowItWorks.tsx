@@ -7,7 +7,7 @@ const steps = [
   {
     n: "STEP 2",
     title: "We start working",
-    body: "We start building the local signals Google rewards — no access to your accounts required.",
+    body: "We start building the local signals Google rewards — your plan needs no access to your accounts.",
   },
   {
     n: "STEP 3",

@@ -16,7 +16,7 @@ const cards: Card[] = [
     tagline: "For local businesses done being buried, steady climbs up the map.",
     points: [
       "10–20 daily engagement signals",
-      "Google Business Profile SEO",
+      "25 sq mi ranking grid",
       "Cloud stacks ×4 / month",
     ],
   },
@@ -26,6 +26,7 @@ const cards: Card[] = [
     featured: true,
     tagline: "For businesses ready to own their city's Top 3, fast.",
     points: [
+      "Essential Build included",
       "30–40 daily engagement signals",
       "Wider 100 sq mi ranking grid",
       "Medium & Google pages, docs, PDF",
@@ -51,8 +52,9 @@ export default function Offer() {
             <span className="green-gradient-text">Scale when you&apos;re ready.</span>
           </h2>
           <p className="section-subtitle mx-auto mt-4">
-            Every business begins on the Community plan with a free 7-day trial,
-            no card, no contract. Move up to City when you want the Top 3 faster.
+            Every business begins with a free 7-day trial, no card, no contract.
+            Move up to City when you want the Top 3 faster, with the Essential
+            Build foundation included.
           </p>
         </div>
 
